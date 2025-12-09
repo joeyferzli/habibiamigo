@@ -7,75 +7,108 @@ const About = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="py-20 bg-sand/30">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-8 opacity-0 animate-fade-up" style={{ animationFillMode: 'forwards' }}>
-              Meet The Amigos Behind Habibi Amigo
+      <section className="pt-32 pb-20">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="max-w-4xl">
+            <h1 className="font-display text-display-xl text-foreground mb-8 opacity-0 animate-fade-up">
+              [ABOUT THE BRAND]
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed opacity-0 animate-fade-up" style={{ animationDelay: '150ms', animationFillMode: 'forwards' }}>
-              Write a short intro about two friends from Lebanon and Spain starting this brand together
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl opacity-0 animate-fade-up delay-100">
+              [Intro paragraph placeholder — write about two friends from Lebanon and Spain 
+              who started this brand together. Their shared love of humor, culture, and comfortable tees.]
             </p>
           </div>
         </div>
       </section>
 
-      {/* Founders Section */}
+      {/* Founder 1 - Joey */}
+      <section className="py-24 bg-sand">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            {/* Portrait */}
+            <div className="opacity-0 animate-fade-up">
+              <div className="aspect-[3/4] bg-oatmeal flex items-center justify-center max-w-md mx-auto lg:mx-0">
+                <div className="text-center p-12">
+                  <div className="w-24 h-32 mx-auto mb-4 border-2 border-dashed border-taupe/50 flex items-center justify-center">
+                    <span className="text-taupe/60 text-xs uppercase tracking-wider">Portrait</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground italic">[Joey's portrait placeholder]</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Info */}
+            <div className="opacity-0 animate-fade-up delay-200">
+              <h2 className="font-display text-display-md text-foreground mb-4">
+                JOEY
+              </h2>
+              <p className="text-primary font-medium text-lg mb-8 uppercase tracking-wider">
+                [Role or title placeholder]
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                [Write a short bio about Joey — his background, personality, Lebanese heritage, 
+                what he brings to the brand, his sense of humor, design perspective, 
+                and why this project matters to him.]
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder 2 - Amigo */}
       <section className="py-24">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {/* Joey */}
-            <div className="text-center opacity-0 animate-fade-up" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
-              <div className="aspect-square max-w-sm mx-auto mb-8 bg-sand/50 rounded-3xl flex items-center justify-center overflow-hidden">
-                <div className="text-center p-6">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-taupe/30 flex items-center justify-center">
-                    <span className="text-5xl">🧑</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground italic">Joey's photo placeholder</p>
-                </div>
-              </div>
-              <h2 className="text-3xl font-bold text-foreground mb-2">Joey</h2>
-              <p className="text-primary font-medium mb-4">Role or tagline for Joey</p>
-              <p className="text-muted-foreground leading-relaxed">
-                Write a short bio about Joey, background, personality, what he brings to the brand
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            {/* Info - Reversed order on desktop */}
+            <div className="order-2 lg:order-1 opacity-0 animate-fade-up delay-200">
+              <h2 className="font-display text-display-md text-foreground mb-4">
+                AMIGO
+              </h2>
+              <p className="text-primary font-medium text-lg mb-8 uppercase tracking-wider">
+                [Role or title placeholder]
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                [Write a short bio about the Spanish friend — his background, personality, 
+                Spanish heritage, what he brings to the brand, his creativity, 
+                and how the friendship with Joey sparked this idea.]
               </p>
             </div>
 
-            {/* Amigo */}
-            <div className="text-center opacity-0 animate-fade-up" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-              <div className="aspect-square max-w-sm mx-auto mb-8 bg-sand/50 rounded-3xl flex items-center justify-center overflow-hidden">
-                <div className="text-center p-6">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-taupe/30 flex items-center justify-center">
-                    <span className="text-5xl">🧑</span>
+            {/* Portrait */}
+            <div className="order-1 lg:order-2 opacity-0 animate-fade-up">
+              <div className="aspect-[3/4] bg-sand flex items-center justify-center max-w-md mx-auto lg:ml-auto lg:mr-0">
+                <div className="text-center p-12">
+                  <div className="w-24 h-32 mx-auto mb-4 border-2 border-dashed border-taupe/50 flex items-center justify-center">
+                    <span className="text-taupe/60 text-xs uppercase tracking-wider">Portrait</span>
                   </div>
-                  <p className="text-sm text-muted-foreground italic">Amigo's photo placeholder</p>
+                  <p className="text-sm text-muted-foreground italic">[Amigo's portrait placeholder]</p>
                 </div>
               </div>
-              <h2 className="text-3xl font-bold text-foreground mb-2">Amigo</h2>
-              <p className="text-primary font-medium mb-4">Role or tagline for the Spanish friend</p>
-              <p className="text-muted-foreground leading-relaxed">
-                Write a short bio about him, background, personality, what he brings to the brand
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What We Stand For */}
-      <section className="py-24 bg-accent/50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-              What Habibi Amigo Stands For
+      {/* Closing Section */}
+      <section className="py-32 bg-card">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-display text-display-lg text-foreground mb-10 opacity-0 animate-fade-up">
+              [THE STORY OF HABIBI AMIGO]
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-              Write a short paragraph about friendship, humor, culture mix, and making Tshirts for friends
+            <p className="text-muted-foreground text-xl leading-relaxed mb-16 opacity-0 animate-fade-up delay-100">
+              [Write a larger paragraph about what Habibi Amigo represents — the friendship, 
+              the cultural blend of Lebanon and Spain, the inside jokes, the shared experiences 
+              turned into wearable designs. T-shirts by friends, for friends. 
+              A celebration of connection and humor across borders.]
             </p>
-            <Button variant="hero" size="lg" asChild>
-              <a href={SHOP_URL} target="_blank" rel="noopener noreferrer">
-                Shop Now
-              </a>
-            </Button>
+            <div className="opacity-0 animate-fade-up delay-200">
+              <Button variant="premium" size="xl" asChild>
+                <a href={SHOP_URL} target="_blank" rel="noopener noreferrer">
+                  Shop Now
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
