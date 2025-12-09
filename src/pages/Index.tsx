@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { ArrowDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import DesignCard from "@/components/DesignCard";
@@ -7,116 +6,138 @@ import DesignCard from "@/components/DesignCard";
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
 const featuredDesigns = [
-  {
-    name: "Design name",
-    description: "One line about this design",
-  },
-  {
-    name: "Design name",
-    description: "One line about this design",
-  },
-  {
-    name: "Design name",
-    description: "One line about this design",
-  },
-  {
-    name: "Design name",
-    description: "One line about this design",
-  },
+  { name: "[Design Name Placeholder]", description: "[One-line description placeholder]" },
+  { name: "[Design Name Placeholder]", description: "[One-line description placeholder]" },
+  { name: "[Design Name Placeholder]", description: "[One-line description placeholder]" },
+  { name: "[Design Name Placeholder]", description: "[One-line description placeholder]" },
 ];
 
 const Index = () => {
-  const scrollToAbout = () => {
-    document.getElementById("why-section")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="min-h-[90vh] flex items-center justify-center relative overflow-hidden">
-        {/* Subtle background texture */}
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-sand/20 to-background" />
-        
-        <div className="container mx-auto px-6 py-20 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0ms', animationFillMode: 'forwards' }}>
-              Main headline about Habibi Amigo and fun Tshirts
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto opacity-0 animate-fade-up" style={{ animationDelay: '150ms', animationFillMode: 'forwards' }}>
-              Short sentence describing the brand vibe and that shirts are made by two friends
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-up" style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}>
-              <Button variant="hero" size="lg" asChild>
-                <a href={SHOP_URL} target="_blank" rel="noopener noreferrer">
-                  Shop Now
-                </a>
-              </Button>
-              <Button variant="outline" size="lg" onClick={scrollToAbout}>
-                Learn More
-              </Button>
+      {/* Hero Section - Full Width Premium */}
+      <section className="min-h-screen flex items-center justify-center relative pt-20">
+        <div className="container mx-auto px-6 lg:px-12 py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            {/* Left - Typography */}
+            <div className="order-2 lg:order-1">
+              <h1 className="font-display text-display-xl text-foreground mb-8 opacity-0 animate-fade-up">
+                [INSERT HERO HEADLINE HERE]
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-lg opacity-0 animate-fade-up delay-200">
+                [Subheadline placeholder — describe the brand vibe and friendship story]
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-up delay-300">
+                <Button variant="premium" size="xl" asChild>
+                  <a href={SHOP_URL} target="_blank" rel="noopener noreferrer">
+                    Shop Now
+                  </a>
+                </Button>
+              </div>
+            </div>
+
+            {/* Right - Hero Image Placeholder */}
+            <div className="order-1 lg:order-2 opacity-0 animate-fade-up delay-100">
+              <div className="aspect-[4/5] bg-sand flex items-center justify-center">
+                <div className="text-center p-12">
+                  <div className="w-32 h-32 mx-auto mb-6 border-2 border-dashed border-taupe/50 flex items-center justify-center">
+                    <span className="text-taupe/60 text-sm uppercase tracking-wider">Hero</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground italic">[Large image/video placeholder area]</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <ArrowDown className="text-muted-foreground" size={24} />
-        </div>
       </section>
 
-      {/* Why Habibi Amigo Section */}
-      <section id="why-section" className="py-24 bg-sand/30">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-              Why Habibi Amigo
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Write a short paragraph about Lebanese and Spanish friends creating Tshirts by friends for friends
-            </p>
+      {/* Brand Intro Section - 50/50 Layout */}
+      <section className="py-32 bg-sand">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            {/* Image */}
+            <div className="opacity-0 animate-fade-up">
+              <div className="aspect-square bg-oatmeal flex items-center justify-center">
+                <div className="text-center p-12">
+                  <div className="w-24 h-24 mx-auto mb-4 border-2 border-dashed border-taupe/50 flex items-center justify-center">
+                    <span className="text-taupe/60 text-xs uppercase tracking-wider">Image</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground italic">[Brand image placeholder]</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Text */}
+            <div className="opacity-0 animate-fade-up delay-200">
+              <h2 className="font-display text-display-md text-foreground mb-8">
+                [HEADER PLACEHOLDER]
+              </h2>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                [Write a paragraph explaining the brand — two friends, one Lebanese and one Spanish, 
+                creating fun T-shirts made by friends for friends. Describe the origin story, 
+                the shared humor, and what makes Habibi Amigo unique.]
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Featured Designs Section */}
-      <section className="py-24">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Featured Designs
+      <section className="py-32">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="mb-20">
+            <h2 className="font-display text-display-lg text-foreground mb-6 opacity-0 animate-fade-up">
+              FEATURED DESIGNS
             </h2>
+            <p className="text-muted-foreground text-lg max-w-xl opacity-0 animate-fade-up delay-100">
+              [Subheading placeholder — describe the collection style]
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
             {featuredDesigns.map((design, index) => (
               <div
                 key={index}
                 className="opacity-0 animate-fade-up"
-                style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
+                style={{ animationDelay: `${(index + 2) * 100}ms` }}
               >
                 <DesignCard name={design.name} description={design.description} />
               </div>
             ))}
           </div>
 
-          <div className="text-center">
-            <Button variant="default" size="lg" asChild>
+          <div className="opacity-0 animate-fade-up delay-600">
+            <Button variant="outline" size="lg" asChild>
               <Link to="/designs">View All Designs</Link>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Brand Vibe Section */}
-      <section className="py-24 bg-accent/50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-              Friends, Jokes, And T Shirts
+      {/* The Habibi Amigo Vibe */}
+      <section className="py-32 bg-card">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="max-w-4xl">
+            <h2 className="font-display text-display-lg text-foreground mb-10 opacity-0 animate-fade-up">
+              [THE HABIBI AMIGO VIBE HEADLINE]
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Write a short story about inside jokes, friendship, and turning them into wearable designs
+            <p className="text-muted-foreground text-xl leading-relaxed mb-16 opacity-0 animate-fade-up delay-100">
+              [Write a larger paragraph about the brand philosophy — inside jokes turned into wearable art, 
+              friendship that crosses cultures, humor that connects people. Describe the creative process, 
+              the inspiration behind designs, and what wearing Habibi Amigo means.]
             </p>
+          </div>
+
+          {/* Large Image Placeholder */}
+          <div className="opacity-0 animate-fade-up delay-200">
+            <div className="aspect-[21/9] bg-sand flex items-center justify-center">
+              <div className="text-center p-12">
+                <div className="w-32 h-16 mx-auto mb-4 border-2 border-dashed border-taupe/50 flex items-center justify-center">
+                  <span className="text-taupe/60 text-xs uppercase tracking-wider">Wide Image</span>
+                </div>
+                <p className="text-sm text-muted-foreground italic">[Oversized image placeholder]</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

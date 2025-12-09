@@ -2,82 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap');
 
 @layer base {
   :root {
-    /* Warm neutral palette */
-    --background: 40 33% 96%;
-    --foreground: 30 10% 15%;
+    /* Premium neutral palette - high contrast editorial */
+    --background: 45 25% 97%;
+    --foreground: 30 10% 12%;
 
-    --card: 40 30% 98%;
-    --card-foreground: 30 10% 15%;
+    --card: 45 20% 95%;
+    --card-foreground: 30 10% 12%;
 
-    --popover: 40 30% 98%;
-    --popover-foreground: 30 10% 15%;
+    --popover: 45 20% 95%;
+    --popover-foreground: 30 10% 12%;
 
-    /* Terracotta/warm earth primary */
-    --primary: 18 45% 55%;
-    --primary-foreground: 40 30% 98%;
+    /* Muted earthy primary */
+    --primary: 25 20% 35%;
+    --primary-foreground: 45 25% 97%;
 
-    /* Sand/beige secondary */
-    --secondary: 35 25% 88%;
-    --secondary-foreground: 30 10% 20%;
+    /* Warm sand secondary */
+    --secondary: 38 25% 90%;
+    --secondary-foreground: 30 10% 15%;
 
-    --muted: 35 20% 92%;
-    --muted-foreground: 30 8% 45%;
+    --muted: 40 15% 92%;
+    --muted-foreground: 30 8% 50%;
 
-    /* Warm accent */
-    --accent: 30 35% 85%;
-    --accent-foreground: 30 10% 15%;
+    /* Soft accent */
+    --accent: 35 20% 88%;
+    --accent-foreground: 30 10% 12%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 35 20% 85%;
-    --input: 35 20% 85%;
-    --ring: 18 45% 55%;
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 25 20% 35%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Custom brand colors */
-    --cream: 40 33% 96%;
-    --sand: 35 25% 88%;
-    --taupe: 30 15% 75%;
-    --terracotta: 18 45% 55%;
-    --terracotta-dark: 18 50% 45%;
-    --charcoal: 30 10% 20%;
-    --warm-white: 40 40% 99%;
+    /* Brand tokens */
+    --cream: 45 25% 97%;
+    --sand: 38 25% 90%;
+    --oatmeal: 35 20% 85%;
+    --taupe: 30 12% 70%;
+    --charcoal: 30 10% 15%;
+    --warm-white: 45 30% 99%;
+    --stone: 35 15% 80%;
   }
 
   .dark {
-    --background: 30 10% 10%;
-    --foreground: 40 30% 95%;
+    --background: 30 10% 8%;
+    --foreground: 45 20% 95%;
 
-    --card: 30 10% 12%;
-    --card-foreground: 40 30% 95%;
+    --card: 30 10% 10%;
+    --card-foreground: 45 20% 95%;
 
-    --popover: 30 10% 12%;
-    --popover-foreground: 40 30% 95%;
+    --popover: 30 10% 10%;
+    --popover-foreground: 45 20% 95%;
 
-    --primary: 18 45% 55%;
-    --primary-foreground: 40 30% 98%;
+    --primary: 35 20% 70%;
+    --primary-foreground: 30 10% 10%;
 
-    --secondary: 30 15% 20%;
-    --secondary-foreground: 40 30% 90%;
+    --secondary: 30 12% 18%;
+    --secondary-foreground: 45 20% 90%;
 
-    --muted: 30 10% 18%;
-    --muted-foreground: 35 15% 60%;
+    --muted: 30 10% 16%;
+    --muted-foreground: 35 12% 55%;
 
-    --accent: 30 15% 22%;
-    --accent-foreground: 40 30% 95%;
+    --accent: 30 12% 20%;
+    --accent-foreground: 45 20% 95%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 30 10% 22%;
-    --input: 30 10% 22%;
-    --ring: 18 45% 55%;
+    --border: 30 10% 20%;
+    --input: 30 10% 20%;
+    --ring: 35 20% 70%;
   }
 }
 
@@ -87,12 +87,16 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Outfit', sans-serif;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
   }
 }
 
@@ -100,13 +104,21 @@
   .text-balance {
     text-wrap: balance;
   }
+  
+  .font-display {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
 }
 
-/* Animations */
+/* Premium animations */
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -123,41 +135,46 @@
   }
 }
 
-@keyframes scale-in {
+@keyframes slide-up {
   from {
     opacity: 0;
-    transform: scale(0.95);
+    transform: translateY(60px);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
+  }
+}
+
+@keyframes reveal {
+  from {
+    clip-path: inset(100% 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
   }
 }
 
 .animate-fade-up {
-  animation: fade-up 0.6s ease-out forwards;
+  animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 .animate-fade-in {
-  animation: fade-in 0.5s ease-out forwards;
+  animation: fade-in 0.6s ease-out forwards;
 }
 
-.animate-scale-in {
-  animation: scale-in 0.4s ease-out forwards;
+.animate-slide-up {
+  animation: slide-up 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-.animation-delay-100 {
-  animation-delay: 100ms;
+.animate-reveal {
+  animation: reveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-.animation-delay-200 {
-  animation-delay: 200ms;
-}
-
-.animation-delay-300 {
-  animation-delay: 300ms;
-}
-
-.animation-delay-400 {
-  animation-delay: 400ms;
-}
+/* Stagger delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }

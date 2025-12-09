@@ -8,20 +8,28 @@ import {
 
 const faqs = [
   {
-    question: "Shipping question here",
-    answer: "Answer about shipping times",
+    question: "[Shipping question placeholder]",
+    answer: "[Answer about shipping times, costs, and delivery regions]",
   },
   {
-    question: "Returns question here",
-    answer: "Answer about return or exchange policy",
+    question: "[Returns question placeholder]",
+    answer: "[Answer about return policy, exchange process, and refund timeline]",
   },
   {
-    question: "Custom design question here",
-    answer: "Answer about whether you accept custom designs",
+    question: "[Custom design question placeholder]",
+    answer: "[Answer about whether custom designs are accepted and how to request them]",
   },
   {
-    question: "Question about whether you are really two friends",
-    answer: "Fun answer that confirms the story",
+    question: "[Sizing question placeholder]",
+    answer: "[Answer about sizing, fit, and how to choose the right size]",
+  },
+  {
+    question: "[Materials question placeholder]",
+    answer: "[Answer about the quality, materials, and sustainability of the products]",
+  },
+  {
+    question: "[Are you really two friends? placeholder]",
+    answer: "[Fun answer confirming the story of two friends creating T-shirts together]",
   },
 ];
 
@@ -29,32 +37,32 @@ const FAQ = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="py-20 bg-sand/30">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 opacity-0 animate-fade-up" style={{ animationFillMode: 'forwards' }}>
+      <section className="pt-32 pb-20">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="max-w-4xl">
+            <h1 className="font-display text-display-xl text-foreground mb-8 opacity-0 animate-fade-up">
               FAQ
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground opacity-0 animate-fade-up" style={{ animationDelay: '150ms', animationFillMode: 'forwards' }}>
-              Got questions? We've got answers.
+            <p className="text-xl text-muted-foreground opacity-0 animate-fade-up delay-100">
+              [Subheading placeholder — got questions? We've got answers]
             </p>
           </div>
         </div>
       </section>
 
       {/* FAQ Content */}
-      <section className="py-24">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto">
+      <section className="py-16 pb-32">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="max-w-3xl">
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, index) => (
                 <AccordionItem
                   key={index}
                   value={`item-${index}`}
-                  className="bg-card rounded-2xl border border-border px-6 opacity-0 animate-fade-up"
-                  style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
+                  className="bg-card border border-border px-8 opacity-0 animate-fade-up rounded-sm"
+                  style={{ animationDelay: `${(index + 2) * 75}ms` }}
                 >
-                  <AccordionTrigger className="text-left text-lg font-medium text-foreground hover:text-primary py-6 hover:no-underline">
+                  <AccordionTrigger className="text-left font-display text-lg tracking-wider text-foreground hover:no-underline py-6">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground pb-6 leading-relaxed">

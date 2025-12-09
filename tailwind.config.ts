@@ -14,7 +14,21 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Outfit', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+        display: ['Bebas Neue', 'sans-serif'],
+      },
+      fontSize: {
+        'display-xl': ['clamp(4rem, 12vw, 10rem)', { lineHeight: '0.9', letterSpacing: '0.02em' }],
+        'display-lg': ['clamp(3rem, 8vw, 7rem)', { lineHeight: '0.95', letterSpacing: '0.02em' }],
+        'display-md': ['clamp(2rem, 5vw, 4rem)', { lineHeight: '1', letterSpacing: '0.02em' }],
+        'display-sm': ['clamp(1.5rem, 3vw, 2.5rem)', { lineHeight: '1.1', letterSpacing: '0.02em' }],
+      },
+      spacing: {
+        '18': '4.5rem',
+        '22': '5.5rem',
+        '26': '6.5rem',
+        '30': '7.5rem',
+        '34': '8.5rem',
       },
       colors: {
         border: "hsl(var(--border))",
@@ -24,11 +38,9 @@ export default {
         foreground: "hsl(var(--foreground))",
         cream: "hsl(var(--cream))",
         sand: "hsl(var(--sand))",
+        oatmeal: "hsl(var(--oatmeal))",
         taupe: "hsl(var(--taupe))",
-        terracotta: {
-          DEFAULT: "hsl(var(--terracotta))",
-          dark: "hsl(var(--terracotta-dark))",
-        },
+        stone: "hsl(var(--stone))",
         charcoal: "hsl(var(--charcoal))",
         "warm-white": "hsl(var(--warm-white))",
         primary: {
