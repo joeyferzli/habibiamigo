@@ -1,11 +1,8 @@
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
-
 const SHOP_URL = "https://habibi-amigo.printify.me";
-
 const About = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Hero */}
       <section className="pt-32 pb-20">
         <div className="container mx-auto px-6 lg:px-12">
@@ -43,7 +40,7 @@ const About = () => {
                 JOEY
               </h2>
               <p className="text-primary font-medium text-lg mb-8 uppercase tracking-wider">
-                [Role or title placeholder]
+                The Habibi 
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
                 [Write a short bio about Joey — his background, personality, Lebanese heritage, 
@@ -112,8 +109,6 @@ const About = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default About;
