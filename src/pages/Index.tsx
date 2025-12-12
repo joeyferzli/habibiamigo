@@ -27,22 +27,20 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section - Full Width Video Banner */}
-      <section className="min-h-screen relative p-6 lg:p-12">
-        {/* Video Background with Border */}
-        <div className="absolute inset-6 lg:inset-12 border-2 border-border overflow-hidden">
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-            className="w-full h-full object-cover"
-          >
-            <source src="/videos/hero-bg.mp4" type="video/mp4" />
-          </video>
-          
-          {/* Overlay for button visibility */}
-          <div className="absolute inset-0 bg-black/20" />
-        </div>
+      <section className="min-h-screen relative">
+        {/* Video Background */}
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/hero-bg.mp4" type="video/mp4" />
+        </video>
+        
+        {/* Overlay for button visibility */}
+        <div className="absolute inset-0 bg-black/20" />
         
         {/* Shop Now Button - Bottom Left */}
         <div className="absolute bottom-12 lg:bottom-20 left-12 lg:left-20">
