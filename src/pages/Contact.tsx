@@ -37,7 +37,8 @@ const Contact = () => {
         className="pt-32 pb-20 relative bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${contactBg})` }}
       >
-        <div className="container mx-auto px-6 lg:px-12">
+        <div className="absolute inset-0 bg-background/40 backdrop-blur-sm" />
+        <div className="container mx-auto px-6 lg:px-12 relative z-10">
           <div className="max-w-4xl">
             <h1 className="font-display text-display-xl text-foreground mb-8 opacity-0 animate-fade-up">
               GET IN TOUCH
