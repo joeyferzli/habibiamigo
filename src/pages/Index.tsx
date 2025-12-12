@@ -127,7 +127,7 @@ const Index = () => {
       </section>
 
       {/* Featured Designs Section */}
-      <section className="py-32 bg-ring">
+      <section className="py-32 bg-primary-foreground">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="mb-20">
             <h2 className="font-display text-display-lg text-foreground mb-6 opacity-0 animate-fade-up">
