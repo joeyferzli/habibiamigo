@@ -9,6 +9,12 @@ import secretlyLatina4 from "@/assets/designs/secretly-latina-4.jpeg";
 import secretlyLatina5 from "@/assets/designs/secretly-latina-5.jpeg";
 import secretlyLatina6 from "@/assets/designs/secretly-latina-6.jpeg";
 
+import dressSpanish1 from "@/assets/designs/dress-spanish-1.jpeg";
+import dressSpanish2 from "@/assets/designs/dress-spanish-2.jpeg";
+import dressSpanish3 from "@/assets/designs/dress-spanish-3.jpeg";
+import dressSpanish4 from "@/assets/designs/dress-spanish-4.jpeg";
+import dressSpanish5 from "@/assets/designs/dress-spanish-5.jpeg";
+
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
 const designs = [
@@ -17,7 +23,11 @@ const designs = [
     description: "A tribute to the latinas",
     images: [secretlyLatina1, secretlyLatina2, secretlyLatina3, secretlyLatina4, secretlyLatina5, secretlyLatina6]
   },
-  { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
+  {
+    name: "Dress Spanish, Eat Lebanese, Kiss Both",
+    description: "The best of both worlds",
+    images: [dressSpanish1, dressSpanish2, dressSpanish3, dressSpanish4, dressSpanish5]
+  },
   { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
   { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
   { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
