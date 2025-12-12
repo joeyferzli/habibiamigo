@@ -52,6 +52,12 @@ import iLied3 from "@/assets/designs/i-lied-3.jpeg";
 import iLied4 from "@/assets/designs/i-lied-4.jpeg";
 import iLied5 from "@/assets/designs/i-lied-5.jpeg";
 
+import asap1 from "@/assets/designs/asap-1.jpeg";
+import asap2 from "@/assets/designs/asap-2.jpeg";
+import asap3 from "@/assets/designs/asap-3.jpeg";
+import asap4 from "@/assets/designs/asap-4.jpeg";
+import asap5 from "@/assets/designs/asap-5.jpeg";
+
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
 const designs = [
@@ -108,6 +114,13 @@ const designs = [
     name: "I Lied. I Love House Music",
     description: "For the rave lovers",
     images: [iLied1, iLied2, iLied3, iLied4, iLied5],
+    primaryIndex: 0,
+    inStock: true,
+  },
+  {
+    name: "My ASAP Stands For Aperol Spritz And Party",
+    description: "Party priorities sorted",
+    images: [asap1, asap2, asap3, asap4, asap5],
     primaryIndex: 0,
     inStock: true,
   },
