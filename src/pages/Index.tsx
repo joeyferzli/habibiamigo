@@ -44,49 +44,59 @@ import iLied3 from "@/assets/designs/i-lied-3.jpeg";
 import iLied4 from "@/assets/designs/i-lied-4.jpeg";
 import iLied5 from "@/assets/designs/i-lied-5.jpeg";
 const SHOP_URL = "https://habibi-amigo.printify.me";
-const featuredDesigns = [{
-  name: "Secretly In Love With Every Latina Here",
-  description: "A tribute to the latinas",
-  images: [secretlyLatina1, secretlyLatina2, secretlyLatina3, secretlyLatina4, secretlyLatina5, secretlyLatina6],
-  primaryIndex: 1
-}, {
-  name: "Dress Spanish, Eat Lebanese, Kiss Both",
-  description: "The best of both worlds",
-  images: [dressSpanish1, dressSpanish2, dressSpanish3, dressSpanish4, dressSpanish5],
-  primaryIndex: 0
-}, {
-  name: "1 Tequila, 2 Tequilas, 3 Tekilsas... Floor",
-  description: "Count your way down",
-  images: [tequila1, tequila2, tequila3, tequila4, tequila5],
-  primaryIndex: 0
-}, {
-  name: "Eres La Aceituna De Mi Vermut",
-  description: "You're the olive to my vermouth",
-  images: [vermut1, vermut2, vermut3, vermut4, vermut5],
-  primaryIndex: 0
-}, {
-  name: "My Ex Is My Biggest Fan",
-  description: "Still watching your every move",
-  images: [exFan1, exFan2, exFan3, exFan4, exFan5],
-  primaryIndex: 0
-}, {
-  name: "Stay Cool, Stay Iconic",
-  description: "Channel your inner legend",
-  images: [stayCool1, stayCool2, stayCool3, stayCool4],
-  primaryIndex: 0
-}, {
-  name: "I Like You But I Got No Game",
-  description: "Honest confession vibes",
-  images: [noGame1, noGame2, noGame3, noGame4, noGame5, noGame6],
-  primaryIndex: 0
-}, {
-  name: "I Lied. I Love House Music",
-  description: "For the rave lovers",
-  images: [iLied1, iLied2, iLied3, iLied4, iLied5],
-  primaryIndex: 0
-}];
+const featuredDesigns = [
+  {
+    name: "Secretly In Love With Every Latina Here",
+    description: "A tribute to the latinas",
+    images: [secretlyLatina1, secretlyLatina2, secretlyLatina3, secretlyLatina4, secretlyLatina5, secretlyLatina6],
+    primaryIndex: 1,
+  },
+  {
+    name: "Dress Spanish, Eat Lebanese, Kiss Both",
+    description: "The best of both worlds",
+    images: [dressSpanish1, dressSpanish2, dressSpanish3, dressSpanish4, dressSpanish5],
+    primaryIndex: 0,
+  },
+  {
+    name: "1 Tequila, 2 Tequilas, 3 Tekilsas... Floor",
+    description: "Count your way down",
+    images: [tequila1, tequila2, tequila3, tequila4, tequila5],
+    primaryIndex: 0,
+  },
+  {
+    name: "Eres La Aceituna De Mi Vermut",
+    description: "You're the olive to my vermouth",
+    images: [vermut1, vermut2, vermut3, vermut4, vermut5],
+    primaryIndex: 2,
+  },
+  {
+    name: "My Ex Is My Biggest Fan",
+    description: "Still watching your every move",
+    images: [exFan1, exFan2, exFan3, exFan4, exFan5],
+    primaryIndex: 0,
+  },
+  {
+    name: "Stay Cool, Stay Iconic",
+    description: "Channel your inner legend",
+    images: [stayCool1, stayCool2, stayCool3, stayCool4],
+    primaryIndex: 0,
+  },
+  {
+    name: "I Like You But I Got No Game",
+    description: "Honest confession vibes",
+    images: [noGame1, noGame2, noGame3, noGame4, noGame5, noGame6],
+    primaryIndex: 0,
+  },
+  {
+    name: "I Lied. I Love House Music",
+    description: "For the rave lovers",
+    images: [iLied1, iLied2, iLied3, iLied4, iLied5],
+    primaryIndex: 0,
+  },
+];
 const Index = () => {
-  return <Layout>
+  return (
+    <Layout>
       {/* Hero Section - Full Width Video Banner */}
       <section className="min-h-screen relative">
         {/* Video Background */}
@@ -143,21 +153,40 @@ const Index = () => {
             <h2 className="font-display text-display-lg text-foreground mb-6 opacity-0 animate-fade-up">
               FEATURED DESIGNS
             </h2>
-            <p className="text-muted-foreground text-lg max-w-xl opacity-0 animate-fade-up delay-100">Browse Habibi Amigo's Latest Drops</p>
+            <p className="text-muted-foreground text-lg max-w-xl opacity-0 animate-fade-up delay-100">
+              Browse Habibi Amigo's Latest Drops
+            </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
-            {featuredDesigns.map((design, index) => <div key={index} className="opacity-0 animate-fade-up" style={{
-            animationDelay: `${(index + 2) * 100}ms`
-          }}>
-                <DesignCard name={design.name} description={design.description} images={design.images} primaryIndex={design.primaryIndex} />
-              </div>)}
-            
+            {featuredDesigns.map((design, index) => (
+              <div
+                key={index}
+                className="opacity-0 animate-fade-up"
+                style={{
+                  animationDelay: `${(index + 2) * 100}ms`,
+                }}
+              >
+                <DesignCard
+                  name={design.name}
+                  description={design.description}
+                  images={design.images}
+                  primaryIndex={design.primaryIndex}
+                />
+              </div>
+            ))}
+
             {/* View All Designs Card */}
-            <Link to="/designs" className="opacity-0 animate-fade-up group" style={{ animationDelay: `${(featuredDesigns.length + 2) * 100}ms` }}>
+            <Link
+              to="/designs"
+              className="opacity-0 animate-fade-up group"
+              style={{ animationDelay: `${(featuredDesigns.length + 2) * 100}ms` }}
+            >
               <div className="aspect-[3/4] bg-sand flex items-center justify-center border border-taupe/20 transition-all duration-300 group-hover:bg-oatmeal group-hover:border-taupe/40">
                 <div className="text-center p-6">
-                  <span className="font-display text-2xl text-foreground group-hover:text-primary transition-colors">View All</span>
+                  <span className="font-display text-2xl text-foreground group-hover:text-primary transition-colors">
+                    View All
+                  </span>
                   <p className="text-muted-foreground text-sm mt-2">Browse the full collection</p>
                 </div>
               </div>
@@ -193,6 +222,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </Layout>;
+    </Layout>
+  );
 };
 export default Index;
