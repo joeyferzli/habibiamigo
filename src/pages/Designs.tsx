@@ -22,13 +22,13 @@ const designs = [
     name: "Secretly In Love With Every Latina Here",
     description: "A tribute to the latinas",
     images: [secretlyLatina1, secretlyLatina2, secretlyLatina3, secretlyLatina4, secretlyLatina5, secretlyLatina6],
-    primaryIndex: 1
+    primaryIndex: 1,
   },
   {
     name: "Dress Spanish, Eat Lebanese, Kiss Both",
     description: "The best of both worlds",
     images: [dressSpanish1, dressSpanish2, dressSpanish3, dressSpanish4, dressSpanish5],
-    primaryIndex: 1
+    primaryIndex: 0,
   },
   { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
   { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
@@ -38,24 +38,24 @@ const designs = [
   { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
 ];
 const Designs = () => {
-  return <Layout>
+  return (
+    <Layout>
       {/* Hero */}
       <section className="relative pt-32 pb-20 min-h-[60vh] flex items-center overflow-hidden">
         {/* Video Background */}
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src="/videos/hero-bg.mp4" type="video/mp4" />
         </video>
-        
+
         {/* Overlay */}
         <div className="absolute inset-0 bg-background/60" />
-        
+
         {/* Content */}
         <div className="container mx-auto px-6 lg:px-12 relative z-10">
           <div className="max-w-4xl">
             <h1 className="font-display text-foreground mb-8 opacity-0 animate-fade-up text-7xl text-left">
               THE HABIBI AMIGO COLLECTION
             </h1>
-            
           </div>
         </div>
       </section>
@@ -64,11 +64,22 @@ const Designs = () => {
       <section className="py-16 pb-32">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16 mb-20">
-            {designs.map((design, index) => <div key={index} className="opacity-0 animate-fade-up" style={{
-            animationDelay: `${index * 75}ms`
-          }}>
-                <DesignCard name={design.name} description={design.description} images={design.images} primaryIndex={design.primaryIndex} />
-              </div>)}
+            {designs.map((design, index) => (
+              <div
+                key={index}
+                className="opacity-0 animate-fade-up"
+                style={{
+                  animationDelay: `${index * 75}ms`,
+                }}
+              >
+                <DesignCard
+                  name={design.name}
+                  description={design.description}
+                  images={design.images}
+                  primaryIndex={design.primaryIndex}
+                />
+              </div>
+            ))}
           </div>
 
           <div className="text-center">
@@ -80,6 +91,7 @@ const Designs = () => {
           </div>
         </div>
       </section>
-    </Layout>;
+    </Layout>
+  );
 };
 export default Designs;
