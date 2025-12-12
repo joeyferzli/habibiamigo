@@ -22,6 +22,12 @@ import tequila3 from "@/assets/designs/tequila-3.jpeg";
 import tequila4 from "@/assets/designs/tequila-4.jpeg";
 import tequila5 from "@/assets/designs/tequila-5.jpeg";
 
+import vermut1 from "@/assets/designs/vermut-1.jpeg";
+import vermut2 from "@/assets/designs/vermut-2.jpeg";
+import vermut3 from "@/assets/designs/vermut-3.jpeg";
+import vermut4 from "@/assets/designs/vermut-4.jpeg";
+import vermut5 from "@/assets/designs/vermut-5.jpeg";
+
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
 const featuredDesigns = [
@@ -43,7 +49,12 @@ const featuredDesigns = [
     images: [tequila1, tequila2, tequila3, tequila4, tequila5],
     primaryIndex: 0,
   },
-  { name: "[Design Name Placeholder]", description: "[One-line description placeholder]" },
+  {
+    name: "Eres La Aceituna De Mi Vermut",
+    description: "You're the olive to my vermouth",
+    images: [vermut1, vermut2, vermut3, vermut4, vermut5],
+    primaryIndex: 0,
+  },
 ];
 
 const Index = () => {
