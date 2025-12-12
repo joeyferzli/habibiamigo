@@ -47,15 +47,18 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Right - Hero Image Placeholder */}
+            {/* Right - Hero Video */}
             <div className="order-1 lg:order-2 opacity-0 animate-fade-up delay-100">
-              <div className="aspect-[4/5] bg-sand flex items-center justify-center">
-                <div className="text-center p-12">
-                  <div className="w-32 h-32 mx-auto mb-6 border-2 border-dashed border-taupe/50 flex items-center justify-center">
-                    <span className="text-taupe/60 text-sm uppercase tracking-wider">Hero</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground italic">[Large image/video placeholder area]</p>
-                </div>
+              <div className="aspect-[4/5] bg-sand overflow-hidden">
+                <video 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                  className="w-full h-full object-cover"
+                >
+                  <source src="/videos/hero-bg.mp4" type="video/mp4" />
+                </video>
               </div>
             </div>
           </div>
