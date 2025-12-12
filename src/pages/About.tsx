@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import amigoPortrait from "@/assets/amigo-portrait.png";
+import joeyPortrait from "@/assets/joey-portrait.png";
 const SHOP_URL = "https://habibi-amigo.printify.me";
 const About = () => {
   return <Layout>
@@ -21,13 +22,12 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             {/* Portrait */}
             <div className="opacity-0 animate-fade-up">
-              <div className="aspect-[3/4] bg-oatmeal flex items-center justify-center max-w-md mx-auto lg:mx-0">
-                <div className="text-center p-12">
-                  <div className="w-24 h-32 mx-auto mb-4 border-2 border-dashed border-taupe/50 flex items-center justify-center">
-                    <span className="text-taupe/60 text-xs uppercase tracking-wider">Portrait</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground italic">[Joey's portrait placeholder]</p>
-                </div>
+              <div className="aspect-[3/4] bg-oatmeal overflow-hidden max-w-md mx-auto lg:mx-0">
+                <img 
+                  src={joeyPortrait} 
+                  alt="Joey - The Habibi" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
