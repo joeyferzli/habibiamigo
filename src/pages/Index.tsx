@@ -39,6 +39,13 @@ import stayCool2 from "@/assets/designs/stay-cool-2.jpeg";
 import stayCool3 from "@/assets/designs/stay-cool-3.jpeg";
 import stayCool4 from "@/assets/designs/stay-cool-4.jpeg";
 
+import noGame1 from "@/assets/designs/no-game-1.jpeg";
+import noGame2 from "@/assets/designs/no-game-2.jpeg";
+import noGame3 from "@/assets/designs/no-game-3.jpeg";
+import noGame4 from "@/assets/designs/no-game-4.jpeg";
+import noGame5 from "@/assets/designs/no-game-5.jpeg";
+import noGame6 from "@/assets/designs/no-game-6.jpeg";
+
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
 const featuredDesigns = [
@@ -76,6 +83,12 @@ const featuredDesigns = [
     name: "Stay Cool, Stay Iconic",
     description: "Channel your inner legend",
     images: [stayCool1, stayCool2, stayCool3, stayCool4],
+    primaryIndex: 0,
+  },
+  {
+    name: "I Like You But I Got No Game",
+    description: "Honest confession vibes",
+    images: [noGame1, noGame2, noGame3, noGame4, noGame5, noGame6],
     primaryIndex: 0,
   },
 ];
