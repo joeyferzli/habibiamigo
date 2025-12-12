@@ -26,42 +26,29 @@ const featuredDesigns = [
 const Index = () => {
   return (
     <Layout>
-      {/* Hero Section - Full Width Premium */}
-      <section className="min-h-screen flex items-center justify-center relative pt-20">
-        <div className="container mx-auto px-6 lg:px-12 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            {/* Left - Typography */}
-            <div className="order-2 lg:order-1">
-              <h1 className="font-display text-display-xl text-foreground mb-8 opacity-0 animate-fade-up">
-                [INSERT HERO HEADLINE HERE]
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-lg opacity-0 animate-fade-up delay-200">
-                [Subheadline placeholder — describe the brand vibe and friendship story]
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-up delay-300">
-                <Button variant="premium" size="xl" asChild>
-                  <a href={SHOP_URL} target="_blank" rel="noopener noreferrer">
-                    Shop Now
-                  </a>
-                </Button>
-              </div>
-            </div>
-
-            {/* Right - Hero Video */}
-            <div className="order-1 lg:order-2 opacity-0 animate-fade-up delay-100">
-              <div className="aspect-[4/5] bg-sand overflow-hidden">
-                <video 
-                  autoPlay 
-                  loop 
-                  muted 
-                  playsInline
-                  className="w-full h-full object-cover"
-                >
-                  <source src="/videos/hero-bg.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
+      {/* Hero Section - Full Width Video Banner */}
+      <section className="min-h-screen relative">
+        {/* Video Background */}
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/hero-bg.mp4" type="video/mp4" />
+        </video>
+        
+        {/* Overlay for button visibility */}
+        <div className="absolute inset-0 bg-black/20" />
+        
+        {/* Shop Now Button */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <Button variant="premium" size="xl" asChild className="opacity-0 animate-fade-up">
+            <a href={SHOP_URL} target="_blank" rel="noopener noreferrer">
+              Shop Now
+            </a>
+          </Button>
         </div>
       </section>
 
