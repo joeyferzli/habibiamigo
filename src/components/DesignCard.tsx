@@ -11,14 +11,16 @@ interface DesignCardProps {
   name: string;
   description: string;
   images?: string[];
+  primaryIndex?: number; // Which image to show as thumbnail (defaults to 0)
 }
 
-const DesignCard = ({ name, description, images = [] }: DesignCardProps) => {
+const DesignCard = ({ name, description, images = [], primaryIndex = 0 }: DesignCardProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const hasImages = images.length > 0;
   const hasMultipleImages = images.length > 1;
+  const thumbnailIndex = hasImages ? Math.min(primaryIndex, images.length - 1) : 0;
 
   const goToPrevious = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
@@ -38,7 +40,7 @@ const DesignCard = ({ name, description, images = [] }: DesignCardProps) => {
         <div className="aspect-square bg-sand mb-6 overflow-hidden">
           {hasImages ? (
             <img 
-              src={images[0]} 
+              src={images[thumbnailIndex]} 
               alt={name}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
