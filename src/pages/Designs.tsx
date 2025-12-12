@@ -27,6 +27,12 @@ import vermut3 from "@/assets/designs/vermut-3.jpeg";
 import vermut4 from "@/assets/designs/vermut-4.jpeg";
 import vermut5 from "@/assets/designs/vermut-5.jpeg";
 
+import exFan1 from "@/assets/designs/ex-fan-1.jpeg";
+import exFan2 from "@/assets/designs/ex-fan-2.jpeg";
+import exFan3 from "@/assets/designs/ex-fan-3.jpeg";
+import exFan4 from "@/assets/designs/ex-fan-4.jpeg";
+import exFan5 from "@/assets/designs/ex-fan-5.jpeg";
+
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
 const designs = [
@@ -52,6 +58,12 @@ const designs = [
     name: "Eres La Aceituna De Mi Vermut",
     description: "You're the olive to my vermouth",
     images: [vermut1, vermut2, vermut3, vermut4, vermut5],
+    primaryIndex: 0,
+  },
+  {
+    name: "My Ex Is My Biggest Fan",
+    description: "Still watching your every move",
+    images: [exFan1, exFan2, exFan3, exFan4, exFan5],
     primaryIndex: 0,
   },
   { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
