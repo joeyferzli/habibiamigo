@@ -121,7 +121,7 @@ const designs = [
     name: "My ASAP Stands For Aperol Spritz And Party",
     description: "Party priorities sorted",
     images: [asap1, asap2, asap3, asap4, asap5],
-    primaryIndex: 0,
+    primaryIndex: 2,
     inStock: true,
   },
 ];
