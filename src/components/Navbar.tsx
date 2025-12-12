@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.jpeg";
 
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
@@ -22,8 +23,8 @@ const Navbar = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="font-display text-2xl md:text-3xl text-foreground tracking-widest">
-            HABIBI AMIGO
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Habibi Amigo" className="h-12 md:h-14 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
