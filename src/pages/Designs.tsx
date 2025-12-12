@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import DesignCard from "@/components/DesignCard";
@@ -53,51 +54,61 @@ const designs = [
     description: "A tribute to the latinas",
     images: [secretlyLatina1, secretlyLatina2, secretlyLatina3, secretlyLatina4, secretlyLatina5, secretlyLatina6],
     primaryIndex: 1,
+    inStock: true,
   },
   {
     name: "Dress Spanish, Eat Lebanese, Kiss Both",
     description: "The best of both worlds",
     images: [dressSpanish1, dressSpanish2, dressSpanish3, dressSpanish4, dressSpanish5],
     primaryIndex: 0,
+    inStock: true,
   },
   {
     name: "1 Tequila, 2 Tequilas, 3 Tekilsas... Floor",
     description: "Count your way down",
     images: [tequila1, tequila2, tequila3, tequila4, tequila5],
     primaryIndex: 0,
+    inStock: true,
   },
   {
     name: "Eres La Aceituna De Mi Vermut",
     description: "You're the olive to my vermouth",
     images: [vermut1, vermut2, vermut3, vermut4, vermut5],
     primaryIndex: 0,
+    inStock: true,
   },
   {
     name: "My Ex Is My Biggest Fan",
     description: "Still watching your every move",
     images: [exFan1, exFan2, exFan3, exFan4, exFan5],
     primaryIndex: 0,
+    inStock: true,
   },
   {
     name: "Stay Cool, Stay Iconic",
     description: "Channel your inner legend",
     images: [stayCool1, stayCool2, stayCool3, stayCool4],
     primaryIndex: 0,
+    inStock: true,
   },
   {
     name: "I Like You But I Got No Game",
     description: "Honest confession vibes",
     images: [noGame1, noGame2, noGame3, noGame4, noGame5, noGame6],
     primaryIndex: 0,
+    inStock: true,
   },
-  { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
-  { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
-  { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
-  { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
-  { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
-  { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
 ];
 const Designs = () => {
+  const [stockFilter, setStockFilter] = useState<"all" | "in" | "out">("all");
+
+  const filteredDesigns = designs.filter((design) => {
+    if (stockFilter === "all") return true;
+    if (stockFilter === "in") return design.inStock;
+    if (stockFilter === "out") return !design.inStock;
+    return true;
+  });
+
   return (
     <Layout>
       {/* Hero */}
@@ -123,8 +134,42 @@ const Designs = () => {
       {/* Designs Grid - Portfolio Style */}
       <section className="py-16 pb-32">
         <div className="container mx-auto px-6 lg:px-12">
+          {/* Filter */}
+          <div className="flex gap-2 mb-10">
+            <button
+              onClick={() => setStockFilter("all")}
+              className={`px-4 py-2 text-xs uppercase tracking-wider rounded transition-colors ${
+                stockFilter === "all"
+                  ? "bg-foreground text-background"
+                  : "bg-muted text-muted-foreground hover:bg-muted/80"
+              }`}
+            >
+              All
+            </button>
+            <button
+              onClick={() => setStockFilter("in")}
+              className={`px-4 py-2 text-xs uppercase tracking-wider rounded transition-colors ${
+                stockFilter === "in"
+                  ? "bg-foreground text-background"
+                  : "bg-muted text-muted-foreground hover:bg-muted/80"
+              }`}
+            >
+              In Stock
+            </button>
+            <button
+              onClick={() => setStockFilter("out")}
+              className={`px-4 py-2 text-xs uppercase tracking-wider rounded transition-colors ${
+                stockFilter === "out"
+                  ? "bg-foreground text-background"
+                  : "bg-muted text-muted-foreground hover:bg-muted/80"
+              }`}
+            >
+              Out of Stock
+            </button>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16 mb-20">
-            {designs.map((design, index) => (
+            {filteredDesigns.map((design, index) => (
               <div
                 key={index}
                 className="opacity-0 animate-fade-up"
@@ -137,6 +182,7 @@ const Designs = () => {
                   description={design.description}
                   images={design.images}
                   primaryIndex={design.primaryIndex}
+                  inStock={design.inStock}
                 />
               </div>
             ))}

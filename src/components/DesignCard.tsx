@@ -12,9 +12,10 @@ interface DesignCardProps {
   description: string;
   images?: string[];
   primaryIndex?: number; // Which image to show as thumbnail (defaults to 0)
+  inStock?: boolean;
 }
 
-const DesignCard = ({ name, description, images = [], primaryIndex = 1 }: DesignCardProps) => {
+const DesignCard = ({ name, description, images = [], primaryIndex = 1, inStock = true }: DesignCardProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -37,7 +38,15 @@ const DesignCard = ({ name, description, images = [], primaryIndex = 1 }: Design
         onClick={() => setIsOpen(true)}
       >
         {/* Image - Large Square */}
-        <div className="aspect-square bg-sand mb-6 overflow-hidden">
+        <div className="aspect-square bg-sand mb-6 overflow-hidden relative">
+          {/* Stock Badge */}
+          <div className={`absolute top-3 right-3 z-10 px-2 py-1 text-[10px] uppercase tracking-wider rounded ${
+            inStock 
+              ? "bg-muted/80 text-muted-foreground" 
+              : "bg-muted text-muted-foreground/60"
+          }`}>
+            {inStock ? "In Stock" : "Out of Stock"}
+          </div>
           {hasImages ? (
             <img 
               src={images[thumbnailIndex]} 
