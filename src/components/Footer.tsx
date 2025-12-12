@@ -63,8 +63,8 @@ const Footer = () => {
             <h4 className="font-display text-lg text-foreground tracking-wider mb-6">SOCIAL</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  [Instagram placeholder]
+                <a href="https://www.instagram.com/habibixamigo/" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Instagram
                 </a>
               </li>
               <li>
