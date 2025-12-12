@@ -19,17 +19,17 @@ import dressSpanish5 from "@/assets/designs/dress-spanish-5.jpeg";
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
 const featuredDesigns = [
-  { 
-    name: "Secretly In Love With Every Latina Here", 
+  {
+    name: "Secretly In Love With Every Latina Here",
     description: "A tribute to the latinas",
     images: [secretlyLatina1, secretlyLatina2, secretlyLatina3, secretlyLatina4, secretlyLatina5, secretlyLatina6],
-    primaryIndex: 1
+    primaryIndex: 1,
   },
   {
     name: "Dress Spanish, Eat Lebanese, Kiss Both",
     description: "The best of both worlds",
     images: [dressSpanish1, dressSpanish2, dressSpanish3, dressSpanish4, dressSpanish5],
-    primaryIndex: 1
+    primaryIndex: 0,
   },
   { name: "[Design Name Placeholder]", description: "[One-line description placeholder]" },
   { name: "[Design Name Placeholder]", description: "[One-line description placeholder]" },
@@ -41,19 +41,13 @@ const Index = () => {
       {/* Hero Section - Full Width Video Banner */}
       <section className="min-h-screen relative">
         {/* Video Background */}
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
+        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src="/videos/hero-bg.mp4?v=3" type="video/mp4" />
         </video>
-        
+
         {/* Overlay for button visibility */}
         <div className="absolute inset-0 bg-black/20" />
-        
+
         {/* Shop Now Button - Bottom Left */}
         <div className="absolute bottom-12 lg:bottom-20 left-12 lg:left-20">
           <Button variant="premium" size="xl" asChild className="opacity-0 animate-fade-up">
@@ -82,13 +76,11 @@ const Index = () => {
 
             {/* Text */}
             <div className="opacity-0 animate-fade-up delay-200">
-              <h2 className="font-display text-display-md text-foreground mb-8">
-                [HEADER PLACEHOLDER]
-              </h2>
+              <h2 className="font-display text-display-md text-foreground mb-8">[HEADER PLACEHOLDER]</h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                [Write a paragraph explaining the brand — two friends, one Lebanese and one Spanish, 
-                creating fun T-shirts made by friends for friends. Describe the origin story, 
-                the shared humor, and what makes Habibi Amigo unique.]
+                [Write a paragraph explaining the brand — two friends, one Lebanese and one Spanish, creating fun
+                T-shirts made by friends for friends. Describe the origin story, the shared humor, and what makes Habibi
+                Amigo unique.]
               </p>
             </div>
           </div>
@@ -114,7 +106,12 @@ const Index = () => {
                 className="opacity-0 animate-fade-up"
                 style={{ animationDelay: `${(index + 2) * 100}ms` }}
               >
-                <DesignCard name={design.name} description={design.description} images={design.images} primaryIndex={design.primaryIndex} />
+                <DesignCard
+                  name={design.name}
+                  description={design.description}
+                  images={design.images}
+                  primaryIndex={design.primaryIndex}
+                />
               </div>
             ))}
           </div>
@@ -135,9 +132,9 @@ const Index = () => {
               [THE HABIBI AMIGO VIBE HEADLINE]
             </h2>
             <p className="text-muted-foreground text-xl leading-relaxed mb-16 opacity-0 animate-fade-up delay-100">
-              [Write a larger paragraph about the brand philosophy — inside jokes turned into wearable art, 
-              friendship that crosses cultures, humor that connects people. Describe the creative process, 
-              the inspiration behind designs, and what wearing Habibi Amigo means.]
+              [Write a larger paragraph about the brand philosophy — inside jokes turned into wearable art, friendship
+              that crosses cultures, humor that connects people. Describe the creative process, the inspiration behind
+              designs, and what wearing Habibi Amigo means.]
             </p>
           </div>
 
