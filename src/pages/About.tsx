@@ -23,11 +23,7 @@ const About = () => {
             {/* Portrait */}
             <div className="opacity-0 animate-fade-up">
               <div className="aspect-[3/4] bg-oatmeal overflow-hidden max-w-md mx-auto lg:mx-0 group">
-                <img 
-                  src={joeyPortrait} 
-                  alt="Joey - The Habibi" 
-                  className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-                />
+                <img src={joeyPortrait} alt="Joey - The Habibi" className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
               </div>
             </div>
 
@@ -50,7 +46,7 @@ This project is personal for him. It’s about friendship, culture mashups, and 
       </section>
 
       {/* Founder 2 - Amigo */}
-      <section className="py-24">
+      <section className="py-24 bg-oatmeal">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             {/* Info - Reversed order on desktop */}
@@ -68,11 +64,7 @@ What started as friendship and shared laughs with Joey turned into a brand that 
             {/* Portrait */}
             <div className="order-1 lg:order-2 opacity-0 animate-fade-up">
               <div className="aspect-[3/4] bg-sand overflow-hidden max-w-md mx-auto lg:ml-auto lg:mr-0 group">
-                <img 
-                  src={amigoPortrait} 
-                  alt="Ignacio - The Amigo" 
-                  className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-                />
+                <img src={amigoPortrait} alt="Ignacio - The Amigo" className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
               </div>
             </div>
           </div>
@@ -80,7 +72,7 @@ What started as friendship and shared laughs with Joey turned into a brand that 
       </section>
 
       {/* Closing Section */}
-      <section className="py-32 bg-card">
+      <section className="py-32 bg-slate-100">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-display text-display-lg text-foreground mb-10 opacity-0 animate-fade-up">THE STORY OF HABIBI AMIGO</h2>
