@@ -16,6 +16,12 @@ import dressSpanish3 from "@/assets/designs/dress-spanish-3.jpeg";
 import dressSpanish4 from "@/assets/designs/dress-spanish-4.jpeg";
 import dressSpanish5 from "@/assets/designs/dress-spanish-5.jpeg";
 
+import tequila1 from "@/assets/designs/tequila-1.jpeg";
+import tequila2 from "@/assets/designs/tequila-2.jpeg";
+import tequila3 from "@/assets/designs/tequila-3.jpeg";
+import tequila4 from "@/assets/designs/tequila-4.jpeg";
+import tequila5 from "@/assets/designs/tequila-5.jpeg";
+
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
 const featuredDesigns = [
@@ -31,7 +37,12 @@ const featuredDesigns = [
     images: [dressSpanish1, dressSpanish2, dressSpanish3, dressSpanish4, dressSpanish5],
     primaryIndex: 0,
   },
-  { name: "[Design Name Placeholder]", description: "[One-line description placeholder]" },
+  {
+    name: "1 Tequila, 2 Tequilas, 3 Tekilsas... Floor",
+    description: "Count your way down",
+    images: [tequila1, tequila2, tequila3, tequila4, tequila5],
+    primaryIndex: 1,
+  },
   { name: "[Design Name Placeholder]", description: "[One-line description placeholder]" },
 ];
 
