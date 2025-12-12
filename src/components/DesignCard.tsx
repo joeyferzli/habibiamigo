@@ -14,7 +14,7 @@ interface DesignCardProps {
   primaryIndex?: number; // Which image to show as thumbnail (defaults to 0)
 }
 
-const DesignCard = ({ name, description, images = [], primaryIndex = 0 }: DesignCardProps) => {
+const DesignCard = ({ name, description, images = [], primaryIndex = 1 }: DesignCardProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
