@@ -68,9 +68,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  [TikTok placeholder]
-                </a>
+                
               </li>
             </ul>
           </div>

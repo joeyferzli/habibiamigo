@@ -54,19 +54,14 @@ const Contact = () => {
                   <h3 className="font-display text-xl text-foreground tracking-wider mb-3">
                     EMAIL
                   </h3>
-                  <p className="text-muted-foreground">[Your contact email placeholder]</p>
+                  <p className="text-muted-foreground">habibiamigo@gmail.com</p>
                 </div>
 
                 <div>
                   <h3 className="font-display text-xl text-foreground tracking-wider mb-3">
                     INSTAGRAM
                   </h3>
-                  <a 
-                    href="https://www.instagram.com/habibixamigo/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
+                  <a href="https://www.instagram.com/habibixamigo/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
                     @habibixamigo
                   </a>
                 </div>
