@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
+import amigoPortrait from "@/assets/amigo-portrait.png";
 const SHOP_URL = "https://habibi-amigo.printify.me";
 const About = () => {
   return <Layout>
@@ -66,13 +67,12 @@ What started as friendship and shared laughs with Joey turned into a brand that 
 
             {/* Portrait */}
             <div className="order-1 lg:order-2 opacity-0 animate-fade-up">
-              <div className="aspect-[3/4] bg-sand flex items-center justify-center max-w-md mx-auto lg:ml-auto lg:mr-0">
-                <div className="text-center p-12">
-                  <div className="w-24 h-32 mx-auto mb-4 border-2 border-dashed border-taupe/50 flex items-center justify-center">
-                    <span className="text-taupe/60 text-xs uppercase tracking-wider">Portrait</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground italic">[Amigo's portrait placeholder]</p>
-                </div>
+              <div className="aspect-[3/4] bg-sand overflow-hidden max-w-md mx-auto lg:ml-auto lg:mr-0">
+                <img 
+                  src={amigoPortrait} 
+                  alt="Ignacio - The Amigo" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
