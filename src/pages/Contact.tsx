@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { toast } from "@/hooks/use-toast";
+import contactBg from "@/assets/contact-bg.png";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -32,7 +33,10 @@ const Contact = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="pt-32 pb-20">
+      <section 
+        className="pt-32 pb-20 relative bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${contactBg})` }}
+      >
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-4xl">
             <h1 className="font-display text-display-xl text-foreground mb-8 opacity-0 animate-fade-up">
