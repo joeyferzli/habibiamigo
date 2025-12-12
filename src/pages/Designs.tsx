@@ -19,8 +19,23 @@ const Designs = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="pt-32 pb-20">
-        <div className="container mx-auto px-6 lg:px-12">
+      <section className="relative pt-32 pb-20 min-h-[60vh] flex items-center overflow-hidden">
+        {/* Video Background */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/hero-bg.mp4" type="video/mp4" />
+        </video>
+        
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-background/60" />
+        
+        {/* Content */}
+        <div className="container mx-auto px-6 lg:px-12 relative z-10">
           <div className="max-w-4xl">
             <h1 className="font-display text-display-xl text-foreground mb-8 opacity-0 animate-fade-up">
               THE HABIBI AMIGO COLLECTION
