@@ -41,7 +41,7 @@ const featuredDesigns = [
     name: "1 Tequila, 2 Tequilas, 3 Tekilsas... Floor",
     description: "Count your way down",
     images: [tequila1, tequila2, tequila3, tequila4, tequila5],
-    primaryIndex: 1,
+    primaryIndex: 0,
   },
   { name: "[Design Name Placeholder]", description: "[One-line description placeholder]" },
 ];
