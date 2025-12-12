@@ -22,12 +22,14 @@ const featuredDesigns = [
   { 
     name: "Secretly In Love With Every Latina Here", 
     description: "A tribute to the latinas",
-    images: [secretlyLatina1, secretlyLatina2, secretlyLatina3, secretlyLatina4, secretlyLatina5, secretlyLatina6]
+    images: [secretlyLatina1, secretlyLatina2, secretlyLatina3, secretlyLatina4, secretlyLatina5, secretlyLatina6],
+    primaryIndex: 1
   },
   {
     name: "Dress Spanish, Eat Lebanese, Kiss Both",
     description: "The best of both worlds",
-    images: [dressSpanish1, dressSpanish2, dressSpanish3, dressSpanish4, dressSpanish5]
+    images: [dressSpanish1, dressSpanish2, dressSpanish3, dressSpanish4, dressSpanish5],
+    primaryIndex: 1
   },
   { name: "[Design Name Placeholder]", description: "[One-line description placeholder]" },
   { name: "[Design Name Placeholder]", description: "[One-line description placeholder]" },
@@ -112,7 +114,7 @@ const Index = () => {
                 className="opacity-0 animate-fade-up"
                 style={{ animationDelay: `${(index + 2) * 100}ms` }}
               >
-                <DesignCard name={design.name} description={design.description} images={design.images} />
+                <DesignCard name={design.name} description={design.description} images={design.images} primaryIndex={design.primaryIndex} />
               </div>
             ))}
           </div>
