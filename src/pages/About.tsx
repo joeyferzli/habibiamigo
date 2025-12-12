@@ -7,13 +7,9 @@ const About = () => {
       <section className="pt-32 pb-20">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-4xl">
-            <h1 className="font-display text-display-xl text-foreground mb-8 opacity-0 animate-fade-up">
-              [ABOUT THE BRAND]
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl opacity-0 animate-fade-up delay-100">
-              [Intro paragraph placeholder — write about two friends from Lebanon and Spain 
-              who started this brand together. Their shared love of humor, culture, and comfortable tees.]
-            </p>
+            <h1 className="font-display text-display-xl text-foreground mb-8 opacity-0 animate-fade-up">ABOUT HABIBI AMIGO</h1>
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl opacity-0 animate-fade-up delay-100">Two friends from Lebanon and Spain who bonded over humor, culture, and great T-shirts. Habibi Amigo is about mixing worlds, sharing laughs and creating comfortable tees that feel effortless.
+          </p>
           </div>
         </div>
       </section>
@@ -42,11 +38,11 @@ const About = () => {
               <p className="text-primary font-medium text-lg mb-8 uppercase tracking-wider">
                 The Habibi 
               </p>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                [Write a short bio about Joey — his background, personality, Lebanese heritage, 
-                what he brings to the brand, his sense of humor, design perspective, 
-                and why this project matters to him.]
-              </p>
+              <p className="text-muted-foreground leading-relaxed text-base">Joey is the Habibi in Habibi Amigo. Lebanese at heart, raised between cultures, and powered by good vibes and inside jokes.
+
+He brings humor, instinctive design taste, and a love for simple pieces that don’t take themselves too seriously.
+
+This project is personal for him. It’s about friendship, culture mashups, and wearing something that feels like you’re in on the joke.</p>
             </div>
           </div>
         </div>
@@ -58,17 +54,14 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             {/* Info - Reversed order on desktop */}
             <div className="order-2 lg:order-1 opacity-0 animate-fade-up delay-200">
-              <h2 className="font-display text-display-md text-foreground mb-4">
-                AMIGO
-              </h2>
-              <p className="text-primary font-medium text-lg mb-8 uppercase tracking-wider">
-                [Role or title placeholder]
-              </p>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                [Write a short bio about the Spanish friend — his background, personality, 
-                Spanish heritage, what he brings to the brand, his creativity, 
-                and how the friendship with Joey sparked this idea.]
-              </p>
+              <h2 className="font-display text-display-md text-foreground mb-4">IGNACIO</h2>
+              <p className="text-primary font-medium text-lg mb-8 uppercase tracking-wider">THE AMIGO</p>
+              <p className="text-muted-foreground leading-relaxed text-base">Ignacio is the Amigo in Habibi Amigo. Spanish through and through, he brings effortless creativity and sharp humor.
+
+
+Obsessed with fun T-shirts, nights out, memes and inside jokes with the boys, he’s the spark behind the brand’s playful edge.
+
+What started as friendship and shared laughs with Joey turned into a brand that doesn’t take itself too seriously.</p>
             </div>
 
             {/* Portrait */}
@@ -90,9 +83,7 @@ const About = () => {
       <section className="py-32 bg-card">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-display text-display-lg text-foreground mb-10 opacity-0 animate-fade-up">
-              [THE STORY OF HABIBI AMIGO]
-            </h2>
+            <h2 className="font-display text-display-lg text-foreground mb-10 opacity-0 animate-fade-up">THE STORY OF HABIBI AMIGO</h2>
             <p className="text-muted-foreground text-xl leading-relaxed mb-16 opacity-0 animate-fade-up delay-100">
               [Write a larger paragraph about what Habibi Amigo represents — the friendship, 
               the cultural blend of Lebanon and Spain, the inside jokes, the shared experiences 
