@@ -84,12 +84,12 @@ What started as friendship and shared laughs with Joey turned into a brand that 
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-display text-display-lg text-foreground mb-10 opacity-0 animate-fade-up">THE STORY OF HABIBI AMIGO</h2>
-            <p className="text-muted-foreground text-xl leading-relaxed mb-16 opacity-0 animate-fade-up delay-100">
-              [Write a larger paragraph about what Habibi Amigo represents — the friendship, 
-              the cultural blend of Lebanon and Spain, the inside jokes, the shared experiences 
-              turned into wearable designs. T-shirts by friends, for friends. 
-              A celebration of connection and humor across borders.]
-            </p>
+            <p className="text-muted-foreground leading-relaxed mb-16 opacity-0 animate-fade-up delay-100 text-left text-lg">Habibi Amigo is a celebration of friendship, culture, and the moments that turn strangers into brothers. It started when two guys from Lebanon and Spain met during their MBA.
+
+One batch apart, a casual “hey man” slowly turned into shared laughs, late nights, inside jokes, and a bond that felt bigger than backgrounds or borders. What came out of that friendship is a brand rooted in shared experiences and humor, blending Lebanese warmth with Spanish energy.
+
+Every design is inspired by real moments, jokes that don’t need explaining, and the kind of comfort that feels familiar the second you put it on. Habibi Amigo is about connection, not perfection.
+T-shirts by friends, for friends.</p>
             <div className="opacity-0 animate-fade-up delay-200">
               <Button variant="premium" size="xl" asChild>
                 <a href={SHOP_URL} target="_blank" rel="noopener noreferrer">
