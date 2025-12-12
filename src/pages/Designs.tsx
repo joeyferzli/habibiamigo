@@ -1,32 +1,30 @@
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import DesignCard from "@/components/DesignCard";
+
+import secretlyLatina1 from "@/assets/designs/secretly-latina-1.jpeg";
+import secretlyLatina2 from "@/assets/designs/secretly-latina-2.jpeg";
+import secretlyLatina3 from "@/assets/designs/secretly-latina-3.jpeg";
+import secretlyLatina4 from "@/assets/designs/secretly-latina-4.jpeg";
+import secretlyLatina5 from "@/assets/designs/secretly-latina-5.jpeg";
+import secretlyLatina6 from "@/assets/designs/secretly-latina-6.jpeg";
+
 const SHOP_URL = "https://habibi-amigo.printify.me";
-const designs = [{
-  name: "[Design Name Placeholder]",
-  description: "[Short caption placeholder]"
-}, {
-  name: "[Design Name Placeholder]",
-  description: "[Short caption placeholder]"
-}, {
-  name: "[Design Name Placeholder]",
-  description: "[Short caption placeholder]"
-}, {
-  name: "[Design Name Placeholder]",
-  description: "[Short caption placeholder]"
-}, {
-  name: "[Design Name Placeholder]",
-  description: "[Short caption placeholder]"
-}, {
-  name: "[Design Name Placeholder]",
-  description: "[Short caption placeholder]"
-}, {
-  name: "[Design Name Placeholder]",
-  description: "[Short caption placeholder]"
-}, {
-  name: "[Design Name Placeholder]",
-  description: "[Short caption placeholder]"
-}];
+
+const designs = [
+  {
+    name: "Secretly In Love With Every Latina Here",
+    description: "A tribute to the latinas",
+    images: [secretlyLatina1, secretlyLatina2, secretlyLatina3, secretlyLatina4, secretlyLatina5, secretlyLatina6]
+  },
+  { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
+  { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
+  { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
+  { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
+  { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
+  { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
+  { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
+];
 const Designs = () => {
   return <Layout>
       {/* Hero */}
@@ -57,7 +55,7 @@ const Designs = () => {
             {designs.map((design, index) => <div key={index} className="opacity-0 animate-fade-up" style={{
             animationDelay: `${index * 75}ms`
           }}>
-                <DesignCard name={design.name} description={design.description} />
+                <DesignCard name={design.name} description={design.description} images={design.images} />
               </div>)}
           </div>
 
