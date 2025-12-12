@@ -80,7 +80,7 @@ const designs = [
     name: "Eres La Aceituna De Mi Vermut",
     description: "You're the olive to my vermouth",
     images: [vermut1, vermut2, vermut3, vermut4, vermut5],
-    primaryIndex: 0,
+    primaryIndex: 1,
     inStock: true,
   },
   {
