@@ -11,7 +11,6 @@ const navItems = [
   { name: "About", path: "/about" },
   { name: "Shop", path: SHOP_URL, external: true },
   { name: "Contact", path: "/contact" },
-  { name: "FAQ", path: "/faq" },
 ];
 
 const Navbar = () => {
