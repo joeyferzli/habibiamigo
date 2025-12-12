@@ -175,22 +175,12 @@ const Index = () => {
                 />
               </div>
             ))}
+          </div>
 
-            {/* View All Designs Card */}
-            <Link
-              to="/designs"
-              className="opacity-0 animate-fade-up group"
-              style={{ animationDelay: `${(featuredDesigns.length + 2) * 100}ms` }}
-            >
-              <div className="aspect-[3/4] bg-sand flex items-center justify-center border border-taupe/20 transition-all duration-300 group-hover:bg-oatmeal group-hover:border-taupe/40">
-                <div className="text-center p-6">
-                  <span className="font-display text-2xl text-foreground group-hover:text-primary transition-colors">
-                    View All
-                  </span>
-                  <p className="text-muted-foreground text-sm mt-2">Browse the full collection</p>
-                </div>
-              </div>
-            </Link>
+          <div className="text-center">
+            <Button variant="premium" size="xl" asChild>
+              <Link to="/designs">View All Designs</Link>
+            </Button>
           </div>
         </div>
       </section>
