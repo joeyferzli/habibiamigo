@@ -22,11 +22,11 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             {/* Portrait */}
             <div className="opacity-0 animate-fade-up">
-              <div className="aspect-[3/4] bg-oatmeal overflow-hidden max-w-md mx-auto lg:mx-0">
+              <div className="aspect-[3/4] bg-oatmeal overflow-hidden max-w-md mx-auto lg:mx-0 group">
                 <img 
                   src={joeyPortrait} 
                   alt="Joey - The Habibi" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                 />
               </div>
             </div>
@@ -67,11 +67,11 @@ What started as friendship and shared laughs with Joey turned into a brand that 
 
             {/* Portrait */}
             <div className="order-1 lg:order-2 opacity-0 animate-fade-up">
-              <div className="aspect-[3/4] bg-sand overflow-hidden max-w-md mx-auto lg:ml-auto lg:mr-0">
+              <div className="aspect-[3/4] bg-sand overflow-hidden max-w-md mx-auto lg:ml-auto lg:mr-0 group">
                 <img 
                   src={amigoPortrait} 
                   alt="Ignacio - The Amigo" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                 />
               </div>
             </div>
