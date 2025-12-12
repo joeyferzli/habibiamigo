@@ -33,6 +33,11 @@ import exFan3 from "@/assets/designs/ex-fan-3.jpeg";
 import exFan4 from "@/assets/designs/ex-fan-4.jpeg";
 import exFan5 from "@/assets/designs/ex-fan-5.jpeg";
 
+import stayCool1 from "@/assets/designs/stay-cool-1.jpeg";
+import stayCool2 from "@/assets/designs/stay-cool-2.jpeg";
+import stayCool3 from "@/assets/designs/stay-cool-3.jpeg";
+import stayCool4 from "@/assets/designs/stay-cool-4.jpeg";
+
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
 const designs = [
@@ -64,6 +69,12 @@ const designs = [
     name: "My Ex Is My Biggest Fan",
     description: "Still watching your every move",
     images: [exFan1, exFan2, exFan3, exFan4, exFan5],
+    primaryIndex: 0,
+  },
+  {
+    name: "Stay Cool, Stay Iconic",
+    description: "Channel your inner legend",
+    images: [stayCool1, stayCool2, stayCool3, stayCool4],
     primaryIndex: 0,
   },
   { name: "[Design Name Placeholder]", description: "[Short caption placeholder]" },
