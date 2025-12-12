@@ -46,6 +46,12 @@ import noGame4 from "@/assets/designs/no-game-4.jpeg";
 import noGame5 from "@/assets/designs/no-game-5.jpeg";
 import noGame6 from "@/assets/designs/no-game-6.jpeg";
 
+import iLied1 from "@/assets/designs/i-lied-1.jpeg";
+import iLied2 from "@/assets/designs/i-lied-2.jpeg";
+import iLied3 from "@/assets/designs/i-lied-3.jpeg";
+import iLied4 from "@/assets/designs/i-lied-4.jpeg";
+import iLied5 from "@/assets/designs/i-lied-5.jpeg";
+
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
 const designs = [
@@ -95,6 +101,13 @@ const designs = [
     name: "I Like You But I Got No Game",
     description: "Honest confession vibes",
     images: [noGame1, noGame2, noGame3, noGame4, noGame5, noGame6],
+    primaryIndex: 0,
+    inStock: true,
+  },
+  {
+    name: "I Lied. I Love House Music",
+    description: "For the rave lovers",
+    images: [iLied1, iLied2, iLied3, iLied4, iLied5],
     primaryIndex: 0,
     inStock: true,
   },
