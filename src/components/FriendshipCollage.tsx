@@ -48,11 +48,25 @@ const photos = [{
   size: "small",
   zIndex: 5
 }];
+const allPhotos = [sunsetLebanon, carryFunny, concertNight, barNight, festivalSun, streetFest];
+
 const FriendshipCollage = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
+  const [photoOffset, setPhotoOffset] = useState(0);
+
+  // Rotate photos every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPhotoOffset((prev) => (prev + 1) % allPhotos.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Get rotated photo for each position
+  const getPhoto = (index: number) => allPhotos[(index + photoOffset) % allPhotos.length];
 
   // Mobile touch/drag scroll handlers
   const handleMouseDown = (e: React.MouseEvent) => {
@@ -83,51 +97,51 @@ const FriendshipCollage = () => {
           {/* Left: Photo Collage (60%) */}
           <div className="col-span-3 relative h-[600px]">
             {/* Main anchor photo - center */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[420px] rounded-2xl overflow-hidden shadow-2xl transition-transform duration-300 hover:scale-[1.02] hover:shadow-3xl" style={{
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[420px] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 hover:scale-[1.02] hover:shadow-3xl" style={{
             transform: `translate(-50%, -50%) rotate(-2deg)`,
             zIndex: 10
           }}>
-              <img src={sunsetLebanon} alt="Sunset in Lebanon" className="w-full h-full object-cover" />
+              <img src={getPhoto(0)} alt="Friends moment" className="w-full h-full object-cover transition-opacity duration-700" />
             </div>
 
             {/* Top-left photo */}
-            <div className="absolute left-0 top-4 w-[200px] h-[260px] rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105" style={{
+            <div className="absolute left-0 top-4 w-[200px] h-[260px] rounded-xl overflow-hidden shadow-xl transition-all duration-700 hover:scale-105" style={{
             transform: `rotate(5deg)`,
             zIndex: 7
           }}>
-              <img src={carryFunny} alt="Carrying friend" className="w-full h-full object-cover" />
+              <img src={getPhoto(1)} alt="Friends moment" className="w-full h-full object-cover transition-opacity duration-700" />
             </div>
 
             {/* Top-right photo - partially off canvas */}
-            <div className="absolute -right-8 top-8 w-[180px] h-[240px] rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105" style={{
+            <div className="absolute -right-8 top-8 w-[180px] h-[240px] rounded-xl overflow-hidden shadow-xl transition-all duration-700 hover:scale-105" style={{
             transform: `rotate(-4deg)`,
             zIndex: 6
           }}>
-              <img src={concertNight} alt="Concert night" className="w-full h-full object-cover" />
+              <img src={getPhoto(2)} alt="Friends moment" className="w-full h-full object-cover transition-opacity duration-700" />
             </div>
 
             {/* Bottom-left photo */}
-            <div className="absolute left-8 bottom-0 w-[160px] h-[200px] rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105" style={{
+            <div className="absolute left-8 bottom-0 w-[160px] h-[200px] rounded-xl overflow-hidden shadow-xl transition-all duration-700 hover:scale-105" style={{
             transform: `rotate(-5deg)`,
             zIndex: 8
           }}>
-              <img src={barNight} alt="Bar night" className="w-full h-full object-cover" />
+              <img src={getPhoto(3)} alt="Friends moment" className="w-full h-full object-cover transition-opacity duration-700" />
             </div>
 
             {/* Bottom-right photo */}
-            <div className="absolute right-12 bottom-8 w-[170px] h-[210px] rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105" style={{
+            <div className="absolute right-12 bottom-8 w-[170px] h-[210px] rounded-xl overflow-hidden shadow-xl transition-all duration-700 hover:scale-105" style={{
             transform: `rotate(4deg)`,
             zIndex: 5
           }}>
-              <img src={festivalSun} alt="Festival in the sun" className="w-full h-full object-cover" />
+              <img src={getPhoto(4)} alt="Friends moment" className="w-full h-full object-cover transition-opacity duration-700" />
             </div>
 
             {/* Small accent photo - top center-right */}
-            <div className="absolute right-1/4 top-0 w-[140px] h-[170px] rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105" style={{
+            <div className="absolute right-1/4 top-0 w-[140px] h-[170px] rounded-xl overflow-hidden shadow-lg transition-all duration-700 hover:scale-105" style={{
             transform: `rotate(3deg)`,
             zIndex: 4
           }}>
-              <img src={streetFest} alt="Street festival" className="w-full h-full object-cover" />
+              <img src={getPhoto(5)} alt="Friends moment" className="w-full h-full object-cover transition-opacity duration-700" />
             </div>
 
             {/* Hidden caption */}
