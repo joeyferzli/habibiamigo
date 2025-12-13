@@ -109,8 +109,8 @@ const Index = () => {
         <div className="absolute inset-0 bg-black/20" />
 
         {/* Shop Now Button - Bottom Left */}
-        <div className="absolute bottom-12 lg:bottom-20 left-12 lg:left-20">
-          <Button variant="premium" size="xl" asChild className="opacity-0 animate-fade-up">
+        <div className="absolute bottom-6 left-6 lg:bottom-20 lg:left-20">
+          <Button variant="premium" size="default" className="md:text-lg md:px-10 md:py-6" asChild>
             <a href={SHOP_URL} target="_blank" rel="noopener noreferrer">
               Shop Now
             </a>
