@@ -1,4 +1,6 @@
 import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 // Import all friend photos
 import partyPurple from "@/assets/friends/party-purple.jpg";
@@ -164,6 +166,9 @@ const FriendshipCollage = () => {
               <p className="text-foreground/80 italic">Lebanese warmth x Spanish chaos.</p>
             </div>
             <p className="font-display text-2xl text-foreground mt-10 opacity-0 animate-fade-up delay-200">T-Shirts By Friends, For Friends.</p>
+            <Link to="/about" className="inline-block mt-8 opacity-0 animate-fade-up delay-300">
+              <Button className="bg-foreground text-background hover:bg-foreground/90">About Us</Button>
+            </Link>
           </div>
         </div>
 
@@ -203,6 +208,9 @@ const FriendshipCollage = () => {
             <p className="font-display text-xl text-foreground mt-8">
               T-shirts by friends, for friends.
             </p>
+            <Link to="/about" className="inline-block mt-6">
+              <Button className="bg-foreground text-background hover:bg-foreground/90">About Us</Button>
+            </Link>
           </div>
         </div>
       </div>
