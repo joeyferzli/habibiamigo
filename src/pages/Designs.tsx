@@ -141,7 +141,7 @@ const Designs = () => {
       <section className="relative aspect-video md:aspect-auto md:pt-32 md:pb-20 md:min-h-[60vh] flex items-center overflow-hidden">
         {/* Video Background */}
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-contain md:object-cover">
-          <source src="/videos/hero-bg.mp4?v=4" type="video/mp4" />
+          <source src="/videos/designs-hero.mp4" type="video/mp4" />
         </video>
 
         {/* Overlay */}
