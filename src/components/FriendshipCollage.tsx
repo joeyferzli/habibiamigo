@@ -49,7 +49,6 @@ const photos = [{
   zIndex: 5
 }];
 const allPhotos = [sunsetLebanon, carryFunny, concertNight, barNight, festivalSun, streetFest];
-
 const FriendshipCollage = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -60,7 +59,7 @@ const FriendshipCollage = () => {
   // Rotate photos every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setPhotoOffset((prev) => (prev + 1) % allPhotos.length);
+      setPhotoOffset(prev => (prev + 1) % allPhotos.length);
     }, 3000);
     return () => clearInterval(interval);
   }, []);
@@ -189,9 +188,7 @@ const FriendshipCollage = () => {
 
           {/* Text content */}
           <div className="mt-10">
-            <h2 className="font-display text-display-sm text-foreground mb-6">
-              From "hey man" to brothers
-            </h2>
+            <h2 className="font-display text-display-sm text-foreground mb-6">HOW A HABIBI MET AN AMIGO</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>We met during our MBA.</p>
               <p>Different batches, different cultures, same sense of humor.</p>
