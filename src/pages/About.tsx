@@ -8,16 +8,6 @@ const About = () => {
       {/* Hero */}
       {/* Hero with Video Background */}
       <section className="aspect-video md:aspect-auto md:min-h-screen relative flex items-center">
-        {/* Video Background */}
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/videos/about-bg.mp4?v=1" type="video/mp4" />
-        </video>
         
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40" />
