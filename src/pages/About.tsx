@@ -22,19 +22,19 @@ const About = () => {
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40" />
         
-        {/* Content - Desktop only (overlaid on video) */}
-        <div className="hidden md:block container mx-auto px-6 lg:px-12 relative z-10">
+        {/* Heading - Both mobile and desktop (on video) */}
+        <div className="container mx-auto px-6 lg:px-12 relative z-10">
           <div className="max-w-4xl">
-            <h1 className="font-display text-display-xl text-white mb-8 opacity-0 animate-fade-up">ABOUT HABIBI AMIGO</h1>
-            <p className="text-xl text-white/90 leading-relaxed max-w-2xl opacity-0 animate-fade-up delay-100">Two friends from Lebanon and Spain who bonded over humor, culture, and great T-shirts. Habibi Amigo is about mixing worlds, sharing laughs and creating comfortable tees that feel effortless.
+            <h1 className="font-display text-3xl md:text-display-xl text-white mb-4 md:mb-8 opacity-0 animate-fade-up">ABOUT HABIBI AMIGO</h1>
+            {/* Paragraph - Desktop only (on video) */}
+            <p className="hidden md:block text-xl text-white/90 leading-relaxed max-w-2xl opacity-0 animate-fade-up delay-100">Two friends from Lebanon and Spain who bonded over humor, culture, and great T-shirts. Habibi Amigo is about mixing worlds, sharing laughs and creating comfortable tees that feel effortless.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Content - Mobile only (below video) */}
+      {/* Paragraph - Mobile only (below video) */}
       <div className="md:hidden bg-sand px-6 py-8">
-        <h1 className="font-display text-3xl text-foreground mb-4 opacity-0 animate-fade-up">ABOUT HABIBI AMIGO</h1>
         <p className="text-sm text-muted-foreground leading-relaxed opacity-0 animate-fade-up delay-100">Two friends from Lebanon and Spain who bonded over humor, culture, and great T-shirts. Habibi Amigo is about mixing worlds, sharing laughs and creating comfortable tees that feel effortless.
         </p>
       </div>
