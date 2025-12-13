@@ -7,14 +7,14 @@ const About = () => {
   return <Layout>
       {/* Hero */}
       {/* Hero with Video Background */}
-      <section className="min-h-screen relative flex items-center">
+      <section className="aspect-video md:aspect-auto md:min-h-screen relative flex items-center">
         {/* Video Background */}
         <video 
           autoPlay 
           loop 
           muted 
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-contain md:object-cover"
         >
           <source src="/videos/about-bg.mp4?v=1" type="video/mp4" />
         </video>
@@ -25,8 +25,8 @@ const About = () => {
         {/* Content */}
         <div className="container mx-auto px-6 lg:px-12 relative z-10">
           <div className="max-w-4xl">
-            <h1 className="font-display text-display-xl text-white mb-8 opacity-0 animate-fade-up">ABOUT HABIBI AMIGO</h1>
-            <p className="text-xl text-white/90 leading-relaxed max-w-2xl opacity-0 animate-fade-up delay-100">Two friends from Lebanon and Spain who bonded over humor, culture, and great T-shirts. Habibi Amigo is about mixing worlds, sharing laughs and creating comfortable tees that feel effortless.
+            <h1 className="font-display text-3xl md:text-display-xl text-white mb-4 md:mb-8 opacity-0 animate-fade-up">ABOUT HABIBI AMIGO</h1>
+            <p className="text-sm md:text-xl text-white/90 leading-relaxed max-w-2xl opacity-0 animate-fade-up delay-100">Two friends from Lebanon and Spain who bonded over humor, culture, and great T-shirts. Habibi Amigo is about mixing worlds, sharing laughs and creating comfortable tees that feel effortless.
             </p>
           </div>
         </div>
