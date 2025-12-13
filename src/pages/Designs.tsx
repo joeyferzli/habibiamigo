@@ -150,7 +150,7 @@ const Designs = () => {
         {/* Content */}
         <div className="container mx-auto px-6 lg:px-12 relative z-10">
           <div className="max-w-4xl">
-            <h1 className="font-display text-foreground mb-8 opacity-0 animate-fade-up text-7xl text-left">
+            <h1 className="font-display text-foreground mb-8 opacity-0 animate-fade-up text-3xl md:text-7xl text-left">
               THE HABIBI AMIGO COLLECTION
             </h1>
           </div>
