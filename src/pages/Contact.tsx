@@ -30,15 +30,17 @@ const Contact = () => {
   };
   return <Layout>
       {/* Hero */}
-      <section className="pt-32 pb-20 relative bg-cover bg-center bg-no-repeat" style={{
+      <section className="aspect-video md:aspect-auto md:pt-32 md:pb-20 relative bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: `url(${contactBg})`
     }}>
-        <div className="container mx-auto px-6 lg:px-12 relative z-10">
-          <div className="max-w-4xl">
-            <h1 className="font-display text-display-xl text-foreground mb-8 opacity-0 animate-fade-up">
-              GET IN TOUCH
-            </h1>
-            
+        {/* Heading - Both mobile and desktop (on image) */}
+        <div className="absolute inset-0 flex items-center md:relative md:inset-auto">
+          <div className="container mx-auto px-6 lg:px-12 relative z-10">
+            <div className="max-w-4xl">
+              <h1 className="font-display text-3xl md:text-display-xl text-foreground mb-4 md:mb-8 opacity-0 animate-fade-up">
+                GET IN TOUCH
+              </h1>
+            </div>
           </div>
         </div>
       </section>
