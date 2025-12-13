@@ -99,9 +99,9 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section - Full Width Video Banner */}
-      <section className="min-h-screen relative">
+      <section className="min-h-screen relative bg-black">
         {/* Video Background */}
-        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
+        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-contain md:object-cover">
           <source src="/videos/hero-bg.mp4?v=4" type="video/mp4" />
         </video>
 
