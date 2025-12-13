@@ -190,8 +190,8 @@ const FriendshipCollage = () => {
           <div className="mt-10">
             <h2 className="font-display text-display-sm text-foreground mb-6">HOW A HABIBI MET AN AMIGO</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>We met during our MBA.</p>
-              <p>Different batches, different cultures, same sense of humor.</p>
+              <p>Barcelona, 2024</p>
+              <p>Different countries, different cultures, same sense of humor.</p>
               <p>
                 What started as jokes, nights out, and inside references turned into 
                 designs we actually wanted to wear.
