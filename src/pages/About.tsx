@@ -14,7 +14,7 @@ const About = () => {
           loop 
           muted 
           playsInline
-          className="absolute inset-0 w-full h-full object-contain md:object-cover"
+          className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/videos/about-bg.mp4?v=1" type="video/mp4" />
         </video>
