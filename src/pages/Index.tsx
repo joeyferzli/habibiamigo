@@ -159,34 +159,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* The Habibi Amigo Vibe */}
-      <section className="py-32 bg-card">
-        <div className="container mx-auto px-6 lg:px-12">
-          <div className="max-w-4xl">
-            <h2 className="font-display text-display-lg text-foreground mb-10 opacity-0 animate-fade-up">
-              [THE HABIBI AMIGO VIBE HEADLINE]
-            </h2>
-            <p className="text-muted-foreground text-xl leading-relaxed mb-16 opacity-0 animate-fade-up delay-100">
-              [Write a larger paragraph about the brand philosophy — inside jokes turned into wearable art, friendship
-              that crosses cultures, humor that connects people. Describe the creative process, the inspiration behind
-              designs, and what wearing Habibi Amigo means.]
-            </p>
-          </div>
-
-          {/* Large Image Placeholder */}
-          <div className="opacity-0 animate-fade-up delay-200">
-            <div className="aspect-[21/9] bg-sand flex items-center justify-center">
-              <div className="text-center p-12">
-                <div className="w-32 h-16 mx-auto mb-4 border-2 border-dashed border-taupe/50 flex items-center justify-center">
-                  <span className="text-taupe/60 text-xs uppercase tracking-wider">Wide Image</span>
-                </div>
-                <p className="text-sm text-muted-foreground italic">[Oversized image placeholder]</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 };
