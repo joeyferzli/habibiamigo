@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import DesignCard from "@/components/DesignCard";
+import FriendshipCollage from "@/components/FriendshipCollage";
 import secretlyLatina1 from "@/assets/designs/secretly-latina-1.jpeg";
 import secretlyLatina2 from "@/assets/designs/secretly-latina-2.jpeg";
 import secretlyLatina3 from "@/assets/designs/secretly-latina-3.jpeg";
@@ -117,34 +118,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Brand Intro Section - 50/50 Layout */}
-      <section className="py-32 bg-sand">
-        <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            {/* Image */}
-            <div className="opacity-0 animate-fade-up">
-              <div className="aspect-square bg-oatmeal flex items-center justify-center">
-                <div className="text-center p-12">
-                  <div className="w-24 h-24 mx-auto mb-4 border-2 border-dashed border-taupe/50 flex items-center justify-center">
-                    <span className="text-taupe/60 text-xs uppercase tracking-wider">Image</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground italic">[Brand image placeholder]</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Text */}
-            <div className="opacity-0 animate-fade-up delay-200">
-              <h2 className="font-display text-display-md text-foreground mb-8">[HEADER PLACEHOLDER]</h2>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                [Write a paragraph explaining the brand — two friends, one Lebanese and one Spanish, creating fun
-                T-shirts made by friends for friends. Describe the origin story, the shared humor, and what makes Habibi
-                Amigo unique.]
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Friendship Story Section */}
+      <FriendshipCollage />
 
       {/* Featured Designs Section */}
       <section className="py-32 bg-primary-foreground">
