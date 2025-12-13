@@ -138,10 +138,10 @@ const Designs = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 min-h-[60vh] flex items-center overflow-hidden">
+      <section className="relative aspect-video md:aspect-auto md:pt-32 md:pb-20 md:min-h-[60vh] flex items-center overflow-hidden">
         {/* Video Background */}
-        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
-          <source src="/videos/hero-bg.mp4" type="video/mp4" />
+        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-contain md:object-cover">
+          <source src="/videos/hero-bg.mp4?v=4" type="video/mp4" />
         </video>
 
         {/* Overlay */}
