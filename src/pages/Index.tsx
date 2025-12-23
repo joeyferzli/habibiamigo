@@ -118,9 +118,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Friendship Story Section */}
-      <FriendshipCollage />
-
       {/* Featured Designs Section */}
       <section className="py-32 bg-primary-foreground">
         <div className="container mx-auto px-6 lg:px-12">
@@ -159,6 +156,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Friendship Story Section */}
+      <FriendshipCollage />
     </Layout>
   );
 };
