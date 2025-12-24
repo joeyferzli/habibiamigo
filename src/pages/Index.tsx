@@ -3,6 +3,8 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import DesignCard from "@/components/DesignCard";
 import FriendshipCollage from "@/components/FriendshipCollage";
+import { Design } from "@/types/design";
+
 import secretlyLatina1 from "@/assets/designs/secretly-latina-1.jpeg";
 import secretlyLatina2 from "@/assets/designs/secretly-latina-2.jpeg";
 import secretlyLatina3 from "@/assets/designs/secretly-latina-3.jpeg";
@@ -24,77 +26,68 @@ import vermut2 from "@/assets/designs/vermut-2.jpeg";
 import vermut3 from "@/assets/designs/vermut-3.jpeg";
 import vermut4 from "@/assets/designs/vermut-4.jpeg";
 import vermut5 from "@/assets/designs/vermut-5.jpeg";
-import exFan1 from "@/assets/designs/ex-fan-1.jpeg";
-import exFan2 from "@/assets/designs/ex-fan-2.jpeg";
-import exFan3 from "@/assets/designs/ex-fan-3.jpeg";
-import exFan4 from "@/assets/designs/ex-fan-4.jpeg";
-import exFan5 from "@/assets/designs/ex-fan-5.jpeg";
-import stayCool1 from "@/assets/designs/stay-cool-1.jpeg";
-import stayCool2 from "@/assets/designs/stay-cool-2.jpeg";
-import stayCool3 from "@/assets/designs/stay-cool-3.jpeg";
-import stayCool4 from "@/assets/designs/stay-cool-4.jpeg";
-import noGame1 from "@/assets/designs/no-game-1.jpeg";
-import noGame2 from "@/assets/designs/no-game-2.jpeg";
-import noGame3 from "@/assets/designs/no-game-3.jpeg";
-import noGame4 from "@/assets/designs/no-game-4.jpeg";
-import noGame5 from "@/assets/designs/no-game-5.jpeg";
-import noGame6 from "@/assets/designs/no-game-6.jpeg";
-import iLied1 from "@/assets/designs/i-lied-1.jpeg";
-import iLied2 from "@/assets/designs/i-lied-2.jpeg";
-import iLied3 from "@/assets/designs/i-lied-3.jpeg";
-import iLied4 from "@/assets/designs/i-lied-4.jpeg";
-import iLied5 from "@/assets/designs/i-lied-5.jpeg";
+
 const SHOP_URL = "https://habibi-amigo.printify.me";
-const featuredDesigns = [
+
+const featuredDesigns: Design[] = [
   {
+    id: "secretly-latina",
     name: "Secretly In Love With Every Latina Here",
-    description: "A tribute to the latinas",
-    images: [secretlyLatina1, secretlyLatina2, secretlyLatina3, secretlyLatina4, secretlyLatina5, secretlyLatina6],
-    primaryIndex: 1,
+    caption: "A tribute to the latinas",
+    description: "A bold statement piece celebrating the beauty and culture of Latinas everywhere.",
+    colorVariations: [
+      { name: "Black", swatchColor: "#1a1a1a", images: [secretlyLatina1, secretlyLatina2] },
+      { name: "White", swatchColor: "#f5f5f5", images: [secretlyLatina3, secretlyLatina4] },
+      { name: "Beige", swatchColor: "#d4c4a8", images: [secretlyLatina5, secretlyLatina6] },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["S", "M", "L", "XL", "XXL"],
+    inStock: true,
   },
   {
+    id: "dress-spanish",
     name: "Dress Spanish, Eat Lebanese, Kiss Both",
-    description: "The best of both worlds",
-    images: [dressSpanish1, dressSpanish2, dressSpanish3, dressSpanish4, dressSpanish5],
-    primaryIndex: 0,
+    caption: "The best of both worlds",
+    description: "Embrace the Mediterranean lifestyle with this fusion-inspired design.",
+    colorVariations: [
+      { name: "Natural", swatchColor: "#e8dcc8", images: [dressSpanish1, dressSpanish2] },
+      { name: "Black", swatchColor: "#1a1a1a", images: [dressSpanish3, dressSpanish4] },
+      { name: "Sand", swatchColor: "#c4a77d", images: [dressSpanish5] },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["XS", "S", "M", "L", "XL"],
+    inStock: true,
   },
   {
+    id: "tequila",
     name: "1 Tequila, 2 Tequilas, 3 Tekilsas... Floor",
-    description: "Count your way down",
-    images: [tequila1, tequila2, tequila3, tequila4, tequila5],
-    primaryIndex: 0,
+    caption: "Count your way down",
+    description: "The perfect party companion for those unforgettable nights.",
+    colorVariations: [
+      { name: "White", swatchColor: "#ffffff", images: [tequila1, tequila2] },
+      { name: "Black", swatchColor: "#1a1a1a", images: [tequila3, tequila4] },
+      { name: "Olive", swatchColor: "#6b7c4e", images: [tequila5] },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["S", "M", "L", "XL", "XXL"],
+    inStock: true,
   },
   {
+    id: "vermut",
     name: "Eres La Aceituna De Mi Vermut",
-    description: "You're the olive to my vermouth",
-    images: [vermut1, vermut2, vermut3, vermut4, vermut5],
-    primaryIndex: 2,
-  },
-  {
-    name: "My Ex Is My Biggest Fan",
-    description: "Still watching your every move",
-    images: [exFan1, exFan2, exFan3, exFan4, exFan5],
-    primaryIndex: 0,
-  },
-  {
-    name: "Stay Cool, Stay Iconic",
-    description: "Channel your inner legend",
-    images: [stayCool1, stayCool2, stayCool3, stayCool4],
-    primaryIndex: 0,
-  },
-  {
-    name: "I Like You But I Got No Game",
-    description: "Honest confession vibes",
-    images: [noGame1, noGame2, noGame3, noGame4, noGame5, noGame6],
-    primaryIndex: 0,
-  },
-  {
-    name: "I Lied. I Love House Music",
-    description: "For the rave lovers",
-    images: [iLied1, iLied2, iLied3, iLied4, iLied5],
-    primaryIndex: 0,
+    caption: "You're the olive to my vermouth",
+    description: "A romantic Spanish phrase for the aperitivo lovers.",
+    colorVariations: [
+      { name: "Cream", swatchColor: "#f5f0e1", images: [vermut1, vermut2] },
+      { name: "Terracotta", swatchColor: "#c65d3b", images: [vermut3, vermut4] },
+      { name: "Navy", swatchColor: "#1e3a5f", images: [vermut5] },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    inStock: true,
   },
 ];
+
 const Index = () => {
   return (
     <Layout>
@@ -133,18 +126,13 @@ const Index = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
             {featuredDesigns.map((design, index) => (
               <div
-                key={index}
+                key={design.id}
                 className="opacity-0 animate-fade-up"
                 style={{
                   animationDelay: `${(index + 2) * 100}ms`,
                 }}
               >
-                <DesignCard
-                  name={design.name}
-                  description={design.description}
-                  images={design.images}
-                  primaryIndex={design.primaryIndex}
-                />
+                <DesignCard design={design} />
               </div>
             ))}
           </div>
@@ -162,4 +150,5 @@ const Index = () => {
     </Layout>
   );
 };
+
 export default Index;

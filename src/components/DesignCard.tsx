@@ -1,138 +1,109 @@
 import { useState } from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Design } from "@/types/design";
+import DesignDetailModal from "./DesignDetailModal";
 
 interface DesignCardProps {
-  name: string;
-  description: string;
-  images?: string[];
-  primaryIndex?: number; // Which image to show as thumbnail (defaults to 0)
-  inStock?: boolean;
+  design: Design;
 }
 
-const DesignCard = ({ name, description, images = [], primaryIndex = 1, inStock = true }: DesignCardProps) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+const DesignCard = ({ design }: DesignCardProps) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedColorIndex, setSelectedColorIndex] = useState(
+    design.defaultColorIndex
+  );
 
-  const hasImages = images.length > 0;
-  const hasMultipleImages = images.length > 1;
-  const thumbnailIndex = hasImages ? Math.min(primaryIndex, images.length - 1) : 0;
+  const currentColor = design.colorVariations[selectedColorIndex];
+  const thumbnailImage = currentColor?.images[0];
 
-  const goToPrevious = () => {
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  const handleColorChange = (index: number) => {
+    setSelectedColorIndex(index);
   };
 
-  const goToNext = () => {
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
   };
 
   return (
     <>
-      <div 
-        className="group cursor-pointer"
-        onClick={() => setIsOpen(true)}
-      >
+      <div className="group">
         {/* Image - Large Square */}
-        <div className="aspect-square bg-sand mb-6 overflow-hidden relative">
+        <div
+          className="aspect-square bg-muted mb-4 overflow-hidden relative cursor-pointer rounded-lg"
+          onClick={handleOpenModal}
+        >
           {/* Stock Badge */}
-          <div className={`absolute top-3 right-3 z-10 px-2 py-1 text-[10px] uppercase tracking-wider rounded ${
-            inStock 
-              ? "bg-muted/80 text-muted-foreground" 
-              : "bg-muted text-muted-foreground/60"
-          }`}>
-            {inStock ? "In Stock" : "Out of Stock"}
+          <div
+            className={`absolute top-3 right-3 z-10 px-2 py-1 text-[10px] uppercase tracking-wider rounded ${
+              design.inStock
+                ? "bg-muted/80 text-muted-foreground"
+                : "bg-muted text-muted-foreground/60"
+            }`}
+          >
+            {design.inStock ? "In Stock" : "Out of Stock"}
           </div>
-          {hasImages ? (
-            <img 
-              src={images[thumbnailIndex]} 
-              alt={name}
+
+          {thumbnailImage ? (
+            <img
+              src={thumbnailImage}
+              alt={design.name}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
           ) : (
-            <div className="w-full h-full flex items-center justify-center bg-oatmeal/50 group-hover:bg-oatmeal transition-colors duration-500">
-              <div className="text-center p-8">
-                <div className="w-20 h-20 mx-auto mb-4 border-2 border-dashed border-taupe/50 flex items-center justify-center">
-                  <span className="text-taupe/60 text-xs uppercase tracking-wider">Image</span>
-                </div>
-                <p className="text-xs text-muted-foreground italic">[Design image placeholder]</p>
-              </div>
+            <div className="w-full h-full flex items-center justify-center bg-muted">
+              <span className="text-muted-foreground text-xs uppercase tracking-wider">
+                No Image
+              </span>
             </div>
           )}
         </div>
-        
+
+        {/* Color Swatches */}
+        {design.colorVariations.length > 1 && (
+          <div className="flex gap-1.5 mb-3">
+            {design.colorVariations.map((color, index) => (
+              <button
+                key={color.name}
+                onClick={() => handleColorChange(index)}
+                className={`w-5 h-5 rounded-full border transition-all ${
+                  index === selectedColorIndex
+                    ? "ring-1 ring-foreground ring-offset-1 ring-offset-background"
+                    : "hover:scale-110"
+                }`}
+                style={{ backgroundColor: color.swatchColor }}
+                title={color.name}
+              />
+            ))}
+          </div>
+        )}
+
         {/* Content */}
-        <div>
-          <h3 className="font-display text-xl text-foreground tracking-wider mb-2 group-hover:tracking-widest transition-all duration-300">
-            {name}
+        <div className="space-y-2">
+          <h3 className="font-display text-xl text-foreground tracking-wider group-hover:tracking-widest transition-all duration-300">
+            {design.name}
           </h3>
-          <p className="text-muted-foreground text-sm">{description}</p>
+          <p className="text-muted-foreground text-sm">{design.caption}</p>
+
+          {/* View Details Button */}
+          <Button
+            variant="outline"
+            size="sm"
+            className="mt-3"
+            onClick={handleOpenModal}
+          >
+            View Details
+          </Button>
         </div>
       </div>
 
-      {/* Quick View Dialog */}
-      <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="max-w-3xl p-0 overflow-hidden bg-background border-border">
-          <DialogTitle className="sr-only">{name}</DialogTitle>
-          <div className="aspect-square w-full relative">
-            {hasImages ? (
-              <>
-                <img 
-                  src={images[currentIndex]} 
-                  alt={`${name} - Image ${currentIndex + 1}`}
-                  className="w-full h-full object-cover"
-                />
-                
-                {/* Navigation Arrows */}
-                {hasMultipleImages && (
-                  <>
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      className="absolute left-4 top-1/2 -translate-y-1/2 bg-background/80 hover:bg-background"
-                      onClick={goToPrevious}
-                    >
-                      <ChevronLeft className="h-6 w-6" />
-                    </Button>
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      className="absolute right-4 top-1/2 -translate-y-1/2 bg-background/80 hover:bg-background"
-                      onClick={goToNext}
-                    >
-                      <ChevronRight className="h-6 w-6" />
-                    </Button>
-                    
-                    {/* Image Counter */}
-                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-background/80 px-3 py-1 text-sm">
-                      {currentIndex + 1} / {images.length}
-                    </div>
-                  </>
-                )}
-              </>
-            ) : (
-              <div className="w-full h-full flex items-center justify-center bg-oatmeal/50">
-                <div className="text-center p-12">
-                  <div className="w-32 h-32 mx-auto mb-6 border-2 border-dashed border-taupe/50 flex items-center justify-center">
-                    <span className="text-taupe/60 text-sm uppercase tracking-wider">Image</span>
-                  </div>
-                  <p className="text-muted-foreground italic">[Design image placeholder]</p>
-                </div>
-              </div>
-            )}
-          </div>
-          <div className="p-6">
-            <h3 className="font-display text-2xl text-foreground tracking-wider mb-2">
-              {name}
-            </h3>
-            <p className="text-muted-foreground">{description}</p>
-          </div>
-        </DialogContent>
-      </Dialog>
+      {/* Detail Modal */}
+      <DesignDetailModal
+        design={design}
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        selectedColorIndex={selectedColorIndex}
+        onColorChange={handleColorChange}
+      />
     </>
   );
 };

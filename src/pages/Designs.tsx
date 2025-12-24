@@ -2,6 +2,11 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import DesignCard from "@/components/DesignCard";
+import { Design } from "@/types/design";
+
+// ============================================
+// DESIGN IMAGES - Import all images here
+// ============================================
 
 import secretlyLatina1 from "@/assets/designs/secretly-latina-1.jpeg";
 import secretlyLatina2 from "@/assets/designs/secretly-latina-2.jpeg";
@@ -58,73 +63,265 @@ import asap3 from "@/assets/designs/asap-3.jpeg";
 import asap4 from "@/assets/designs/asap-4.jpeg";
 import asap5 from "@/assets/designs/asap-5.jpeg";
 
+// ============================================
+// SHOP URL - Link to Printify store
+// ============================================
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
-const designs = [
+// ============================================
+// DESIGNS DATA - FULLY EDITABLE
+// ============================================
+// To edit a design:
+// - name: Change the display title
+// - caption: Short text shown on grid card
+// - description: Full text shown in modal
+// - colorVariations: Add/remove colors with their images
+// - defaultColorIndex: Which color shows by default (0-based)
+// - availableSizes: Which sizes are available
+// - notes: Optional fit/fabric info
+// - inStock: true/false for availability
+// ============================================
+
+const designs: Design[] = [
   {
+    id: "secretly-latina",
     name: "Secretly In Love With Every Latina Here",
-    description: "A tribute to the latinas",
-    images: [secretlyLatina1, secretlyLatina2, secretlyLatina3, secretlyLatina4, secretlyLatina5, secretlyLatina6],
-    primaryIndex: 1,
+    caption: "A tribute to the latinas",
+    description:
+      "A bold statement piece celebrating the beauty and culture of Latinas everywhere. Perfect for those who wear their heart on their sleeve.",
+    colorVariations: [
+      {
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [secretlyLatina1, secretlyLatina2],
+      },
+      {
+        name: "White",
+        swatchColor: "#f5f5f5",
+        images: [secretlyLatina3, secretlyLatina4],
+      },
+      {
+        name: "Beige",
+        swatchColor: "#d4c4a8",
+        images: [secretlyLatina5, secretlyLatina6],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["S", "M", "L", "XL", "XXL"],
+    notes: "Unisex fit. True to size. 100% cotton.",
     inStock: true,
   },
   {
+    id: "dress-spanish",
     name: "Dress Spanish, Eat Lebanese, Kiss Both",
-    description: "The best of both worlds",
-    images: [dressSpanish1, dressSpanish2, dressSpanish3, dressSpanish4, dressSpanish5],
-    primaryIndex: 0,
+    caption: "The best of both worlds",
+    description:
+      "Embrace the Mediterranean lifestyle with this fusion-inspired design. For those who appreciate culture without borders.",
+    colorVariations: [
+      {
+        name: "Natural",
+        swatchColor: "#e8dcc8",
+        images: [dressSpanish1, dressSpanish2],
+      },
+      {
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [dressSpanish3, dressSpanish4],
+      },
+      {
+        name: "Sand",
+        swatchColor: "#c4a77d",
+        images: [dressSpanish5],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["XS", "S", "M", "L", "XL"],
+    notes: "Relaxed fit. Runs slightly large.",
     inStock: true,
   },
   {
+    id: "tequila",
     name: "1 Tequila, 2 Tequilas, 3 Tekilsas... Floor",
-    description: "Count your way down",
-    images: [tequila1, tequila2, tequila3, tequila4, tequila5],
-    primaryIndex: 0,
+    caption: "Count your way down",
+    description:
+      "The perfect party companion. A playful nod to those nights that start with good intentions and end with great stories.",
+    colorVariations: [
+      {
+        name: "White",
+        swatchColor: "#ffffff",
+        images: [tequila1, tequila2],
+      },
+      {
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [tequila3, tequila4],
+      },
+      {
+        name: "Olive",
+        swatchColor: "#6b7c4e",
+        images: [tequila5],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["S", "M", "L", "XL", "XXL"],
     inStock: true,
   },
   {
+    id: "vermut",
     name: "Eres La Aceituna De Mi Vermut",
-    description: "You're the olive to my vermouth",
-    images: [vermut1, vermut2, vermut3, vermut4, vermut5],
-    primaryIndex: 2,
+    caption: "You're the olive to my vermouth",
+    description:
+      "A romantic Spanish phrase for the aperitivo lovers. Because every great drink needs its perfect match.",
+    colorVariations: [
+      {
+        name: "Cream",
+        swatchColor: "#f5f0e1",
+        images: [vermut1, vermut2],
+      },
+      {
+        name: "Terracotta",
+        swatchColor: "#c65d3b",
+        images: [vermut3, vermut4],
+      },
+      {
+        name: "Navy",
+        swatchColor: "#1e3a5f",
+        images: [vermut5],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    notes: "Premium cotton blend. Pre-shrunk.",
     inStock: true,
   },
   {
+    id: "ex-fan",
     name: "My Ex Is My Biggest Fan",
-    description: "Still watching your every move",
-    images: [exFan1, exFan2, exFan3, exFan4, exFan5],
-    primaryIndex: 0,
+    caption: "Still watching your every move",
+    description:
+      "For those who know their worth. A confident reminder that moving on doesn't mean being forgotten.",
+    colorVariations: [
+      {
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [exFan1, exFan2, exFan3],
+      },
+      {
+        name: "White",
+        swatchColor: "#ffffff",
+        images: [exFan4, exFan5],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["S", "M", "L", "XL"],
     inStock: true,
   },
   {
+    id: "stay-cool",
     name: "Stay Cool, Stay Iconic",
-    description: "Channel your inner legend",
-    images: [stayCool1, stayCool2, stayCool3, stayCool4],
-    primaryIndex: 0,
+    caption: "Channel your inner legend",
+    description:
+      "A minimalist statement for those who let their presence speak louder than words. Effortlessly cool.",
+    colorVariations: [
+      {
+        name: "Off-White",
+        swatchColor: "#f8f6f0",
+        images: [stayCool1, stayCool2],
+      },
+      {
+        name: "Charcoal",
+        swatchColor: "#3d3d3d",
+        images: [stayCool3, stayCool4],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["S", "M", "L", "XL", "XXL"],
+    notes: "Oversized fit. Size down for regular fit.",
     inStock: true,
   },
   {
+    id: "no-game",
     name: "I Like You But I Got No Game",
-    description: "Honest confession vibes",
-    images: [noGame1, noGame2, noGame3, noGame4, noGame5, noGame6],
-    primaryIndex: 0,
+    caption: "Honest confession vibes",
+    description:
+      "Honesty is the best policy. For the charmingly awkward and authentically real among us.",
+    colorVariations: [
+      {
+        name: "Vintage White",
+        swatchColor: "#f0ece3",
+        images: [noGame1, noGame2],
+      },
+      {
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [noGame3, noGame4],
+      },
+      {
+        name: "Forest",
+        swatchColor: "#2d4a3e",
+        images: [noGame5, noGame6],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["XS", "S", "M", "L", "XL"],
     inStock: true,
   },
   {
+    id: "i-lied",
     name: "I Lied. I Love House Music",
-    description: "For the rave lovers",
-    images: [iLied1, iLied2, iLied3, iLied4, iLied5],
-    primaryIndex: 0,
+    caption: "For the rave lovers",
+    description:
+      "The confession every house head needs to make. Because the bass drop never lies.",
+    colorVariations: [
+      {
+        name: "Black",
+        swatchColor: "#0f0f0f",
+        images: [iLied1, iLied2, iLied3],
+      },
+      {
+        name: "White",
+        swatchColor: "#ffffff",
+        images: [iLied4, iLied5],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["S", "M", "L", "XL", "XXL"],
+    notes: "Festival-ready. Lightweight cotton.",
     inStock: true,
   },
   {
+    id: "asap",
     name: "My ASAP Stands For Aperol Spritz And Party",
-    description: "Party priorities sorted",
-    images: [asap1, asap2, asap3, asap4, asap5],
-    primaryIndex: 2,
+    caption: "Party priorities sorted",
+    description:
+      "Redefining urgency one spritz at a time. For those whose priority list starts with good vibes.",
+    colorVariations: [
+      {
+        name: "Sunset Orange",
+        swatchColor: "#e87a3d",
+        images: [asap1, asap2],
+      },
+      {
+        name: "White",
+        swatchColor: "#ffffff",
+        images: [asap3, asap4],
+      },
+      {
+        name: "Cream",
+        swatchColor: "#f5ebe0",
+        images: [asap5],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["XS", "S", "M", "L", "XL", "XXL"],
     inStock: true,
   },
 ];
+
+// ============================================
+// DESIGNS PAGE COMPONENT
+// ============================================
+
 const Designs = () => {
   const [stockFilter, setStockFilter] = useState<"all" | "in" | "out">("all");
 
@@ -140,7 +337,13 @@ const Designs = () => {
       {/* Hero */}
       <section className="relative aspect-video md:aspect-auto md:pt-32 md:pb-20 md:min-h-[60vh] flex items-center overflow-hidden">
         {/* Video Background */}
-        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-contain md:object-cover">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-contain md:object-cover"
+        >
           <source src="/videos/designs-hero.mp4" type="video/mp4" />
         </video>
 
@@ -157,7 +360,7 @@ const Designs = () => {
         </div>
       </section>
 
-      {/* Designs Grid - Portfolio Style */}
+      {/* Designs Grid */}
       <section className="py-16 pb-32">
         <div className="container mx-auto px-6 lg:px-12">
           {/* Filter */}
@@ -194,22 +397,17 @@ const Designs = () => {
             </button>
           </div>
 
+          {/* Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16 mb-20">
             {filteredDesigns.map((design, index) => (
               <div
-                key={index}
+                key={design.id}
                 className="opacity-0 animate-fade-up"
                 style={{
                   animationDelay: `${index * 75}ms`,
                 }}
               >
-                <DesignCard
-                  name={design.name}
-                  description={design.description}
-                  images={design.images}
-                  primaryIndex={design.primaryIndex}
-                  inStock={design.inStock}
-                />
+                <DesignCard design={design} />
               </div>
             ))}
           </div>
@@ -226,4 +424,5 @@ const Designs = () => {
     </Layout>
   );
 };
+
 export default Designs;
