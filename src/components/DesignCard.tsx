@@ -88,7 +88,7 @@ const DesignCard = ({ design }: DesignCardProps) => {
           <Button
             variant="outline"
             size="sm"
-            className="mt-3"
+            className="mt-3 text-xs px-3 py-1 h-7"
             onClick={handleOpenModal}
           >
             View Details
