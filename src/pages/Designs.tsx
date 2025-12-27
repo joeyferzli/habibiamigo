@@ -152,10 +152,13 @@ import exFanNavy4 from "@/assets/designs/ex-fan-navy-4.jpg";
 import exFanNavy5 from "@/assets/designs/ex-fan-navy-5.jpg";
 import exFanNavy6 from "@/assets/designs/ex-fan-navy-6.jpg";
 
-import stayCool1 from "@/assets/designs/stay-cool-1.jpeg";
-import stayCool2 from "@/assets/designs/stay-cool-2.jpeg";
-import stayCool3 from "@/assets/designs/stay-cool-3.jpeg";
-import stayCool4 from "@/assets/designs/stay-cool-4.jpeg";
+// Stay Cool - Black variant
+import stayCoolBlack1 from "@/assets/designs/stay-cool-black-1.jpg";
+import stayCoolBlack2 from "@/assets/designs/stay-cool-black-2.jpg";
+import stayCoolBlack3 from "@/assets/designs/stay-cool-black-3.jpg";
+import stayCoolBlack4 from "@/assets/designs/stay-cool-black-4.jpg";
+import stayCoolBlack5 from "@/assets/designs/stay-cool-black-5.jpg";
+import stayCoolBlack6 from "@/assets/designs/stay-cool-black-6.jpg";
 
 import noGame1 from "@/assets/designs/no-game-1.jpeg";
 import noGame2 from "@/assets/designs/no-game-2.jpeg";
@@ -412,14 +415,9 @@ const designs: Design[] = [
       "A minimalist statement for those who let their presence speak louder than words. Effortlessly cool.",
     colorVariations: [
       {
-        name: "Off-White",
-        swatchColor: "#f8f6f0",
-        images: [stayCool1, stayCool2],
-      },
-      {
-        name: "Charcoal",
-        swatchColor: "#3d3d3d",
-        images: [stayCool3, stayCool4],
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [stayCoolBlack1, stayCoolBlack2, stayCoolBlack3, stayCoolBlack4, stayCoolBlack5, stayCoolBlack6],
       },
     ],
     defaultColorIndex: 0,
