@@ -124,7 +124,6 @@ const featuredDesigns: Design[] = [
     colorVariations: [
       { name: "White", swatchColor: "#ffffff", images: [tequila1, tequila2] },
       { name: "Black", swatchColor: "#1a1a1a", images: [tequila3, tequila4] },
-      { name: "Olive", swatchColor: "#6b7c4e", images: [tequila5] },
     ],
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL", "XXL"],
