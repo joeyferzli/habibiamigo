@@ -160,12 +160,37 @@ import stayCoolBlack4 from "@/assets/designs/stay-cool-black-4.jpg";
 import stayCoolBlack5 from "@/assets/designs/stay-cool-black-5.jpg";
 import stayCoolBlack6 from "@/assets/designs/stay-cool-black-6.jpg";
 
-import noGame1 from "@/assets/designs/no-game-1.jpeg";
-import noGame2 from "@/assets/designs/no-game-2.jpeg";
-import noGame3 from "@/assets/designs/no-game-3.jpeg";
-import noGame4 from "@/assets/designs/no-game-4.jpeg";
-import noGame5 from "@/assets/designs/no-game-5.jpeg";
-import noGame6 from "@/assets/designs/no-game-6.jpeg";
+// No Game - White variant
+import noGameWhite1 from "@/assets/designs/no-game-white-1.jpg";
+import noGameWhite2 from "@/assets/designs/no-game-white-2.jpg";
+import noGameWhite3 from "@/assets/designs/no-game-white-3.jpg";
+import noGameWhite4 from "@/assets/designs/no-game-white-4.jpg";
+import noGameWhite5 from "@/assets/designs/no-game-white-5.jpg";
+import noGameWhite6 from "@/assets/designs/no-game-white-6.jpg";
+
+// No Game - Black variant
+import noGameBlack1 from "@/assets/designs/no-game-black-1.jpg";
+import noGameBlack2 from "@/assets/designs/no-game-black-2.jpg";
+import noGameBlack3 from "@/assets/designs/no-game-black-3.jpg";
+import noGameBlack4 from "@/assets/designs/no-game-black-4.jpg";
+import noGameBlack5 from "@/assets/designs/no-game-black-5.jpg";
+import noGameBlack6 from "@/assets/designs/no-game-black-6.jpg";
+
+// No Game - Lavender variant
+import noGameLavender1 from "@/assets/designs/no-game-lavender-1.jpg";
+import noGameLavender2 from "@/assets/designs/no-game-lavender-2.jpg";
+import noGameLavender3 from "@/assets/designs/no-game-lavender-3.jpg";
+import noGameLavender4 from "@/assets/designs/no-game-lavender-4.jpg";
+import noGameLavender5 from "@/assets/designs/no-game-lavender-5.jpg";
+import noGameLavender6 from "@/assets/designs/no-game-lavender-6.jpg";
+
+// No Game - Navy variant
+import noGameNavy1 from "@/assets/designs/no-game-navy-1.jpg";
+import noGameNavy2 from "@/assets/designs/no-game-navy-2.jpg";
+import noGameNavy3 from "@/assets/designs/no-game-navy-3.jpg";
+import noGameNavy4 from "@/assets/designs/no-game-navy-4.jpg";
+import noGameNavy5 from "@/assets/designs/no-game-navy-5.jpg";
+import noGameNavy6 from "@/assets/designs/no-game-navy-6.jpg";
 
 import iLied1 from "@/assets/designs/i-lied-1.jpeg";
 import iLied2 from "@/assets/designs/i-lied-2.jpeg";
@@ -433,19 +458,24 @@ const designs: Design[] = [
       "Honesty is the best policy. For the charmingly awkward and authentically real among us.",
     colorVariations: [
       {
-        name: "Vintage White",
-        swatchColor: "#f0ece3",
-        images: [noGame1, noGame2],
+        name: "White",
+        swatchColor: "#f5f5f5",
+        images: [noGameWhite1, noGameWhite2, noGameWhite3, noGameWhite4, noGameWhite5, noGameWhite6],
       },
       {
         name: "Black",
         swatchColor: "#1a1a1a",
-        images: [noGame3, noGame4],
+        images: [noGameBlack1, noGameBlack2, noGameBlack3, noGameBlack4, noGameBlack5, noGameBlack6],
       },
       {
-        name: "Forest",
-        swatchColor: "#2d4a3e",
-        images: [noGame5, noGame6],
+        name: "Lavender Blue",
+        swatchColor: "#7b9cb8",
+        images: [noGameLavender1, noGameLavender2, noGameLavender3, noGameLavender4, noGameLavender5, noGameLavender6],
+      },
+      {
+        name: "Navy",
+        swatchColor: "#1e3a5f",
+        images: [noGameNavy1, noGameNavy2, noGameNavy3, noGameNavy4, noGameNavy5, noGameNavy6],
       },
     ],
     defaultColorIndex: 0,
