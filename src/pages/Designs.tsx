@@ -88,11 +88,37 @@ import tequilaBlack4 from "@/assets/designs/tequila-black-4.jpg";
 import tequilaBlack5 from "@/assets/designs/tequila-black-5.jpg";
 import tequilaBlack6 from "@/assets/designs/tequila-black-6.jpg";
 
-import vermut1 from "@/assets/designs/vermut-1.jpeg";
-import vermut2 from "@/assets/designs/vermut-2.jpeg";
-import vermut3 from "@/assets/designs/vermut-3.jpeg";
-import vermut4 from "@/assets/designs/vermut-4.jpeg";
-import vermut5 from "@/assets/designs/vermut-5.jpeg";
+// Vermut - White variant
+import vermutWhite1 from "@/assets/designs/vermut-white-1.jpg";
+import vermutWhite2 from "@/assets/designs/vermut-white-2.jpg";
+import vermutWhite3 from "@/assets/designs/vermut-white-3.jpg";
+import vermutWhite4 from "@/assets/designs/vermut-white-4.jpg";
+import vermutWhite5 from "@/assets/designs/vermut-white-5.jpg";
+import vermutWhite6 from "@/assets/designs/vermut-white-6.jpg";
+
+// Vermut - Black variant
+import vermutBlack1 from "@/assets/designs/vermut-black-1.jpg";
+import vermutBlack2 from "@/assets/designs/vermut-black-2.jpg";
+import vermutBlack3 from "@/assets/designs/vermut-black-3.jpg";
+import vermutBlack4 from "@/assets/designs/vermut-black-4.jpg";
+import vermutBlack5 from "@/assets/designs/vermut-black-5.jpg";
+import vermutBlack6 from "@/assets/designs/vermut-black-6.jpg";
+
+// Vermut - Navy variant
+import vermutNavy1 from "@/assets/designs/vermut-navy-1.jpg";
+import vermutNavy2 from "@/assets/designs/vermut-navy-2.jpg";
+import vermutNavy3 from "@/assets/designs/vermut-navy-3.jpg";
+import vermutNavy4 from "@/assets/designs/vermut-navy-4.jpg";
+import vermutNavy5 from "@/assets/designs/vermut-navy-5.jpg";
+import vermutNavy6 from "@/assets/designs/vermut-navy-6.jpg";
+
+// Vermut - Lavender Blue variant
+import vermutLavender1 from "@/assets/designs/vermut-lavender-1.jpg";
+import vermutLavender2 from "@/assets/designs/vermut-lavender-2.jpg";
+import vermutLavender3 from "@/assets/designs/vermut-lavender-3.jpg";
+import vermutLavender4 from "@/assets/designs/vermut-lavender-4.jpg";
+import vermutLavender5 from "@/assets/designs/vermut-lavender-5.jpg";
+import vermutLavender6 from "@/assets/designs/vermut-lavender-6.jpg";
 
 import exFan1 from "@/assets/designs/ex-fan-1.jpeg";
 import exFan2 from "@/assets/designs/ex-fan-2.jpeg";
@@ -296,24 +322,28 @@ const designs: Design[] = [
       "A romantic Spanish phrase for the aperitivo lovers. Because every great drink needs its perfect match.",
     colorVariations: [
       {
-        name: "Cream",
-        swatchColor: "#f5f0e1",
-        images: [vermut1, vermut2],
-      },
-      {
-        name: "Terracotta",
-        swatchColor: "#c65d3b",
-        images: [vermut3, vermut4],
-      },
-      {
         name: "Navy",
         swatchColor: "#1e3a5f",
-        images: [vermut5],
+        images: [vermutNavy1, vermutNavy2, vermutNavy3, vermutNavy4, vermutNavy5, vermutNavy6],
+      },
+      {
+        name: "White",
+        swatchColor: "#f5f5f5",
+        images: [vermutWhite1, vermutWhite2, vermutWhite3, vermutWhite4, vermutWhite5, vermutWhite6],
+      },
+      {
+        name: "Lavender Blue",
+        swatchColor: "#7b9cb8",
+        images: [vermutLavender1, vermutLavender2, vermutLavender3, vermutLavender4, vermutLavender5, vermutLavender6],
+      },
+      {
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [vermutBlack1, vermutBlack2, vermutBlack3, vermutBlack4, vermutBlack5, vermutBlack6],
       },
     ],
     defaultColorIndex: 0,
     availableSizes: ["XS", "S", "M", "L", "XL", "XXL"],
-    notes: "Premium cotton blend. Pre-shrunk.",
     inStock: true,
   },
   {
