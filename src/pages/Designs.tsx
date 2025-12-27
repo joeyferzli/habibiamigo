@@ -128,6 +128,14 @@ import exFanWhite4 from "@/assets/designs/ex-fan-white-4.jpg";
 import exFanWhite5 from "@/assets/designs/ex-fan-white-5.jpg";
 import exFanWhite6 from "@/assets/designs/ex-fan-white-6.jpg";
 
+// Ex Fan - Black variant
+import exFanBlack1 from "@/assets/designs/ex-fan-black-1.jpg";
+import exFanBlack2 from "@/assets/designs/ex-fan-black-2.jpg";
+import exFanBlack3 from "@/assets/designs/ex-fan-black-3.jpg";
+import exFanBlack4 from "@/assets/designs/ex-fan-black-4.jpg";
+import exFanBlack5 from "@/assets/designs/ex-fan-black-5.jpg";
+import exFanBlack6 from "@/assets/designs/ex-fan-black-6.jpg";
+
 import stayCool1 from "@/assets/designs/stay-cool-1.jpeg";
 import stayCool2 from "@/assets/designs/stay-cool-2.jpeg";
 import stayCool3 from "@/assets/designs/stay-cool-3.jpeg";
@@ -359,6 +367,11 @@ const designs: Design[] = [
         name: "White",
         swatchColor: "#f5f5f5",
         images: [exFanWhite1, exFanWhite2, exFanWhite3, exFanWhite4, exFanWhite5, exFanWhite6],
+      },
+      {
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [exFanBlack1, exFanBlack2, exFanBlack3, exFanBlack4, exFanBlack5, exFanBlack6],
       },
     ],
     defaultColorIndex: 0,
