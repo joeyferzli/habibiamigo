@@ -40,11 +40,37 @@ import secretlyLatinaLavender4 from "@/assets/designs/secretly-latina-lavender-4
 import secretlyLatinaLavender5 from "@/assets/designs/secretly-latina-lavender-5.jpg";
 import secretlyLatinaLavender6 from "@/assets/designs/secretly-latina-lavender-6.jpg";
 
-import dressSpanish1 from "@/assets/designs/dress-spanish-1.jpeg";
-import dressSpanish2 from "@/assets/designs/dress-spanish-2.jpeg";
-import dressSpanish3 from "@/assets/designs/dress-spanish-3.jpeg";
-import dressSpanish4 from "@/assets/designs/dress-spanish-4.jpeg";
-import dressSpanish5 from "@/assets/designs/dress-spanish-5.jpeg";
+// Dress Spanish - White variant
+import dressSpanishWhite1 from "@/assets/designs/dress-spanish-white-1.jpg";
+import dressSpanishWhite2 from "@/assets/designs/dress-spanish-white-2.jpg";
+import dressSpanishWhite3 from "@/assets/designs/dress-spanish-white-3.jpg";
+import dressSpanishWhite4 from "@/assets/designs/dress-spanish-white-4.jpg";
+import dressSpanishWhite5 from "@/assets/designs/dress-spanish-white-5.jpg";
+import dressSpanishWhite6 from "@/assets/designs/dress-spanish-white-6.jpg";
+
+// Dress Spanish - Black variant
+import dressSpanishBlack1 from "@/assets/designs/dress-spanish-black-1.jpg";
+import dressSpanishBlack2 from "@/assets/designs/dress-spanish-black-2.jpg";
+import dressSpanishBlack3 from "@/assets/designs/dress-spanish-black-3.jpg";
+import dressSpanishBlack4 from "@/assets/designs/dress-spanish-black-4.jpg";
+import dressSpanishBlack5 from "@/assets/designs/dress-spanish-black-5.jpg";
+import dressSpanishBlack6 from "@/assets/designs/dress-spanish-black-6.jpg";
+
+// Dress Spanish - Navy variant
+import dressSpanishNavy1 from "@/assets/designs/dress-spanish-navy-1.jpg";
+import dressSpanishNavy2 from "@/assets/designs/dress-spanish-navy-2.jpg";
+import dressSpanishNavy3 from "@/assets/designs/dress-spanish-navy-3.jpg";
+import dressSpanishNavy4 from "@/assets/designs/dress-spanish-navy-4.jpg";
+import dressSpanishNavy5 from "@/assets/designs/dress-spanish-navy-5.jpg";
+import dressSpanishNavy6 from "@/assets/designs/dress-spanish-navy-6.jpg";
+
+// Dress Spanish - Lavender Blue variant
+import dressSpanishLavender1 from "@/assets/designs/dress-spanish-lavender-1.jpg";
+import dressSpanishLavender2 from "@/assets/designs/dress-spanish-lavender-2.jpg";
+import dressSpanishLavender3 from "@/assets/designs/dress-spanish-lavender-3.jpg";
+import dressSpanishLavender4 from "@/assets/designs/dress-spanish-lavender-4.jpg";
+import dressSpanishLavender5 from "@/assets/designs/dress-spanish-lavender-5.jpg";
+import dressSpanishLavender6 from "@/assets/designs/dress-spanish-lavender-6.jpg";
 
 import tequila1 from "@/assets/designs/tequila-1.jpeg";
 import tequila2 from "@/assets/designs/tequila-2.jpeg";
@@ -177,22 +203,55 @@ const designs: Design[] = [
       "Embrace the Mediterranean lifestyle with this fusion-inspired design. For those who appreciate culture without borders.",
     colorVariations: [
       {
-        name: "Natural",
-        swatchColor: "#e8dcc8",
-        images: [dressSpanish1, dressSpanish2],
+        name: "White",
+        swatchColor: "#f5f5f5",
+        images: [
+          dressSpanishWhite1,
+          dressSpanishWhite2,
+          dressSpanishWhite3,
+          dressSpanishWhite4,
+          dressSpanishWhite5,
+          dressSpanishWhite6,
+        ],
       },
       {
         name: "Black",
         swatchColor: "#1a1a1a",
-        images: [dressSpanish3, dressSpanish4],
+        images: [
+          dressSpanishBlack1,
+          dressSpanishBlack2,
+          dressSpanishBlack3,
+          dressSpanishBlack4,
+          dressSpanishBlack5,
+          dressSpanishBlack6,
+        ],
       },
       {
-        name: "Sand",
-        swatchColor: "#c4a77d",
-        images: [dressSpanish5],
+        name: "Navy",
+        swatchColor: "#1e3a5f",
+        images: [
+          dressSpanishNavy1,
+          dressSpanishNavy2,
+          dressSpanishNavy3,
+          dressSpanishNavy4,
+          dressSpanishNavy5,
+          dressSpanishNavy6,
+        ],
+      },
+      {
+        name: "Lavender Blue",
+        swatchColor: "#7b9cb8",
+        images: [
+          dressSpanishLavender1,
+          dressSpanishLavender2,
+          dressSpanishLavender3,
+          dressSpanishLavender4,
+          dressSpanishLavender5,
+          dressSpanishLavender6,
+        ],
       },
     ],
-    defaultColorIndex: 0,
+    defaultColorIndex: 3,
     availableSizes: ["XS", "S", "M", "L", "XL"],
     notes: "Relaxed fit. Runs slightly large.",
     inStock: true,
