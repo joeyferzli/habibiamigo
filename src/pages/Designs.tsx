@@ -518,22 +518,22 @@ const designs: Design[] = [
       {
         name: "White",
         swatchColor: "#f5f5f5",
-        images: [iLiedWhite1, iLiedWhite2, iLiedWhite3, iLiedWhite4, iLiedWhite5, iLiedWhite6],
+        images: [iLiedWhite6, iLiedWhite5, iLiedWhite4, iLiedWhite3, iLiedWhite2, iLiedWhite1],
       },
       {
         name: "Black",
         swatchColor: "#1a1a1a",
-        images: [iLiedBlack1, iLiedBlack2, iLiedBlack3, iLiedBlack4, iLiedBlack5, iLiedBlack6],
+        images: [iLiedBlack6, iLiedBlack5, iLiedBlack4, iLiedBlack3, iLiedBlack2, iLiedBlack1],
       },
       {
         name: "Lavender Blue",
         swatchColor: "#7b9cb8",
-        images: [iLiedLavender1, iLiedLavender2, iLiedLavender3, iLiedLavender4, iLiedLavender5, iLiedLavender6],
+        images: [iLiedLavender6, iLiedLavender5, iLiedLavender4, iLiedLavender3, iLiedLavender2, iLiedLavender1],
       },
       {
         name: "Navy",
         swatchColor: "#1e3a5f",
-        images: [iLiedNavy1, iLiedNavy2, iLiedNavy3, iLiedNavy4, iLiedNavy5, iLiedNavy6],
+        images: [iLiedNavy6, iLiedNavy5, iLiedNavy4, iLiedNavy3, iLiedNavy2, iLiedNavy1],
       },
     ],
     defaultColorIndex: 0,
