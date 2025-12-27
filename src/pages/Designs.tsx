@@ -8,12 +8,37 @@ import { Design } from "@/types/design";
 // DESIGN IMAGES - Import all images here
 // ============================================
 
-import secretlyLatina1 from "@/assets/designs/secretly-latina-1.jpeg";
-import secretlyLatina2 from "@/assets/designs/secretly-latina-2.jpeg";
-import secretlyLatina3 from "@/assets/designs/secretly-latina-3.jpeg";
-import secretlyLatina4 from "@/assets/designs/secretly-latina-4.jpeg";
-import secretlyLatina5 from "@/assets/designs/secretly-latina-5.jpeg";
-import secretlyLatina6 from "@/assets/designs/secretly-latina-6.jpeg";
+// Secretly Latina - White variant
+import secretlyLatinaWhite1 from "@/assets/designs/secretly-latina-white-1.jpg";
+import secretlyLatinaWhite2 from "@/assets/designs/secretly-latina-white-2.jpg";
+import secretlyLatinaWhite3 from "@/assets/designs/secretly-latina-white-3.jpg";
+import secretlyLatinaWhite4 from "@/assets/designs/secretly-latina-white-4.jpg";
+import secretlyLatinaWhite5 from "@/assets/designs/secretly-latina-white-5.jpg";
+import secretlyLatinaWhite6 from "@/assets/designs/secretly-latina-white-6.jpg";
+
+// Secretly Latina - Black variant
+import secretlyLatinaBlack1 from "@/assets/designs/secretly-latina-black-1.jpg";
+import secretlyLatinaBlack2 from "@/assets/designs/secretly-latina-black-2.jpg";
+import secretlyLatinaBlack3 from "@/assets/designs/secretly-latina-black-3.jpg";
+import secretlyLatinaBlack4 from "@/assets/designs/secretly-latina-black-4.jpg";
+import secretlyLatinaBlack5 from "@/assets/designs/secretly-latina-black-5.jpg";
+import secretlyLatinaBlack6 from "@/assets/designs/secretly-latina-black-6.jpg";
+
+// Secretly Latina - Navy variant
+import secretlyLatinaNavy1 from "@/assets/designs/secretly-latina-navy-1.jpg";
+import secretlyLatinaNavy2 from "@/assets/designs/secretly-latina-navy-2.jpg";
+import secretlyLatinaNavy3 from "@/assets/designs/secretly-latina-navy-3.jpg";
+import secretlyLatinaNavy4 from "@/assets/designs/secretly-latina-navy-4.jpg";
+import secretlyLatinaNavy5 from "@/assets/designs/secretly-latina-navy-5.jpg";
+import secretlyLatinaNavy6 from "@/assets/designs/secretly-latina-navy-6.jpg";
+
+// Secretly Latina - Lavender Blue variant
+import secretlyLatinaLavender1 from "@/assets/designs/secretly-latina-lavender-1.jpg";
+import secretlyLatinaLavender2 from "@/assets/designs/secretly-latina-lavender-2.jpg";
+import secretlyLatinaLavender3 from "@/assets/designs/secretly-latina-lavender-3.jpg";
+import secretlyLatinaLavender4 from "@/assets/designs/secretly-latina-lavender-4.jpg";
+import secretlyLatinaLavender5 from "@/assets/designs/secretly-latina-lavender-5.jpg";
+import secretlyLatinaLavender6 from "@/assets/designs/secretly-latina-lavender-6.jpg";
 
 import dressSpanish1 from "@/assets/designs/dress-spanish-1.jpeg";
 import dressSpanish2 from "@/assets/designs/dress-spanish-2.jpeg";
@@ -91,22 +116,55 @@ const designs: Design[] = [
       "A bold statement piece celebrating the beauty and culture of Latinas everywhere. Perfect for those who wear their heart on their sleeve.",
     colorVariations: [
       {
-        name: "Black",
-        swatchColor: "#1a1a1a",
-        images: [secretlyLatina1, secretlyLatina2],
-      },
-      {
         name: "White",
         swatchColor: "#f5f5f5",
-        images: [secretlyLatina3, secretlyLatina4],
+        images: [
+          secretlyLatinaWhite6,
+          secretlyLatinaWhite5,
+          secretlyLatinaWhite1,
+          secretlyLatinaWhite4,
+          secretlyLatinaWhite3,
+          secretlyLatinaWhite2,
+        ],
       },
       {
-        name: "Beige",
-        swatchColor: "#d4c4a8",
-        images: [secretlyLatina5, secretlyLatina6],
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [
+          secretlyLatinaBlack6,
+          secretlyLatinaBlack5,
+          secretlyLatinaBlack1,
+          secretlyLatinaBlack4,
+          secretlyLatinaBlack3,
+          secretlyLatinaBlack2,
+        ],
+      },
+      {
+        name: "Navy",
+        swatchColor: "#1e3a5f",
+        images: [
+          secretlyLatinaNavy6,
+          secretlyLatinaNavy5,
+          secretlyLatinaNavy1,
+          secretlyLatinaNavy4,
+          secretlyLatinaNavy3,
+          secretlyLatinaNavy2,
+        ],
+      },
+      {
+        name: "Lavender Blue",
+        swatchColor: "#7b9cb8",
+        images: [
+          secretlyLatinaLavender1,
+          secretlyLatinaLavender2,
+          secretlyLatinaLavender3,
+          secretlyLatinaLavender4,
+          secretlyLatinaLavender5,
+          secretlyLatinaLavender6,
+        ],
       },
     ],
-    defaultColorIndex: 0,
+    defaultColorIndex: 3,
     availableSizes: ["S", "M", "L", "XL", "XXL"],
     notes: "Unisex fit. True to size. 100% cotton.",
     inStock: true,
