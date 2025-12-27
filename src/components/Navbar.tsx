@@ -8,6 +8,7 @@ const SHOP_URL = "https://habibi-amigo.printify.me";
 const navItems = [
   { name: "Home", path: "/" },
   { name: "Designs", path: "/designs" },
+  { name: "Secret Designs", path: "/secret-designs" },
   { name: "About", path: "/about" },
   { name: "Shop", path: SHOP_URL, external: true },
   { name: "Contact", path: "/contact" },
