@@ -59,7 +59,7 @@ const DesignCard = ({ design }: DesignCardProps) => {
         </div>
 
         {/* Color Swatches */}
-        {design.colorVariations.length > 1 && (
+        {design.colorVariations.length >= 1 && (
           <div className="flex gap-1.5 mb-3">
             {design.colorVariations.map((color, index) => (
               <button
