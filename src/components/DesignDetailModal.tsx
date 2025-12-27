@@ -153,15 +153,6 @@ const DesignDetailModal = ({
           </div>
         </div>
 
-        {/* Notes */}
-        {design.notes && (
-          <div className="p-4 bg-muted/50 rounded-lg">
-            <p className="text-sm text-muted-foreground italic">
-              {design.notes}
-            </p>
-          </div>
-        )}
-
         {/* Shop Button */}
         <Button variant="premium" size="lg" className="w-full" asChild>
           <a href={SHOP_URL} target="_blank" rel="noopener noreferrer">
