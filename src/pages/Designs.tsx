@@ -224,11 +224,21 @@ import iLiedLavender4 from "@/assets/designs/i-lied-lavender-4.jpg";
 import iLiedLavender5 from "@/assets/designs/i-lied-lavender-5.jpg";
 import iLiedLavender6 from "@/assets/designs/i-lied-lavender-6.jpg";
 
-import asap1 from "@/assets/designs/asap-1.jpeg";
-import asap2 from "@/assets/designs/asap-2.jpeg";
-import asap3 from "@/assets/designs/asap-3.jpeg";
-import asap4 from "@/assets/designs/asap-4.jpeg";
-import asap5 from "@/assets/designs/asap-5.jpeg";
+// ASAP - White variant
+import asapWhite1 from "@/assets/designs/asap-white-1.jpg";
+import asapWhite2 from "@/assets/designs/asap-white-2.jpg";
+import asapWhite3 from "@/assets/designs/asap-white-3.jpg";
+import asapWhite4 from "@/assets/designs/asap-white-4.jpg";
+import asapWhite5 from "@/assets/designs/asap-white-5.jpg";
+import asapWhite6 from "@/assets/designs/asap-white-6.jpg";
+
+// ASAP - Black variant
+import asapBlack1 from "@/assets/designs/asap-black-1.jpg";
+import asapBlack2 from "@/assets/designs/asap-black-2.jpg";
+import asapBlack3 from "@/assets/designs/asap-black-3.jpg";
+import asapBlack4 from "@/assets/designs/asap-black-4.jpg";
+import asapBlack5 from "@/assets/designs/asap-black-5.jpg";
+import asapBlack6 from "@/assets/designs/asap-black-6.jpg";
 
 // ============================================
 // SHOP URL - Link to Printify store
@@ -549,19 +559,14 @@ const designs: Design[] = [
       "Redefining urgency one spritz at a time. For those whose priority list starts with good vibes.",
     colorVariations: [
       {
-        name: "Sunset Orange",
-        swatchColor: "#e87a3d",
-        images: [asap1, asap2],
-      },
-      {
         name: "White",
-        swatchColor: "#ffffff",
-        images: [asap3, asap4],
+        swatchColor: "#f5f5f5",
+        images: [asapWhite6, asapWhite5, asapWhite4, asapWhite3, asapWhite2, asapWhite1],
       },
       {
-        name: "Cream",
-        swatchColor: "#f5ebe0",
-        images: [asap5],
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [asapBlack6, asapBlack5, asapBlack4, asapBlack3, asapBlack2, asapBlack1],
       },
     ],
     defaultColorIndex: 0,
