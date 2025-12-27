@@ -251,7 +251,7 @@ const designs: Design[] = [
         ],
       },
     ],
-    defaultColorIndex: 3,
+    defaultColorIndex: 0,
     availableSizes: ["XS", "S", "M", "L", "XL"],
     notes: "Relaxed fit. Runs slightly large.",
     inStock: true,
