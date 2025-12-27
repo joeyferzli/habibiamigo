@@ -144,6 +144,14 @@ import exFanLavender4 from "@/assets/designs/ex-fan-lavender-4.jpg";
 import exFanLavender5 from "@/assets/designs/ex-fan-lavender-5.jpg";
 import exFanLavender6 from "@/assets/designs/ex-fan-lavender-6.jpg";
 
+// Ex Fan - Navy variant
+import exFanNavy1 from "@/assets/designs/ex-fan-navy-1.jpg";
+import exFanNavy2 from "@/assets/designs/ex-fan-navy-2.jpg";
+import exFanNavy3 from "@/assets/designs/ex-fan-navy-3.jpg";
+import exFanNavy4 from "@/assets/designs/ex-fan-navy-4.jpg";
+import exFanNavy5 from "@/assets/designs/ex-fan-navy-5.jpg";
+import exFanNavy6 from "@/assets/designs/ex-fan-navy-6.jpg";
+
 import stayCool1 from "@/assets/designs/stay-cool-1.jpeg";
 import stayCool2 from "@/assets/designs/stay-cool-2.jpeg";
 import stayCool3 from "@/assets/designs/stay-cool-3.jpeg";
@@ -385,6 +393,11 @@ const designs: Design[] = [
         name: "Lavender Blue",
         swatchColor: "#7b9cb8",
         images: [exFanLavender1, exFanLavender2, exFanLavender3, exFanLavender4, exFanLavender5, exFanLavender6],
+      },
+      {
+        name: "Navy",
+        swatchColor: "#1e3a5f",
+        images: [exFanNavy1, exFanNavy2, exFanNavy3, exFanNavy4, exFanNavy5, exFanNavy6],
       },
     ],
     defaultColorIndex: 0,
