@@ -72,11 +72,21 @@ import dressSpanishLavender4 from "@/assets/designs/dress-spanish-lavender-4.jpg
 import dressSpanishLavender5 from "@/assets/designs/dress-spanish-lavender-5.jpg";
 import dressSpanishLavender6 from "@/assets/designs/dress-spanish-lavender-6.jpg";
 
-import tequila1 from "@/assets/designs/tequila-1.jpeg";
-import tequila2 from "@/assets/designs/tequila-2.jpeg";
-import tequila3 from "@/assets/designs/tequila-3.jpeg";
-import tequila4 from "@/assets/designs/tequila-4.jpeg";
-import tequila5 from "@/assets/designs/tequila-5.jpeg";
+// Tequila - White variant
+import tequilaWhite1 from "@/assets/designs/tequila-white-1.jpg";
+import tequilaWhite2 from "@/assets/designs/tequila-white-2.jpg";
+import tequilaWhite3 from "@/assets/designs/tequila-white-3.jpg";
+import tequilaWhite4 from "@/assets/designs/tequila-white-4.jpg";
+import tequilaWhite5 from "@/assets/designs/tequila-white-5.jpg";
+import tequilaWhite6 from "@/assets/designs/tequila-white-6.jpg";
+
+// Tequila - Black variant
+import tequilaBlack1 from "@/assets/designs/tequila-black-1.jpg";
+import tequilaBlack2 from "@/assets/designs/tequila-black-2.jpg";
+import tequilaBlack3 from "@/assets/designs/tequila-black-3.jpg";
+import tequilaBlack4 from "@/assets/designs/tequila-black-4.jpg";
+import tequilaBlack5 from "@/assets/designs/tequila-black-5.jpg";
+import tequilaBlack6 from "@/assets/designs/tequila-black-6.jpg";
 
 import vermut1 from "@/assets/designs/vermut-1.jpeg";
 import vermut2 from "@/assets/designs/vermut-2.jpeg";
@@ -266,12 +276,12 @@ const designs: Design[] = [
       {
         name: "White",
         swatchColor: "#ffffff",
-        images: [tequila1, tequila2],
+        images: [tequilaWhite1, tequilaWhite2, tequilaWhite3, tequilaWhite4, tequilaWhite5, tequilaWhite6],
       },
       {
         name: "Black",
         swatchColor: "#1a1a1a",
-        images: [tequila3, tequila4],
+        images: [tequilaBlack6, tequilaBlack1, tequilaBlack2, tequilaBlack3, tequilaBlack4, tequilaBlack5],
       },
     ],
     defaultColorIndex: 0,
