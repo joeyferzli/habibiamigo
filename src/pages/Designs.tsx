@@ -192,11 +192,37 @@ import noGameNavy4 from "@/assets/designs/no-game-navy-4.jpg";
 import noGameNavy5 from "@/assets/designs/no-game-navy-5.jpg";
 import noGameNavy6 from "@/assets/designs/no-game-navy-6.jpg";
 
-import iLied1 from "@/assets/designs/i-lied-1.jpeg";
-import iLied2 from "@/assets/designs/i-lied-2.jpeg";
-import iLied3 from "@/assets/designs/i-lied-3.jpeg";
-import iLied4 from "@/assets/designs/i-lied-4.jpeg";
-import iLied5 from "@/assets/designs/i-lied-5.jpeg";
+// I Lied - White variant
+import iLiedWhite1 from "@/assets/designs/i-lied-white-1.jpg";
+import iLiedWhite2 from "@/assets/designs/i-lied-white-2.jpg";
+import iLiedWhite3 from "@/assets/designs/i-lied-white-3.jpg";
+import iLiedWhite4 from "@/assets/designs/i-lied-white-4.jpg";
+import iLiedWhite5 from "@/assets/designs/i-lied-white-5.jpg";
+import iLiedWhite6 from "@/assets/designs/i-lied-white-6.jpg";
+
+// I Lied - Black variant
+import iLiedBlack1 from "@/assets/designs/i-lied-black-1.jpg";
+import iLiedBlack2 from "@/assets/designs/i-lied-black-2.jpg";
+import iLiedBlack3 from "@/assets/designs/i-lied-black-3.jpg";
+import iLiedBlack4 from "@/assets/designs/i-lied-black-4.jpg";
+import iLiedBlack5 from "@/assets/designs/i-lied-black-5.jpg";
+import iLiedBlack6 from "@/assets/designs/i-lied-black-6.jpg";
+
+// I Lied - Navy variant
+import iLiedNavy1 from "@/assets/designs/i-lied-navy-1.jpg";
+import iLiedNavy2 from "@/assets/designs/i-lied-navy-2.jpg";
+import iLiedNavy3 from "@/assets/designs/i-lied-navy-3.jpg";
+import iLiedNavy4 from "@/assets/designs/i-lied-navy-4.jpg";
+import iLiedNavy5 from "@/assets/designs/i-lied-navy-5.jpg";
+import iLiedNavy6 from "@/assets/designs/i-lied-navy-6.jpg";
+
+// I Lied - Lavender variant
+import iLiedLavender1 from "@/assets/designs/i-lied-lavender-1.jpg";
+import iLiedLavender2 from "@/assets/designs/i-lied-lavender-2.jpg";
+import iLiedLavender3 from "@/assets/designs/i-lied-lavender-3.jpg";
+import iLiedLavender4 from "@/assets/designs/i-lied-lavender-4.jpg";
+import iLiedLavender5 from "@/assets/designs/i-lied-lavender-5.jpg";
+import iLiedLavender6 from "@/assets/designs/i-lied-lavender-6.jpg";
 
 import asap1 from "@/assets/designs/asap-1.jpeg";
 import asap2 from "@/assets/designs/asap-2.jpeg";
@@ -490,14 +516,24 @@ const designs: Design[] = [
       "The confession every house head needs to make. Because the bass drop never lies.",
     colorVariations: [
       {
-        name: "Black",
-        swatchColor: "#0f0f0f",
-        images: [iLied1, iLied2, iLied3],
+        name: "White",
+        swatchColor: "#f5f5f5",
+        images: [iLiedWhite1, iLiedWhite2, iLiedWhite3, iLiedWhite4, iLiedWhite5, iLiedWhite6],
       },
       {
-        name: "White",
-        swatchColor: "#ffffff",
-        images: [iLied4, iLied5],
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [iLiedBlack1, iLiedBlack2, iLiedBlack3, iLiedBlack4, iLiedBlack5, iLiedBlack6],
+      },
+      {
+        name: "Lavender Blue",
+        swatchColor: "#7b9cb8",
+        images: [iLiedLavender1, iLiedLavender2, iLiedLavender3, iLiedLavender4, iLiedLavender5, iLiedLavender6],
+      },
+      {
+        name: "Navy",
+        swatchColor: "#1e3a5f",
+        images: [iLiedNavy1, iLiedNavy2, iLiedNavy3, iLiedNavy4, iLiedNavy5, iLiedNavy6],
       },
     ],
     defaultColorIndex: 0,
