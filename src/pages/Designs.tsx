@@ -456,7 +456,7 @@ const designs: Design[] = [
       {
         name: "Black",
         swatchColor: "#1a1a1a",
-        images: [exFanBlack6, exFanBlack1, exFanBlack2, exFanBlack3, exFanBlack4, exFanBlack5],
+        images: [exFanBlack1, exFanBlack2, exFanBlack3, exFanBlack4, exFanBlack5],
       },
       {
         name: "Lavender Blue",
