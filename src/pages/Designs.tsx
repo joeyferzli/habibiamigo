@@ -337,12 +337,11 @@ const designs: Design[] = [
         name: "White",
         swatchColor: "#f5f5f5",
         images: [
-          dressSpanishWhite6,
-          dressSpanishWhite5,
-          whiteFront1,
-          whiteFront2,
-          whiteFront3,
+          dressSpanishWhite1,
+          dressSpanishWhite2,
+          dressSpanishWhite3,
           dressSpanishWhite4,
+          dressSpanishWhite5,
         ],
       },
       {
