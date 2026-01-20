@@ -348,7 +348,6 @@ const designs: Design[] = [
         name: "Black",
         swatchColor: "#1a1a1a",
         images: [
-          dressSpanishBlack6,
           dressSpanishBlack1,
           dressSpanishBlack2,
           dressSpanishBlack3,
