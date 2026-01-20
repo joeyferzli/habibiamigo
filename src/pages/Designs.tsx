@@ -240,6 +240,11 @@ import asapBlack4 from "@/assets/designs/asap-black-4.jpg";
 import asapBlack5 from "@/assets/designs/asap-black-5.jpg";
 import asapBlack6 from "@/assets/designs/asap-black-6.jpg";
 
+// Common white front photos (shared across all white variants)
+import whiteFront1 from "@/assets/designs/white-front-1.jpg";
+import whiteFront2 from "@/assets/designs/white-front-2.jpg";
+import whiteFront3 from "@/assets/designs/white-front-3.jpg";
+
 // ============================================
 // SHOP URL - Link to Printify store
 // ============================================
@@ -273,10 +278,10 @@ const designs: Design[] = [
         images: [
           secretlyLatinaWhite6,
           secretlyLatinaWhite5,
-          secretlyLatinaWhite1,
+          whiteFront1,
+          whiteFront2,
+          whiteFront3,
           secretlyLatinaWhite4,
-          secretlyLatinaWhite3,
-          secretlyLatinaWhite2,
         ],
       },
       {
@@ -333,11 +338,11 @@ const designs: Design[] = [
         swatchColor: "#f5f5f5",
         images: [
           dressSpanishWhite6,
-          dressSpanishWhite1,
-          dressSpanishWhite2,
-          dressSpanishWhite3,
-          dressSpanishWhite4,
           dressSpanishWhite5,
+          whiteFront1,
+          whiteFront2,
+          whiteFront3,
+          dressSpanishWhite4,
         ],
       },
       {
@@ -392,7 +397,7 @@ const designs: Design[] = [
       {
         name: "White",
         swatchColor: "#ffffff",
-        images: [tequilaWhite1, tequilaWhite2, tequilaWhite3, tequilaWhite4, tequilaWhite5, tequilaWhite6],
+        images: [tequilaWhite6, tequilaWhite5, whiteFront1, whiteFront2, whiteFront3, tequilaWhite4],
       },
       {
         name: "Black",
@@ -419,7 +424,7 @@ const designs: Design[] = [
       {
         name: "White",
         swatchColor: "#f5f5f5",
-        images: [vermutWhite1, vermutWhite2, vermutWhite3, vermutWhite4, vermutWhite5, vermutWhite6],
+        images: [vermutWhite6, vermutWhite5, whiteFront1, whiteFront2, whiteFront3, vermutWhite4],
       },
       {
         name: "Lavender Blue",
@@ -446,7 +451,7 @@ const designs: Design[] = [
       {
         name: "White",
         swatchColor: "#f5f5f5",
-        images: [exFanWhite6, exFanWhite1, exFanWhite2, exFanWhite3, exFanWhite4, exFanWhite5],
+        images: [exFanWhite6, exFanWhite5, whiteFront1, whiteFront2, whiteFront3, exFanWhite4],
       },
       {
         name: "Black",
@@ -496,7 +501,7 @@ const designs: Design[] = [
       {
         name: "White",
         swatchColor: "#f5f5f5",
-        images: [noGameWhite1, noGameWhite2, noGameWhite3, noGameWhite4, noGameWhite5, noGameWhite6],
+        images: [noGameWhite6, noGameWhite5, whiteFront1, whiteFront2, whiteFront3, noGameWhite4],
       },
       {
         name: "Black",
@@ -528,7 +533,7 @@ const designs: Design[] = [
       {
         name: "White",
         swatchColor: "#f5f5f5",
-        images: [iLiedWhite6, iLiedWhite5, iLiedWhite4, iLiedWhite3, iLiedWhite2, iLiedWhite1],
+        images: [iLiedWhite6, iLiedWhite5, whiteFront1, whiteFront2, whiteFront3, iLiedWhite4],
       },
       {
         name: "Black",
@@ -561,7 +566,7 @@ const designs: Design[] = [
       {
         name: "White",
         swatchColor: "#f5f5f5",
-        images: [asapWhite6, asapWhite5, asapWhite4, asapWhite3, asapWhite2, asapWhite1],
+        images: [asapWhite6, asapWhite5, whiteFront1, whiteFront2, whiteFront3, asapWhite4],
       },
       {
         name: "Black",
