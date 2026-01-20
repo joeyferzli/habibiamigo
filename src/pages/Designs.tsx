@@ -519,7 +519,13 @@ const designs: Design[] = [
       {
         name: "Lavender Blue",
         swatchColor: "#7b9cb8",
-        images: [noGameLavender1, noGameLavender2, noGameLavender3, noGameLavender4, noGameLavender5, noGameLavender6],
+        images: [
+          noGameLavender1,
+          noGameLavender2,
+          noGameLavender3,
+          noGameLavender4,
+          noGameLavender5,
+        ],
       },
       {
         name: "Navy",
