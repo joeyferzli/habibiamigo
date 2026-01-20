@@ -497,7 +497,13 @@ const designs: Design[] = [
       {
         name: "White",
         swatchColor: "#f5f5f5",
-        images: [noGameWhite6, noGameWhite5, whiteFront1, whiteFront2, whiteFront3, noGameWhite4],
+        images: [
+          noGameWhite1,
+          noGameWhite2,
+          noGameWhite3,
+          noGameWhite4,
+          noGameWhite5,
+        ],
       },
       {
         name: "Black",
