@@ -466,7 +466,7 @@ const designs: Design[] = [
       {
         name: "Navy",
         swatchColor: "#1e3a5f",
-        images: [exFanNavy6, exFanNavy1, exFanNavy2, exFanNavy3, exFanNavy4, exFanNavy5],
+        images: [exFanNavy1, exFanNavy2, exFanNavy3, exFanNavy4, exFanNavy5],
       },
     ],
     defaultColorIndex: 0,
