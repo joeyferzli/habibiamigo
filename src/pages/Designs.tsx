@@ -479,7 +479,13 @@ const designs: Design[] = [
       {
         name: "Black",
         swatchColor: "#1a1a1a",
-        images: [stayCoolBlack1, stayCoolBlack2, stayCoolBlack3, stayCoolBlack4, stayCoolBlack5, stayCoolBlack6],
+        images: [
+          stayCoolBlack1,
+          stayCoolBlack2,
+          stayCoolBlack3,
+          stayCoolBlack4,
+          stayCoolBlack5,
+        ],
       },
     ],
     defaultColorIndex: 0,
