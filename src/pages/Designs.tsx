@@ -359,7 +359,6 @@ const designs: Design[] = [
         name: "Navy",
         swatchColor: "#1e3a5f",
         images: [
-          dressSpanishNavy6,
           dressSpanishNavy1,
           dressSpanishNavy2,
           dressSpanishNavy3,
