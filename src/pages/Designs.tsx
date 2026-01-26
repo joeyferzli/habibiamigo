@@ -261,6 +261,14 @@ import notAnOptionNavy4 from "@/assets/designs/not-an-option-navy-4.jpg";
 import notAnOptionNavy5 from "@/assets/designs/not-an-option-navy-5.jpg";
 import notAnOptionNavy6 from "@/assets/designs/not-an-option-navy-6.jpg";
 
+// Not An Option - Lavender variant
+import notAnOptionLavender1 from "@/assets/designs/not-an-option-lavender-1.jpg";
+import notAnOptionLavender2 from "@/assets/designs/not-an-option-lavender-2.jpg";
+import notAnOptionLavender3 from "@/assets/designs/not-an-option-lavender-3.jpg";
+import notAnOptionLavender4 from "@/assets/designs/not-an-option-lavender-4.jpg";
+import notAnOptionLavender5 from "@/assets/designs/not-an-option-lavender-5.jpg";
+import notAnOptionLavender6 from "@/assets/designs/not-an-option-lavender-6.jpg";
+
 // ============================================
 // SHOP URL - Link to Printify store
 // ============================================
@@ -700,6 +708,18 @@ const designs: Design[] = [
           notAnOptionNavy4,
           notAnOptionNavy5,
           notAnOptionNavy6,
+        ],
+      },
+      {
+        name: "Lavender",
+        swatchColor: "#a8d4f0",
+        images: [
+          notAnOptionLavender1,
+          notAnOptionLavender2,
+          notAnOptionLavender3,
+          notAnOptionLavender4,
+          notAnOptionLavender5,
+          notAnOptionLavender6,
         ],
       },
     ],
