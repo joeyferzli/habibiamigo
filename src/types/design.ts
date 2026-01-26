@@ -31,6 +31,6 @@ export interface Design {
   inStock: boolean;
 }
 
-export type Size = "XS" | "S" | "M" | "L" | "XL" | "XXL";
+export type Size = "S" | "M" | "L" | "XL";
 
-export const ALL_SIZES: Size[] = ["XS", "S", "M", "L", "XL", "XXL"];
+export const ALL_SIZES: Size[] = ["S", "M", "L", "XL"];

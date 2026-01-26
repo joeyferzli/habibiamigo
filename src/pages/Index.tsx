@@ -103,7 +103,7 @@ const featuredDesigns: Design[] = [
       },
     ],
     defaultColorIndex: 0,
-    availableSizes: ["S", "M", "L", "XL", "XXL"],
+    availableSizes: ["S", "M", "L", "XL"],
     inStock: true,
   },
   {
@@ -117,7 +117,7 @@ const featuredDesigns: Design[] = [
       { name: "Navy", swatchColor: "#1e3a5f", images: [dressSpanishNavy6, dressSpanishNavy1, dressSpanishNavy2, dressSpanishNavy3, dressSpanishNavy4, dressSpanishNavy5] },
     ],
     defaultColorIndex: 0,
-    availableSizes: ["XS", "S", "M", "L", "XL"],
+    availableSizes: ["S", "M", "L", "XL"],
     inStock: true,
   },
   {
@@ -130,7 +130,7 @@ const featuredDesigns: Design[] = [
       { name: "Black", swatchColor: "#1a1a1a", images: [tequilaBlack6, tequilaBlack1, tequilaBlack2, tequilaBlack3, tequilaBlack4, tequilaBlack5] },
     ],
     defaultColorIndex: 0,
-    availableSizes: ["S", "M", "L", "XL", "XXL"],
+    availableSizes: ["S", "M", "L", "XL"],
     inStock: true,
   },
   {
@@ -144,7 +144,7 @@ const featuredDesigns: Design[] = [
       { name: "Black", swatchColor: "#1a1a1a", images: [vermutBlack1, vermutBlack2, vermutBlack3, vermutBlack4, vermutBlack5, vermutBlack6] },
     ],
     defaultColorIndex: 0,
-    availableSizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    availableSizes: ["S", "M", "L", "XL"],
     inStock: true,
   },
 ];
