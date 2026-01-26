@@ -863,7 +863,7 @@ const designs: Design[] = [
       {
         name: "Black",
         swatchColor: "#1a1a1a",
-        images: [iLiedBlack6, iLiedBlack5, iLiedBlack4, iLiedBlack3, iLiedBlack2, iLiedBlack1],
+        images: [iLiedBlack1, iLiedBlack2, iLiedBlack3, iLiedBlack4, iLiedBlack5, iLiedBlack6],
       },
       {
         name: "Navy",
