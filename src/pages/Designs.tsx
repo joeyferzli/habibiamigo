@@ -828,7 +828,7 @@ const designs: Design[] = [
   {
     id: "her-or-the-boys",
     name: "Her or the Boys",
-    caption: "Live is made by difficult decisions",
+    caption: "Life is made by difficult decisions",
     description: "We chose those who stayed with us through all of it. This is for the boys.",
     colorVariations: [
       {
