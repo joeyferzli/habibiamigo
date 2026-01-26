@@ -269,6 +269,14 @@ import notAnOptionLavender4 from "@/assets/designs/not-an-option-lavender-4.jpg"
 import notAnOptionLavender5 from "@/assets/designs/not-an-option-lavender-5.jpg";
 import notAnOptionLavender6 from "@/assets/designs/not-an-option-lavender-6.jpg";
 
+// You Only Live Once - White variant
+import yoloWhite1 from "@/assets/designs/yolo-white-1.jpg";
+import yoloWhite2 from "@/assets/designs/yolo-white-2.jpg";
+import yoloWhite3 from "@/assets/designs/yolo-white-3.jpg";
+import yoloWhite4 from "@/assets/designs/yolo-white-4.jpg";
+import yoloWhite5 from "@/assets/designs/yolo-white-5.jpg";
+import yoloWhite6 from "@/assets/designs/yolo-white-6.jpg";
+
 // ============================================
 // SHOP URL - Link to Printify store
 // ============================================
@@ -728,20 +736,27 @@ const designs: Design[] = [
     inStock: true,
   },
   {
-    id: "new-design-3",
-    name: "New Design 3",
-    caption: "Coming soon",
-    description: "Description for new design 3.",
+    id: "you-only-live-once",
+    name: "You Only Live Once",
+    caption: "Use ChatGPT to translate it",
+    description: "We promise you will like it.",
     colorVariations: [
       {
         name: "White",
         swatchColor: "#f5f5f5",
-        images: [whiteFront1, whiteFront2, whiteFront3],
+        images: [
+          yoloWhite1,
+          yoloWhite2,
+          yoloWhite3,
+          yoloWhite4,
+          yoloWhite5,
+          yoloWhite6,
+        ],
       },
     ],
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
-    inStock: false,
+    inStock: true,
   },
   {
     id: "new-design-4",
