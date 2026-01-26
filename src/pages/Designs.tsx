@@ -659,7 +659,7 @@ const designs: Design[] = [
       {
         name: "White",
         swatchColor: "#f5f5f5",
-        images: [vermutWhite6, vermutWhite5, whiteFront1, whiteFront2, whiteFront3, vermutWhite4],
+        images: [vermutWhite1, vermutWhite2, vermutWhite3, vermutWhite4, vermutWhite5, vermutWhite6],
       },
       {
         name: "Black",
