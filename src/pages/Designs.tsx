@@ -365,6 +365,14 @@ import favNotifNavy4 from "@/assets/designs/fav-notif-navy-4.jpg";
 import favNotifNavy5 from "@/assets/designs/fav-notif-navy-5.jpg";
 import favNotifNavy6 from "@/assets/designs/fav-notif-navy-6.jpg";
 
+// Favorite Notification - Baby Blue variant
+import favNotifBabyblue1 from "@/assets/designs/fav-notif-babyblue-1.jpg";
+import favNotifBabyblue2 from "@/assets/designs/fav-notif-babyblue-2.jpg";
+import favNotifBabyblue3 from "@/assets/designs/fav-notif-babyblue-3.jpg";
+import favNotifBabyblue4 from "@/assets/designs/fav-notif-babyblue-4.jpg";
+import favNotifBabyblue5 from "@/assets/designs/fav-notif-babyblue-5.jpg";
+import favNotifBabyblue6 from "@/assets/designs/fav-notif-babyblue-6.jpg";
+
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
 // DESIGNS DATA - FULLY EDITABLE
@@ -994,7 +1002,14 @@ const designs: Design[] = [
       {
         name: "Baby Blue",
         swatchColor: "#a8d4f0",
-        images: [whiteFront1, whiteFront2, whiteFront3],
+        images: [
+          favNotifBabyblue1,
+          favNotifBabyblue2,
+          favNotifBabyblue3,
+          favNotifBabyblue4,
+          favNotifBabyblue5,
+          favNotifBabyblue6,
+        ],
       },
     ],
     defaultColorIndex: 0,
