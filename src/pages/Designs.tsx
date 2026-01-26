@@ -63,6 +63,14 @@ import secretlyLatinaNavy4 from "@/assets/designs/secretly-latina-navy-4.jpg";
 import secretlyLatinaNavy5 from "@/assets/designs/secretly-latina-navy-5.jpg";
 import secretlyLatinaNavy6 from "@/assets/designs/secretly-latina-navy-6.jpg";
 
+// Secretly Latina - Baby Blue variant
+import secretlyLatinaBabyblue1 from "@/assets/designs/secretly-latina-babyblue-1.jpg";
+import secretlyLatinaBabyblue2 from "@/assets/designs/secretly-latina-babyblue-2.jpg";
+import secretlyLatinaBabyblue3 from "@/assets/designs/secretly-latina-babyblue-3.jpg";
+import secretlyLatinaBabyblue4 from "@/assets/designs/secretly-latina-babyblue-4.jpg";
+import secretlyLatinaBabyblue5 from "@/assets/designs/secretly-latina-babyblue-5.jpg";
+import secretlyLatinaBabyblue6 from "@/assets/designs/secretly-latina-babyblue-6.jpg";
+
 // Dress Spanish - White variant
 import dressSpanishWhite1 from "@/assets/designs/dress-spanish-white-1.jpg";
 import dressSpanishWhite2 from "@/assets/designs/dress-spanish-white-2.jpg";
@@ -529,6 +537,18 @@ const designs: Design[] = [
           secretlyLatinaNavy4,
           secretlyLatinaNavy3,
           secretlyLatinaNavy2,
+        ],
+      },
+      {
+        name: "Baby Blue",
+        swatchColor: "#a8d4f0",
+        images: [
+          secretlyLatinaBabyblue6,
+          secretlyLatinaBabyblue5,
+          secretlyLatinaBabyblue1,
+          secretlyLatinaBabyblue2,
+          secretlyLatinaBabyblue3,
+          secretlyLatinaBabyblue4,
         ],
       },
     ],
