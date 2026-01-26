@@ -309,7 +309,14 @@ import herOrBoysWhite4 from "@/assets/designs/her-or-boys-white-4.jpg";
 import herOrBoysWhite5 from "@/assets/designs/her-or-boys-white-5.jpg";
 import herOrBoysWhite6 from "@/assets/designs/her-or-boys-white-6.jpg";
 
-// SHOP URL - Link to Printify store
+// Her or the Boys - Black variant
+import herOrBoysBlack1 from "@/assets/designs/her-or-boys-black-1.jpg";
+import herOrBoysBlack2 from "@/assets/designs/her-or-boys-black-2.jpg";
+import herOrBoysBlack3 from "@/assets/designs/her-or-boys-black-3.jpg";
+import herOrBoysBlack4 from "@/assets/designs/her-or-boys-black-4.jpg";
+import herOrBoysBlack5 from "@/assets/designs/her-or-boys-black-5.jpg";
+import herOrBoysBlack6 from "@/assets/designs/her-or-boys-black-6.jpg";
+
 // ============================================
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
@@ -841,6 +848,18 @@ const designs: Design[] = [
           herOrBoysWhite4,
           herOrBoysWhite5,
           herOrBoysWhite6,
+        ],
+      },
+      {
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [
+          herOrBoysBlack1,
+          herOrBoysBlack2,
+          herOrBoysBlack3,
+          herOrBoysBlack4,
+          herOrBoysBlack5,
+          herOrBoysBlack6,
         ],
       },
     ],
