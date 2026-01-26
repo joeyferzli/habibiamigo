@@ -1189,20 +1189,36 @@ const designs: Design[] = [
     season: "Season 1",
   },
   {
-    id: "new-design-7",
-    name: "New Design 7",
-    caption: "Coming soon",
-    description: "Description for new design 7.",
+    id: "get-married-or-afters",
+    name: "Get Married? Or Afters?",
+    caption: "Life is riddled with difficult choices.",
+    description: "Choose wisely, my friends.",
     colorVariations: [
       {
         name: "White",
         swatchColor: "#f5f5f5",
         images: [whiteFront1, whiteFront2, whiteFront3],
       },
+      {
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [noGameBlack1, noGameBlack2, noGameBlack3],
+      },
+      {
+        name: "Navy",
+        swatchColor: "#1e3a5f",
+        images: [exFanNavy1, exFanNavy2, exFanNavy3],
+      },
+      {
+        name: "Baby Blue",
+        swatchColor: "#a8d4f0",
+        images: [dressSpanishBabyblue1, dressSpanishBabyblue2, dressSpanishBabyblue3],
+      },
     ],
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
-    inStock: false,
+    inStock: true,
+    season: "Season 1",
   },
 ];
 
