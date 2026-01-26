@@ -237,6 +237,14 @@ import spanishGirlsNavy4 from "@/assets/designs/spanish-girls-navy-4.jpg";
 import spanishGirlsNavy5 from "@/assets/designs/spanish-girls-navy-5.jpg";
 import spanishGirlsNavy6 from "@/assets/designs/spanish-girls-navy-6.jpg";
 
+// Not An Option - White variant
+import notAnOptionWhite1 from "@/assets/designs/not-an-option-white-1.jpg";
+import notAnOptionWhite2 from "@/assets/designs/not-an-option-white-2.jpg";
+import notAnOptionWhite3 from "@/assets/designs/not-an-option-white-3.jpg";
+import notAnOptionWhite4 from "@/assets/designs/not-an-option-white-4.jpg";
+import notAnOptionWhite5 from "@/assets/designs/not-an-option-white-5.jpg";
+import notAnOptionWhite6 from "@/assets/designs/not-an-option-white-6.jpg";
+
 // ============================================
 // SHOP URL - Link to Printify store
 // ============================================
@@ -637,20 +645,27 @@ const designs: Design[] = [
     inStock: true,
   },
   {
-    id: "new-design-2",
-    name: "New Design 2",
-    caption: "Coming soon",
-    description: "Description for new design 2.",
+    id: "not-an-option",
+    name: "No Soy Una Opción, Soy Tu Tremenda Oportunidad",
+    caption: "The best investment you'll make",
+    description: "I am the best investment you will make. My ROI is out of this world. Don't miss this opportunity.",
     colorVariations: [
       {
         name: "White",
         swatchColor: "#f5f5f5",
-        images: [whiteFront1, whiteFront2, whiteFront3],
+        images: [
+          notAnOptionWhite1,
+          notAnOptionWhite2,
+          notAnOptionWhite3,
+          notAnOptionWhite4,
+          notAnOptionWhite5,
+          notAnOptionWhite6,
+        ],
       },
     ],
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
-    inStock: false,
+    inStock: true,
   },
   {
     id: "new-design-3",
