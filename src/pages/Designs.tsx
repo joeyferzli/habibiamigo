@@ -276,6 +276,14 @@ import whiteFront1 from "@/assets/designs/white-front-1.jpg";
 import whiteFront2 from "@/assets/designs/white-front-2.jpg";
 import whiteFront3 from "@/assets/designs/white-front-3.jpg";
 
+// Get Married? Or Afters? - White variant
+import getMarriedWhite1 from "@/assets/designs/get-married-white-1.jpg";
+import getMarriedWhite2 from "@/assets/designs/get-married-white-2.jpg";
+import getMarriedWhite3 from "@/assets/designs/get-married-white-3.jpg";
+import getMarriedWhite4 from "@/assets/designs/get-married-white-4.jpg";
+import getMarriedWhite5 from "@/assets/designs/get-married-white-5.jpg";
+import getMarriedWhite6 from "@/assets/designs/get-married-white-6.jpg";
+
 // Spanish Girls Are Always Right - White variant
 import spanishGirlsWhite1 from "@/assets/designs/spanish-girls-white-1.jpg";
 import spanishGirlsWhite2 from "@/assets/designs/spanish-girls-white-2.jpg";
@@ -1197,7 +1205,7 @@ const designs: Design[] = [
       {
         name: "White",
         swatchColor: "#f5f5f5",
-        images: [whiteFront1, whiteFront2, whiteFront3],
+        images: [getMarriedWhite1, getMarriedWhite2, getMarriedWhite3, getMarriedWhite4, getMarriedWhite5, getMarriedWhite6],
       },
       {
         name: "Black",
