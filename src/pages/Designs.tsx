@@ -349,6 +349,14 @@ import favNotifWhite4 from "@/assets/designs/fav-notif-white-4.jpg";
 import favNotifWhite5 from "@/assets/designs/fav-notif-white-5.jpg";
 import favNotifWhite6 from "@/assets/designs/fav-notif-white-6.jpg";
 
+// Favorite Notification - Black variant
+import favNotifBlack1 from "@/assets/designs/fav-notif-black-1.jpg";
+import favNotifBlack2 from "@/assets/designs/fav-notif-black-2.jpg";
+import favNotifBlack3 from "@/assets/designs/fav-notif-black-3.jpg";
+import favNotifBlack4 from "@/assets/designs/fav-notif-black-4.jpg";
+import favNotifBlack5 from "@/assets/designs/fav-notif-black-5.jpg";
+import favNotifBlack6 from "@/assets/designs/fav-notif-black-6.jpg";
+
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
 // DESIGNS DATA - FULLY EDITABLE
@@ -954,7 +962,14 @@ const designs: Design[] = [
       {
         name: "Black",
         swatchColor: "#1a1a1a",
-        images: [whiteFront1, whiteFront2, whiteFront3],
+        images: [
+          favNotifBlack1,
+          favNotifBlack2,
+          favNotifBlack3,
+          favNotifBlack4,
+          favNotifBlack5,
+          favNotifBlack6,
+        ],
       },
       {
         name: "Navy",
