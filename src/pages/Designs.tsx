@@ -56,6 +56,14 @@ import dressSpanishNavy4 from "@/assets/designs/dress-spanish-navy-4.jpg";
 import dressSpanishNavy5 from "@/assets/designs/dress-spanish-navy-5.jpg";
 import dressSpanishNavy6 from "@/assets/designs/dress-spanish-navy-6.jpg";
 
+// Dress Spanish - Baby Blue variant
+import dressSpanishBabyblue1 from "@/assets/designs/dress-spanish-babyblue-1.jpg";
+import dressSpanishBabyblue2 from "@/assets/designs/dress-spanish-babyblue-2.jpg";
+import dressSpanishBabyblue3 from "@/assets/designs/dress-spanish-babyblue-3.jpg";
+import dressSpanishBabyblue4 from "@/assets/designs/dress-spanish-babyblue-4.jpg";
+import dressSpanishBabyblue5 from "@/assets/designs/dress-spanish-babyblue-5.jpg";
+import dressSpanishBabyblue6 from "@/assets/designs/dress-spanish-babyblue-6.jpg";
+
 // Tequila - White variant
 import tequilaWhite1 from "@/assets/designs/tequila-white-1.jpg";
 import tequilaWhite2 from "@/assets/designs/tequila-white-2.jpg";
@@ -307,6 +315,18 @@ const designs: Design[] = [
           dressSpanishNavy4,
           dressSpanishNavy5,
           dressSpanishNavy6,
+        ],
+      },
+      {
+        name: "Baby Blue",
+        swatchColor: "#a8d4f0",
+        images: [
+          dressSpanishBabyblue1,
+          dressSpanishBabyblue2,
+          dressSpanishBabyblue3,
+          dressSpanishBabyblue4,
+          dressSpanishBabyblue5,
+          dressSpanishBabyblue6,
         ],
       },
     ],
