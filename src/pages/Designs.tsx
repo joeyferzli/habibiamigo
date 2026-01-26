@@ -494,7 +494,7 @@ const designs: Design[] = [
     ],
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
-    inStock: false,
+    inStock: true,
   },
   {
     id: "secretly-latina",
