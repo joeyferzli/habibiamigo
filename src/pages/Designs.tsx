@@ -143,6 +143,14 @@ import vermutNavy4 from "@/assets/designs/vermut-navy-4.jpg";
 import vermutNavy5 from "@/assets/designs/vermut-navy-5.jpg";
 import vermutNavy6 from "@/assets/designs/vermut-navy-6.jpg";
 
+// Vermut - Baby Blue variant
+import vermutBabyblue1 from "@/assets/designs/vermut-babyblue-1.jpg";
+import vermutBabyblue2 from "@/assets/designs/vermut-babyblue-2.jpg";
+import vermutBabyblue3 from "@/assets/designs/vermut-babyblue-3.jpg";
+import vermutBabyblue4 from "@/assets/designs/vermut-babyblue-4.jpg";
+import vermutBabyblue5 from "@/assets/designs/vermut-babyblue-5.jpg";
+import vermutBabyblue6 from "@/assets/designs/vermut-babyblue-6.jpg";
+
 // Ex Fan - White variant
 import exFanWhite1 from "@/assets/designs/ex-fan-white-1.jpg";
 import exFanWhite2 from "@/assets/designs/ex-fan-white-2.jpg";
@@ -665,6 +673,11 @@ const designs: Design[] = [
         name: "Black",
         swatchColor: "#1a1a1a",
         images: [vermutBlack1, vermutBlack2, vermutBlack3, vermutBlack4, vermutBlack5, vermutBlack6],
+      },
+      {
+        name: "Baby Blue",
+        swatchColor: "#a8d4f0",
+        images: [vermutBabyblue1, vermutBabyblue2, vermutBabyblue3, vermutBabyblue4, vermutBabyblue5, vermutBabyblue6],
       },
     ],
     defaultColorIndex: 0,
