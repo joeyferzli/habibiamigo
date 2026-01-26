@@ -253,6 +253,14 @@ import notAnOptionBlack4 from "@/assets/designs/not-an-option-black-4.jpg";
 import notAnOptionBlack5 from "@/assets/designs/not-an-option-black-5.jpg";
 import notAnOptionBlack6 from "@/assets/designs/not-an-option-black-6.jpg";
 
+// Not An Option - Navy variant
+import notAnOptionNavy1 from "@/assets/designs/not-an-option-navy-1.jpg";
+import notAnOptionNavy2 from "@/assets/designs/not-an-option-navy-2.jpg";
+import notAnOptionNavy3 from "@/assets/designs/not-an-option-navy-3.jpg";
+import notAnOptionNavy4 from "@/assets/designs/not-an-option-navy-4.jpg";
+import notAnOptionNavy5 from "@/assets/designs/not-an-option-navy-5.jpg";
+import notAnOptionNavy6 from "@/assets/designs/not-an-option-navy-6.jpg";
+
 // ============================================
 // SHOP URL - Link to Printify store
 // ============================================
@@ -680,6 +688,18 @@ const designs: Design[] = [
           notAnOptionBlack4,
           notAnOptionBlack5,
           notAnOptionBlack6,
+        ],
+      },
+      {
+        name: "Navy",
+        swatchColor: "#1e3a5f",
+        images: [
+          notAnOptionNavy1,
+          notAnOptionNavy2,
+          notAnOptionNavy3,
+          notAnOptionNavy4,
+          notAnOptionNavy5,
+          notAnOptionNavy6,
         ],
       },
     ],
