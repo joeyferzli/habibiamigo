@@ -317,7 +317,14 @@ import herOrBoysBlack4 from "@/assets/designs/her-or-boys-black-4.jpg";
 import herOrBoysBlack5 from "@/assets/designs/her-or-boys-black-5.jpg";
 import herOrBoysBlack6 from "@/assets/designs/her-or-boys-black-6.jpg";
 
-// ============================================
+// Her or the Boys - Navy variant
+import herOrBoysNavy1 from "@/assets/designs/her-or-boys-navy-1.jpg";
+import herOrBoysNavy2 from "@/assets/designs/her-or-boys-navy-2.jpg";
+import herOrBoysNavy3 from "@/assets/designs/her-or-boys-navy-3.jpg";
+import herOrBoysNavy4 from "@/assets/designs/her-or-boys-navy-4.jpg";
+import herOrBoysNavy5 from "@/assets/designs/her-or-boys-navy-5.jpg";
+import herOrBoysNavy6 from "@/assets/designs/her-or-boys-navy-6.jpg";
+
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
 // ============================================
@@ -860,6 +867,18 @@ const designs: Design[] = [
           herOrBoysBlack4,
           herOrBoysBlack5,
           herOrBoysBlack6,
+        ],
+      },
+      {
+        name: "Navy",
+        swatchColor: "#1e3a5f",
+        images: [
+          herOrBoysNavy1,
+          herOrBoysNavy2,
+          herOrBoysNavy3,
+          herOrBoysNavy4,
+          herOrBoysNavy5,
+          herOrBoysNavy6,
         ],
       },
     ],
