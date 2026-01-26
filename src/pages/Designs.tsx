@@ -341,6 +341,14 @@ import herOrBoysBabyblue4 from "@/assets/designs/her-or-boys-babyblue-4.jpg";
 import herOrBoysBabyblue5 from "@/assets/designs/her-or-boys-babyblue-5.jpg";
 import herOrBoysBabyblue6 from "@/assets/designs/her-or-boys-babyblue-6.jpg";
 
+// Favorite Notification - White variant
+import favNotifWhite1 from "@/assets/designs/fav-notif-white-1.jpg";
+import favNotifWhite2 from "@/assets/designs/fav-notif-white-2.jpg";
+import favNotifWhite3 from "@/assets/designs/fav-notif-white-3.jpg";
+import favNotifWhite4 from "@/assets/designs/fav-notif-white-4.jpg";
+import favNotifWhite5 from "@/assets/designs/fav-notif-white-5.jpg";
+import favNotifWhite6 from "@/assets/designs/fav-notif-white-6.jpg";
+
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
 // DESIGNS DATA - FULLY EDITABLE
@@ -934,7 +942,14 @@ const designs: Design[] = [
       {
         name: "White",
         swatchColor: "#f5f5f5",
-        images: [whiteFront1, whiteFront2, whiteFront3],
+        images: [
+          favNotifWhite1,
+          favNotifWhite2,
+          favNotifWhite3,
+          favNotifWhite4,
+          favNotifWhite5,
+          favNotifWhite6,
+        ],
       },
       {
         name: "Black",
