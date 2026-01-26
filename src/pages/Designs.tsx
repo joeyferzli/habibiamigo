@@ -926,14 +926,29 @@ const designs: Design[] = [
     inStock: true,
   },
   {
-    id: "new-design-5",
-    name: "New Design 5",
-    caption: "Coming soon",
-    description: "Description for new design 5.",
+    id: "favorite-notification",
+    name: "You Are My Favorite Notification",
+    caption: "I love when you text me",
+    description: "For those who light up every time their phone buzzes with that special someone's name.",
     colorVariations: [
       {
         name: "White",
         swatchColor: "#f5f5f5",
+        images: [whiteFront1, whiteFront2, whiteFront3],
+      },
+      {
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [whiteFront1, whiteFront2, whiteFront3],
+      },
+      {
+        name: "Navy",
+        swatchColor: "#1e3a5f",
+        images: [whiteFront1, whiteFront2, whiteFront3],
+      },
+      {
+        name: "Baby Blue",
+        swatchColor: "#a8d4f0",
         images: [whiteFront1, whiteFront2, whiteFront3],
       },
     ],
