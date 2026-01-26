@@ -29,7 +29,12 @@ export interface Design {
   notes?: string;
   /** Stock status */
   inStock: boolean;
+  /** Season collection (e.g., "Season 1", "Season 2") */
+  season?: string;
 }
+
+export const SEASONS = ["Season 1"] as const;
+export type Season = typeof SEASONS[number];
 
 export type Size = "S" | "M" | "L" | "XL";
 
