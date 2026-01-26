@@ -293,6 +293,14 @@ import yoloNavy4 from "@/assets/designs/yolo-navy-4.jpg";
 import yoloNavy5 from "@/assets/designs/yolo-navy-5.jpg";
 import yoloNavy6 from "@/assets/designs/yolo-navy-6.jpg";
 
+// You Only Live Once - Baby Blue variant
+import yoloBabyblue1 from "@/assets/designs/yolo-babyblue-1.jpg";
+import yoloBabyblue2 from "@/assets/designs/yolo-babyblue-2.jpg";
+import yoloBabyblue3 from "@/assets/designs/yolo-babyblue-3.jpg";
+import yoloBabyblue4 from "@/assets/designs/yolo-babyblue-4.jpg";
+import yoloBabyblue5 from "@/assets/designs/yolo-babyblue-5.jpg";
+import yoloBabyblue6 from "@/assets/designs/yolo-babyblue-6.jpg";
+
 // ============================================
 // SHOP URL - Link to Printify store
 // ============================================
@@ -791,6 +799,18 @@ const designs: Design[] = [
           yoloNavy4,
           yoloNavy5,
           yoloNavy6,
+        ],
+      },
+      {
+        name: "Baby Blue",
+        swatchColor: "#a8d4f0",
+        images: [
+          yoloBabyblue1,
+          yoloBabyblue2,
+          yoloBabyblue3,
+          yoloBabyblue4,
+          yoloBabyblue5,
+          yoloBabyblue6,
         ],
       },
     ],
