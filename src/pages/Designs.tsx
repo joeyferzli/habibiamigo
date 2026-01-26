@@ -277,6 +277,14 @@ import yoloWhite4 from "@/assets/designs/yolo-white-4.jpg";
 import yoloWhite5 from "@/assets/designs/yolo-white-5.jpg";
 import yoloWhite6 from "@/assets/designs/yolo-white-6.jpg";
 
+// You Only Live Once - Black variant
+import yoloBlack1 from "@/assets/designs/yolo-black-1.jpg";
+import yoloBlack2 from "@/assets/designs/yolo-black-2.jpg";
+import yoloBlack3 from "@/assets/designs/yolo-black-3.jpg";
+import yoloBlack4 from "@/assets/designs/yolo-black-4.jpg";
+import yoloBlack5 from "@/assets/designs/yolo-black-5.jpg";
+import yoloBlack6 from "@/assets/designs/yolo-black-6.jpg";
+
 // ============================================
 // SHOP URL - Link to Printify store
 // ============================================
@@ -751,6 +759,18 @@ const designs: Design[] = [
           yoloWhite4,
           yoloWhite5,
           yoloWhite6,
+        ],
+      },
+      {
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [
+          yoloBlack1,
+          yoloBlack2,
+          yoloBlack3,
+          yoloBlack4,
+          yoloBlack5,
+          yoloBlack6,
         ],
       },
     ],
