@@ -128,6 +128,14 @@ import exFanNavy4 from "@/assets/designs/ex-fan-navy-4.jpg";
 import exFanNavy5 from "@/assets/designs/ex-fan-navy-5.jpg";
 import exFanNavy6 from "@/assets/designs/ex-fan-navy-6.jpg";
 
+// Ex Fan - Baby Blue variant
+import exFanBabyblue1 from "@/assets/designs/ex-fan-babyblue-1.jpg";
+import exFanBabyblue2 from "@/assets/designs/ex-fan-babyblue-2.jpg";
+import exFanBabyblue3 from "@/assets/designs/ex-fan-babyblue-3.jpg";
+import exFanBabyblue4 from "@/assets/designs/ex-fan-babyblue-4.jpg";
+import exFanBabyblue5 from "@/assets/designs/ex-fan-babyblue-5.jpg";
+import exFanBabyblue6 from "@/assets/designs/ex-fan-babyblue-6.jpg";
+
 // Stay Cool - Black variant
 import stayCoolBlack1 from "@/assets/designs/stay-cool-black-1.jpg";
 import stayCoolBlack2 from "@/assets/designs/stay-cool-black-2.jpg";
@@ -529,6 +537,18 @@ const designs: Design[] = [
         name: "Navy",
         swatchColor: "#1e3a5f",
         images: [exFanNavy1, exFanNavy2, exFanNavy3, exFanNavy4, exFanNavy5],
+      },
+      {
+        name: "Baby Blue",
+        swatchColor: "#a8d4f0",
+        images: [
+          exFanBabyblue1,
+          exFanBabyblue2,
+          exFanBabyblue3,
+          exFanBabyblue4,
+          exFanBabyblue5,
+          exFanBabyblue6,
+        ],
       },
     ],
     defaultColorIndex: 0,
