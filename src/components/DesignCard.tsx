@@ -9,8 +9,9 @@ interface DesignCardProps {
 
 const DesignCard = ({ design }: DesignCardProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedColorIndex, setSelectedColorIndex] = useState(
-    design.defaultColorIndex
+  // Randomize initial color on each mount for dynamic display
+  const [selectedColorIndex, setSelectedColorIndex] = useState(() =>
+    Math.floor(Math.random() * design.colorVariations.length)
   );
 
   const currentColor = design.colorVariations[selectedColorIndex];

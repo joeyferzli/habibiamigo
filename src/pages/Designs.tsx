@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import DesignCard from "@/components/DesignCard";
-import { Design } from "@/types/design";
+import { Design, SEASONS } from "@/types/design";
 
 // ============================================
 // DESIGN IMAGES - Import all images here
@@ -495,6 +495,7 @@ const designs: Design[] = [
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
     inStock: true,
+    season: "Season 1",
   },
   {
     id: "secretly-latina",
@@ -556,6 +557,7 @@ const designs: Design[] = [
     availableSizes: ["S", "M", "L", "XL"],
     notes: "Unisex fit. True to size. 100% cotton.",
     inStock: true,
+    season: "Season 1",
   },
   {
     id: "dress-spanish",
@@ -617,6 +619,7 @@ const designs: Design[] = [
     availableSizes: ["S", "M", "L", "XL"],
     notes: "Relaxed fit. Runs slightly large.",
     inStock: true,
+    season: "Season 1",
   },
   {
     id: "tequila",
@@ -639,6 +642,7 @@ const designs: Design[] = [
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
     inStock: true,
+    season: "Season 1",
   },
   {
     id: "vermut",
@@ -666,6 +670,7 @@ const designs: Design[] = [
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
     inStock: true,
+    season: "Season 1",
   },
   {
     id: "ex-fan",
@@ -705,6 +710,7 @@ const designs: Design[] = [
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
     inStock: true,
+    season: "Season 1",
   },
   {
     id: "stay-cool",
@@ -729,6 +735,7 @@ const designs: Design[] = [
     availableSizes: ["S", "M", "L", "XL"],
     notes: "Oversized fit. Size down for regular fit.",
     inStock: true,
+    season: "Season 1",
   },
   {
     id: "no-game",
@@ -786,6 +793,7 @@ const designs: Design[] = [
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
     inStock: true,
+    season: "Season 1",
   },
   {
     id: "i-lied",
@@ -814,6 +822,7 @@ const designs: Design[] = [
     availableSizes: ["S", "M", "L", "XL"],
     notes: "Festival-ready. Lightweight cotton.",
     inStock: true,
+    season: "Season 1",
   },
   {
     id: "asap",
@@ -848,6 +857,7 @@ const designs: Design[] = [
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
     inStock: true,
+    season: "Season 1",
   },
   // ============================================
   // NEW DESIGNS - Add images and details below
@@ -910,6 +920,7 @@ const designs: Design[] = [
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
     inStock: true,
+    season: "Season 1",
   },
   {
     id: "not-an-option",
@@ -969,6 +980,7 @@ const designs: Design[] = [
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
     inStock: true,
+    season: "Season 1",
   },
   {
     id: "you-only-live-once",
@@ -1028,6 +1040,7 @@ const designs: Design[] = [
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
     inStock: true,
+    season: "Season 1",
   },
   {
     id: "her-or-the-boys",
@@ -1087,6 +1100,7 @@ const designs: Design[] = [
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
     inStock: true,
+    season: "Season 1",
   },
   {
     id: "favorite-notification",
@@ -1146,6 +1160,7 @@ const designs: Design[] = [
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
     inStock: true,
+    season: "Season 1",
   },
   {
     id: "new-design-7",
@@ -1171,11 +1186,23 @@ const designs: Design[] = [
 
 const Designs = () => {
   const [stockFilter, setStockFilter] = useState<"all" | "in" | "out">("all");
+  const [seasonFilter, setSeasonFilter] = useState<string>("all");
+
+  // Get unique seasons from designs
+  const availableSeasons = useMemo(() => {
+    const seasons = new Set<string>();
+    designs.forEach((design) => {
+      if (design.season) seasons.add(design.season);
+    });
+    return Array.from(seasons).sort();
+  }, []);
 
   const filteredDesigns = designs.filter((design) => {
-    if (stockFilter === "all") return true;
-    if (stockFilter === "in") return design.inStock;
-    if (stockFilter === "out") return !design.inStock;
+    // Season filter
+    if (seasonFilter !== "all" && design.season !== seasonFilter) return false;
+    // Stock filter
+    if (stockFilter === "in" && !design.inStock) return false;
+    if (stockFilter === "out" && design.inStock) return false;
     return true;
   });
 
@@ -1210,38 +1237,73 @@ const Designs = () => {
       {/* Designs Grid */}
       <section className="py-16 pb-32">
         <div className="container mx-auto px-6 lg:px-12">
-          {/* Filter */}
-          <div className="flex gap-2 mb-10">
-            <button
-              onClick={() => setStockFilter("all")}
-              className={`px-4 py-2 text-xs uppercase tracking-wider rounded transition-colors ${
-                stockFilter === "all"
-                  ? "bg-foreground text-background"
-                  : "bg-muted text-muted-foreground hover:bg-muted/80"
-              }`}
-            >
-              All
-            </button>
-            <button
-              onClick={() => setStockFilter("in")}
-              className={`px-4 py-2 text-xs uppercase tracking-wider rounded transition-colors ${
-                stockFilter === "in"
-                  ? "bg-foreground text-background"
-                  : "bg-muted text-muted-foreground hover:bg-muted/80"
-              }`}
-            >
-              In Stock
-            </button>
-            <button
-              onClick={() => setStockFilter("out")}
-              className={`px-4 py-2 text-xs uppercase tracking-wider rounded transition-colors ${
-                stockFilter === "out"
-                  ? "bg-foreground text-background"
-                  : "bg-muted text-muted-foreground hover:bg-muted/80"
-              }`}
-            >
-              Out of Stock
-            </button>
+          {/* Season Filter */}
+          {availableSeasons.length > 0 && (
+            <div className="mb-6">
+              <h3 className="text-xs uppercase tracking-wider text-muted-foreground mb-3">Collection</h3>
+              <div className="flex flex-wrap gap-2">
+                <button
+                  onClick={() => setSeasonFilter("all")}
+                  className={`px-4 py-2 text-xs uppercase tracking-wider rounded transition-colors ${
+                    seasonFilter === "all"
+                      ? "bg-foreground text-background"
+                      : "bg-muted text-muted-foreground hover:bg-muted/80"
+                  }`}
+                >
+                  All Seasons
+                </button>
+                {availableSeasons.map((season) => (
+                  <button
+                    key={season}
+                    onClick={() => setSeasonFilter(season)}
+                    className={`px-4 py-2 text-xs uppercase tracking-wider rounded transition-colors ${
+                      seasonFilter === season
+                        ? "bg-foreground text-background"
+                        : "bg-muted text-muted-foreground hover:bg-muted/80"
+                    }`}
+                  >
+                    {season}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Stock Filter */}
+          <div className="mb-10">
+            <h3 className="text-xs uppercase tracking-wider text-muted-foreground mb-3">Availability</h3>
+            <div className="flex gap-2">
+              <button
+                onClick={() => setStockFilter("all")}
+                className={`px-4 py-2 text-xs uppercase tracking-wider rounded transition-colors ${
+                  stockFilter === "all"
+                    ? "bg-foreground text-background"
+                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                }`}
+              >
+                All
+              </button>
+              <button
+                onClick={() => setStockFilter("in")}
+                className={`px-4 py-2 text-xs uppercase tracking-wider rounded transition-colors ${
+                  stockFilter === "in"
+                    ? "bg-foreground text-background"
+                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                }`}
+              >
+                In Stock
+              </button>
+              <button
+                onClick={() => setStockFilter("out")}
+                className={`px-4 py-2 text-xs uppercase tracking-wider rounded transition-colors ${
+                  stockFilter === "out"
+                    ? "bg-foreground text-background"
+                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                }`}
+              >
+                Out of Stock
+              </button>
+            </div>
           </div>
 
           {/* Grid */}
