@@ -213,6 +213,14 @@ import spanishGirlsWhite4 from "@/assets/designs/spanish-girls-white-4.jpg";
 import spanishGirlsWhite5 from "@/assets/designs/spanish-girls-white-5.jpg";
 import spanishGirlsWhite6 from "@/assets/designs/spanish-girls-white-6.jpg";
 
+// Spanish Girls Are Always Right - Black variant
+import spanishGirlsBlack1 from "@/assets/designs/spanish-girls-black-1.jpg";
+import spanishGirlsBlack2 from "@/assets/designs/spanish-girls-black-2.jpg";
+import spanishGirlsBlack3 from "@/assets/designs/spanish-girls-black-3.jpg";
+import spanishGirlsBlack4 from "@/assets/designs/spanish-girls-black-4.jpg";
+import spanishGirlsBlack5 from "@/assets/designs/spanish-girls-black-5.jpg";
+import spanishGirlsBlack6 from "@/assets/designs/spanish-girls-black-6.jpg";
+
 // ============================================
 // SHOP URL - Link to Printify store
 // ============================================
@@ -569,6 +577,18 @@ const designs: Design[] = [
           spanishGirlsWhite4,
           spanishGirlsWhite5,
           spanishGirlsWhite6,
+        ],
+      },
+      {
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [
+          spanishGirlsBlack1,
+          spanishGirlsBlack2,
+          spanishGirlsBlack3,
+          spanishGirlsBlack4,
+          spanishGirlsBlack5,
+          spanishGirlsBlack6,
         ],
       },
     ],
