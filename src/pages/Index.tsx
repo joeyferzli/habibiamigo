@@ -114,7 +114,7 @@ const featuredDesigns: Design[] = [
     colorVariations: [
       { name: "White", swatchColor: "#f5f5f5", images: [dressSpanishWhite1, dressSpanishWhite2, dressSpanishWhite3, dressSpanishWhite4, dressSpanishWhite5, dressSpanishWhite6] },
       { name: "Black", swatchColor: "#1a1a1a", images: [dressSpanishBlack1, dressSpanishBlack2, dressSpanishBlack3, dressSpanishBlack4, dressSpanishBlack5, dressSpanishBlack6] },
-      { name: "Navy", swatchColor: "#1e3a5f", images: [dressSpanishNavy6, dressSpanishNavy1, dressSpanishNavy2, dressSpanishNavy3, dressSpanishNavy4, dressSpanishNavy5] },
+      { name: "Navy", swatchColor: "#1e3a5f", images: [dressSpanishNavy1, dressSpanishNavy2, dressSpanishNavy3, dressSpanishNavy4, dressSpanishNavy5, dressSpanishNavy6] },
     ],
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
