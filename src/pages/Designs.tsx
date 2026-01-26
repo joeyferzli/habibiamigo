@@ -398,6 +398,38 @@ const SHOP_URL = "https://habibi-amigo.printify.me";
 
 const designs: Design[] = [
   {
+    id: "tequila-run-club",
+    name: "Tequila Run Club",
+    caption: "Love Tequila. Love Running. Do Both.",
+    description:
+      "As the T-shirt says. Love Tequila. Love running. Do both. The perfect blend of fitness and fiesta for those who run hard and celebrate harder.",
+    colorVariations: [
+      {
+        name: "White",
+        swatchColor: "#f5f5f5",
+        images: [whiteFront1, whiteFront2, whiteFront3],
+      },
+      {
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [whiteFront1, whiteFront2, whiteFront3],
+      },
+      {
+        name: "Navy",
+        swatchColor: "#1e3a5f",
+        images: [whiteFront1, whiteFront2, whiteFront3],
+      },
+      {
+        name: "Baby Blue",
+        swatchColor: "#a8d4f0",
+        images: [whiteFront1, whiteFront2, whiteFront3],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["S", "M", "L", "XL"],
+    inStock: false,
+  },
+  {
     id: "secretly-latina",
     name: "Secretly In Love With Every Latina Here",
     caption: "A tribute to the latinas",
@@ -1030,22 +1062,6 @@ const designs: Design[] = [
           favNotifBabyblue5,
           favNotifBabyblue6,
         ],
-      },
-    ],
-    defaultColorIndex: 0,
-    availableSizes: ["S", "M", "L", "XL"],
-    inStock: false,
-  },
-  {
-    id: "new-design-6",
-    name: "New Design 6",
-    caption: "Coming soon",
-    description: "Description for new design 6.",
-    colorVariations: [
-      {
-        name: "White",
-        swatchColor: "#f5f5f5",
-        images: [whiteFront1, whiteFront2, whiteFront3],
       },
     ],
     defaultColorIndex: 0,
