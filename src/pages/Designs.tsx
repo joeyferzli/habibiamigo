@@ -325,9 +325,16 @@ import herOrBoysNavy4 from "@/assets/designs/her-or-boys-navy-4.jpg";
 import herOrBoysNavy5 from "@/assets/designs/her-or-boys-navy-5.jpg";
 import herOrBoysNavy6 from "@/assets/designs/her-or-boys-navy-6.jpg";
 
+// Her or the Boys - Baby Blue variant
+import herOrBoysBabyblue1 from "@/assets/designs/her-or-boys-babyblue-1.jpg";
+import herOrBoysBabyblue2 from "@/assets/designs/her-or-boys-babyblue-2.jpg";
+import herOrBoysBabyblue3 from "@/assets/designs/her-or-boys-babyblue-3.jpg";
+import herOrBoysBabyblue4 from "@/assets/designs/her-or-boys-babyblue-4.jpg";
+import herOrBoysBabyblue5 from "@/assets/designs/her-or-boys-babyblue-5.jpg";
+import herOrBoysBabyblue6 from "@/assets/designs/her-or-boys-babyblue-6.jpg";
+
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
-// ============================================
 // DESIGNS DATA - FULLY EDITABLE
 // ============================================
 // To edit a design:
@@ -879,6 +886,18 @@ const designs: Design[] = [
           herOrBoysNavy4,
           herOrBoysNavy5,
           herOrBoysNavy6,
+        ],
+      },
+      {
+        name: "Baby Blue",
+        swatchColor: "#a8d4f0",
+        images: [
+          herOrBoysBabyblue1,
+          herOrBoysBabyblue2,
+          herOrBoysBabyblue3,
+          herOrBoysBabyblue4,
+          herOrBoysBabyblue5,
+          herOrBoysBabyblue6,
         ],
       },
     ],
