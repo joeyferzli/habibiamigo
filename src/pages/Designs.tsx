@@ -654,7 +654,7 @@ const designs: Design[] = [
   },
   {
     id: "not-an-option",
-    name: "No Soy Una Opción, Soy Tu Tremenda Oportunidad",
+    name: "Not An Option",
     caption: "The best investment you'll make",
     description: "I am the best investment you will make. My ROI is out of this world. Don't miss this opportunity.",
     colorVariations: [
