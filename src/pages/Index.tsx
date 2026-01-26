@@ -127,7 +127,7 @@ const featuredDesigns: Design[] = [
     description: "The perfect party companion for those unforgettable nights.",
     colorVariations: [
       { name: "White", swatchColor: "#ffffff", images: [tequilaWhite1, tequilaWhite2, tequilaWhite3, tequilaWhite4, tequilaWhite5, tequilaWhite6] },
-      { name: "Black", swatchColor: "#1a1a1a", images: [tequilaBlack6, tequilaBlack1, tequilaBlack2, tequilaBlack3, tequilaBlack4, tequilaBlack5] },
+      { name: "Black", swatchColor: "#1a1a1a", images: [tequilaBlack1, tequilaBlack2, tequilaBlack3, tequilaBlack4, tequilaBlack5, tequilaBlack6] },
     ],
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
