@@ -301,7 +301,14 @@ import yoloBabyblue4 from "@/assets/designs/yolo-babyblue-4.jpg";
 import yoloBabyblue5 from "@/assets/designs/yolo-babyblue-5.jpg";
 import yoloBabyblue6 from "@/assets/designs/yolo-babyblue-6.jpg";
 
-// ============================================
+// Her or the Boys - White variant
+import herOrBoysWhite1 from "@/assets/designs/her-or-boys-white-1.jpg";
+import herOrBoysWhite2 from "@/assets/designs/her-or-boys-white-2.jpg";
+import herOrBoysWhite3 from "@/assets/designs/her-or-boys-white-3.jpg";
+import herOrBoysWhite4 from "@/assets/designs/her-or-boys-white-4.jpg";
+import herOrBoysWhite5 from "@/assets/designs/her-or-boys-white-5.jpg";
+import herOrBoysWhite6 from "@/assets/designs/her-or-boys-white-6.jpg";
+
 // SHOP URL - Link to Printify store
 // ============================================
 const SHOP_URL = "https://habibi-amigo.printify.me";
@@ -819,20 +826,27 @@ const designs: Design[] = [
     inStock: true,
   },
   {
-    id: "new-design-4",
-    name: "New Design 4",
-    caption: "Coming soon",
-    description: "Description for new design 4.",
+    id: "her-or-the-boys",
+    name: "Her or the Boys",
+    caption: "Live is made by difficult decisions",
+    description: "We chose those who stayed with us through all of it. This is for the boys.",
     colorVariations: [
       {
         name: "White",
         swatchColor: "#f5f5f5",
-        images: [whiteFront1, whiteFront2, whiteFront3],
+        images: [
+          herOrBoysWhite1,
+          herOrBoysWhite2,
+          herOrBoysWhite3,
+          herOrBoysWhite4,
+          herOrBoysWhite5,
+          herOrBoysWhite6,
+        ],
       },
     ],
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
-    inStock: false,
+    inStock: true,
   },
   {
     id: "new-design-5",
