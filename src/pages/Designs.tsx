@@ -292,6 +292,14 @@ import getMarriedBlack4 from "@/assets/designs/get-married-black-4.jpg";
 import getMarriedBlack5 from "@/assets/designs/get-married-black-5.jpg";
 import getMarriedBlack6 from "@/assets/designs/get-married-black-6.jpg";
 
+// Get Married? Or Afters? - Navy variant
+import getMarriedNavy1 from "@/assets/designs/get-married-navy-1.jpg";
+import getMarriedNavy2 from "@/assets/designs/get-married-navy-2.jpg";
+import getMarriedNavy3 from "@/assets/designs/get-married-navy-3.jpg";
+import getMarriedNavy4 from "@/assets/designs/get-married-navy-4.jpg";
+import getMarriedNavy5 from "@/assets/designs/get-married-navy-5.jpg";
+import getMarriedNavy6 from "@/assets/designs/get-married-navy-6.jpg";
+
 // Spanish Girls Are Always Right - White variant
 import spanishGirlsWhite1 from "@/assets/designs/spanish-girls-white-1.jpg";
 import spanishGirlsWhite2 from "@/assets/designs/spanish-girls-white-2.jpg";
@@ -1223,7 +1231,7 @@ const designs: Design[] = [
       {
         name: "Navy",
         swatchColor: "#1e3a5f",
-        images: [exFanNavy1, exFanNavy2, exFanNavy3],
+        images: [getMarriedNavy1, getMarriedNavy2, getMarriedNavy3, getMarriedNavy4, getMarriedNavy5, getMarriedNavy6],
       },
       {
         name: "Baby Blue",
