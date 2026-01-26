@@ -32,14 +32,6 @@ import secretlyLatinaNavy4 from "@/assets/designs/secretly-latina-navy-4.jpg";
 import secretlyLatinaNavy5 from "@/assets/designs/secretly-latina-navy-5.jpg";
 import secretlyLatinaNavy6 from "@/assets/designs/secretly-latina-navy-6.jpg";
 
-// Secretly Latina - Lavender Blue variant
-import secretlyLatinaLavender1 from "@/assets/designs/secretly-latina-lavender-1.jpg";
-import secretlyLatinaLavender2 from "@/assets/designs/secretly-latina-lavender-2.jpg";
-import secretlyLatinaLavender3 from "@/assets/designs/secretly-latina-lavender-3.jpg";
-import secretlyLatinaLavender4 from "@/assets/designs/secretly-latina-lavender-4.jpg";
-import secretlyLatinaLavender5 from "@/assets/designs/secretly-latina-lavender-5.jpg";
-import secretlyLatinaLavender6 from "@/assets/designs/secretly-latina-lavender-6.jpg";
-
 // Dress Spanish - White variant
 import dressSpanishWhite1 from "@/assets/designs/dress-spanish-white-1.jpg";
 import dressSpanishWhite2 from "@/assets/designs/dress-spanish-white-2.jpg";
@@ -63,14 +55,6 @@ import dressSpanishNavy3 from "@/assets/designs/dress-spanish-navy-3.jpg";
 import dressSpanishNavy4 from "@/assets/designs/dress-spanish-navy-4.jpg";
 import dressSpanishNavy5 from "@/assets/designs/dress-spanish-navy-5.jpg";
 import dressSpanishNavy6 from "@/assets/designs/dress-spanish-navy-6.jpg";
-
-// Dress Spanish - Lavender Blue variant
-import dressSpanishLavender1 from "@/assets/designs/dress-spanish-lavender-1.jpg";
-import dressSpanishLavender2 from "@/assets/designs/dress-spanish-lavender-2.jpg";
-import dressSpanishLavender3 from "@/assets/designs/dress-spanish-lavender-3.jpg";
-import dressSpanishLavender4 from "@/assets/designs/dress-spanish-lavender-4.jpg";
-import dressSpanishLavender5 from "@/assets/designs/dress-spanish-lavender-5.jpg";
-import dressSpanishLavender6 from "@/assets/designs/dress-spanish-lavender-6.jpg";
 
 // Tequila - White variant
 import tequilaWhite1 from "@/assets/designs/tequila-white-1.jpg";
@@ -112,14 +96,6 @@ import vermutNavy4 from "@/assets/designs/vermut-navy-4.jpg";
 import vermutNavy5 from "@/assets/designs/vermut-navy-5.jpg";
 import vermutNavy6 from "@/assets/designs/vermut-navy-6.jpg";
 
-// Vermut - Lavender Blue variant
-import vermutLavender1 from "@/assets/designs/vermut-lavender-1.jpg";
-import vermutLavender2 from "@/assets/designs/vermut-lavender-2.jpg";
-import vermutLavender3 from "@/assets/designs/vermut-lavender-3.jpg";
-import vermutLavender4 from "@/assets/designs/vermut-lavender-4.jpg";
-import vermutLavender5 from "@/assets/designs/vermut-lavender-5.jpg";
-import vermutLavender6 from "@/assets/designs/vermut-lavender-6.jpg";
-
 // Ex Fan - White variant
 import exFanWhite1 from "@/assets/designs/ex-fan-white-1.jpg";
 import exFanWhite2 from "@/assets/designs/ex-fan-white-2.jpg";
@@ -135,14 +111,6 @@ import exFanBlack3 from "@/assets/designs/ex-fan-black-3.jpg";
 import exFanBlack4 from "@/assets/designs/ex-fan-black-4.jpg";
 import exFanBlack5 from "@/assets/designs/ex-fan-black-5.jpg";
 import exFanBlack6 from "@/assets/designs/ex-fan-black-6.jpg";
-
-// Ex Fan - Lavender Blue variant
-import exFanLavender1 from "@/assets/designs/ex-fan-lavender-1.jpg";
-import exFanLavender2 from "@/assets/designs/ex-fan-lavender-2.jpg";
-import exFanLavender3 from "@/assets/designs/ex-fan-lavender-3.jpg";
-import exFanLavender4 from "@/assets/designs/ex-fan-lavender-4.jpg";
-import exFanLavender5 from "@/assets/designs/ex-fan-lavender-5.jpg";
-import exFanLavender6 from "@/assets/designs/ex-fan-lavender-6.jpg";
 
 // Ex Fan - Navy variant
 import exFanNavy1 from "@/assets/designs/ex-fan-navy-1.jpg";
@@ -176,14 +144,6 @@ import noGameBlack4 from "@/assets/designs/no-game-black-4.jpg";
 import noGameBlack5 from "@/assets/designs/no-game-black-5.jpg";
 import noGameBlack6 from "@/assets/designs/no-game-black-6.jpg";
 
-// No Game - Lavender variant
-import noGameLavender1 from "@/assets/designs/no-game-lavender-1.jpg";
-import noGameLavender2 from "@/assets/designs/no-game-lavender-2.jpg";
-import noGameLavender3 from "@/assets/designs/no-game-lavender-3.jpg";
-import noGameLavender4 from "@/assets/designs/no-game-lavender-4.jpg";
-import noGameLavender5 from "@/assets/designs/no-game-lavender-5.jpg";
-import noGameLavender6 from "@/assets/designs/no-game-lavender-6.jpg";
-
 // No Game - Navy variant
 import noGameNavy1 from "@/assets/designs/no-game-navy-1.jpg";
 import noGameNavy2 from "@/assets/designs/no-game-navy-2.jpg";
@@ -215,14 +175,6 @@ import iLiedNavy3 from "@/assets/designs/i-lied-navy-3.jpg";
 import iLiedNavy4 from "@/assets/designs/i-lied-navy-4.jpg";
 import iLiedNavy5 from "@/assets/designs/i-lied-navy-5.jpg";
 import iLiedNavy6 from "@/assets/designs/i-lied-navy-6.jpg";
-
-// I Lied - Lavender variant
-import iLiedLavender1 from "@/assets/designs/i-lied-lavender-1.jpg";
-import iLiedLavender2 from "@/assets/designs/i-lied-lavender-2.jpg";
-import iLiedLavender3 from "@/assets/designs/i-lied-lavender-3.jpg";
-import iLiedLavender4 from "@/assets/designs/i-lied-lavender-4.jpg";
-import iLiedLavender5 from "@/assets/designs/i-lied-lavender-5.jpg";
-import iLiedLavender6 from "@/assets/designs/i-lied-lavender-6.jpg";
 
 // ASAP - White variant
 import asapWhite1 from "@/assets/designs/asap-white-1.jpg";
@@ -308,20 +260,8 @@ const designs: Design[] = [
           secretlyLatinaNavy2,
         ],
       },
-      {
-        name: "Lavender Blue",
-        swatchColor: "#7b9cb8",
-        images: [
-          secretlyLatinaLavender1,
-          secretlyLatinaLavender2,
-          secretlyLatinaLavender3,
-          secretlyLatinaLavender4,
-          secretlyLatinaLavender5,
-          secretlyLatinaLavender6,
-        ],
-      },
     ],
-    defaultColorIndex: 3,
+    defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL", "XXL"],
     notes: "Unisex fit. True to size. 100% cotton.",
     inStock: true,
@@ -364,17 +304,6 @@ const designs: Design[] = [
           dressSpanishNavy3,
           dressSpanishNavy4,
           dressSpanishNavy5,
-        ],
-      },
-      {
-        name: "Lavender Blue",
-        swatchColor: "#7b9cb8",
-        images: [
-          dressSpanishLavender1,
-          dressSpanishLavender2,
-          dressSpanishLavender3,
-          dressSpanishLavender4,
-          dressSpanishLavender5,
         ],
       },
     ],
@@ -423,11 +352,6 @@ const designs: Design[] = [
         images: [vermutWhite6, vermutWhite5, whiteFront1, whiteFront2, whiteFront3, vermutWhite4],
       },
       {
-        name: "Lavender Blue",
-        swatchColor: "#7b9cb8",
-        images: [vermutLavender1, vermutLavender2, vermutLavender3, vermutLavender4, vermutLavender5, vermutLavender6],
-      },
-      {
         name: "Black",
         swatchColor: "#1a1a1a",
         images: [vermutBlack1, vermutBlack2, vermutBlack3, vermutBlack4, vermutBlack5, vermutBlack6],
@@ -453,11 +377,6 @@ const designs: Design[] = [
         name: "Black",
         swatchColor: "#1a1a1a",
         images: [exFanBlack1, exFanBlack2, exFanBlack3, exFanBlack4, exFanBlack5],
-      },
-      {
-        name: "Lavender Blue",
-        swatchColor: "#7b9cb8",
-        images: [exFanLavender1, exFanLavender2, exFanLavender3, exFanLavender4, exFanLavender5],
       },
       {
         name: "Navy",
@@ -523,17 +442,6 @@ const designs: Design[] = [
         ],
       },
       {
-        name: "Lavender Blue",
-        swatchColor: "#7b9cb8",
-        images: [
-          noGameLavender1,
-          noGameLavender2,
-          noGameLavender3,
-          noGameLavender4,
-          noGameLavender5,
-        ],
-      },
-      {
         name: "Navy",
         swatchColor: "#1e3a5f",
         images: [
@@ -565,11 +473,6 @@ const designs: Design[] = [
         name: "Black",
         swatchColor: "#1a1a1a",
         images: [iLiedBlack6, iLiedBlack5, iLiedBlack4, iLiedBlack3, iLiedBlack2, iLiedBlack1],
-      },
-      {
-        name: "Lavender Blue",
-        swatchColor: "#7b9cb8",
-        images: [iLiedLavender6, iLiedLavender5, iLiedLavender4, iLiedLavender3, iLiedLavender2, iLiedLavender1],
       },
       {
         name: "Navy",
