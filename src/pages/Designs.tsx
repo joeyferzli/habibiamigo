@@ -519,6 +519,121 @@ const designs: Design[] = [
     availableSizes: ["XS", "S", "M", "L", "XL", "XXL"],
     inStock: true,
   },
+  // ============================================
+  // NEW DESIGNS - Add images and details below
+  // ============================================
+  {
+    id: "new-design-1",
+    name: "New Design 1",
+    caption: "Coming soon",
+    description: "Description for new design 1.",
+    colorVariations: [
+      {
+        name: "White",
+        swatchColor: "#f5f5f5",
+        images: [whiteFront1, whiteFront2, whiteFront3],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["S", "M", "L", "XL"],
+    inStock: false,
+  },
+  {
+    id: "new-design-2",
+    name: "New Design 2",
+    caption: "Coming soon",
+    description: "Description for new design 2.",
+    colorVariations: [
+      {
+        name: "White",
+        swatchColor: "#f5f5f5",
+        images: [whiteFront1, whiteFront2, whiteFront3],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["S", "M", "L", "XL"],
+    inStock: false,
+  },
+  {
+    id: "new-design-3",
+    name: "New Design 3",
+    caption: "Coming soon",
+    description: "Description for new design 3.",
+    colorVariations: [
+      {
+        name: "White",
+        swatchColor: "#f5f5f5",
+        images: [whiteFront1, whiteFront2, whiteFront3],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["S", "M", "L", "XL"],
+    inStock: false,
+  },
+  {
+    id: "new-design-4",
+    name: "New Design 4",
+    caption: "Coming soon",
+    description: "Description for new design 4.",
+    colorVariations: [
+      {
+        name: "White",
+        swatchColor: "#f5f5f5",
+        images: [whiteFront1, whiteFront2, whiteFront3],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["S", "M", "L", "XL"],
+    inStock: false,
+  },
+  {
+    id: "new-design-5",
+    name: "New Design 5",
+    caption: "Coming soon",
+    description: "Description for new design 5.",
+    colorVariations: [
+      {
+        name: "White",
+        swatchColor: "#f5f5f5",
+        images: [whiteFront1, whiteFront2, whiteFront3],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["S", "M", "L", "XL"],
+    inStock: false,
+  },
+  {
+    id: "new-design-6",
+    name: "New Design 6",
+    caption: "Coming soon",
+    description: "Description for new design 6.",
+    colorVariations: [
+      {
+        name: "White",
+        swatchColor: "#f5f5f5",
+        images: [whiteFront1, whiteFront2, whiteFront3],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["S", "M", "L", "XL"],
+    inStock: false,
+  },
+  {
+    id: "new-design-7",
+    name: "New Design 7",
+    caption: "Coming soon",
+    description: "Description for new design 7.",
+    colorVariations: [
+      {
+        name: "White",
+        swatchColor: "#f5f5f5",
+        images: [whiteFront1, whiteFront2, whiteFront3],
+      },
+    ],
+    defaultColorIndex: 0,
+    availableSizes: ["S", "M", "L", "XL"],
+    inStock: false,
+  },
 ];
 
 // ============================================
