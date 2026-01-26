@@ -32,6 +32,14 @@ import tequilaRunNavy4 from "@/assets/designs/tequila-run-navy-4.jpg";
 import tequilaRunNavy5 from "@/assets/designs/tequila-run-navy-5.jpg";
 import tequilaRunNavy6 from "@/assets/designs/tequila-run-navy-6.jpg";
 
+// Tequila Run Club - Baby Blue variant
+import tequilaRunBabyblue1 from "@/assets/designs/tequila-run-babyblue-1.jpg";
+import tequilaRunBabyblue2 from "@/assets/designs/tequila-run-babyblue-2.jpg";
+import tequilaRunBabyblue3 from "@/assets/designs/tequila-run-babyblue-3.jpg";
+import tequilaRunBabyblue4 from "@/assets/designs/tequila-run-babyblue-4.jpg";
+import tequilaRunBabyblue5 from "@/assets/designs/tequila-run-babyblue-5.jpg";
+import tequilaRunBabyblue6 from "@/assets/designs/tequila-run-babyblue-6.jpg";
+
 import secretlyLatinaWhite1 from "@/assets/designs/secretly-latina-white-1.jpg";
 import secretlyLatinaWhite2 from "@/assets/designs/secretly-latina-white-2.jpg";
 import secretlyLatinaWhite3 from "@/assets/designs/secretly-latina-white-3.jpg";
@@ -466,7 +474,14 @@ const designs: Design[] = [
       {
         name: "Baby Blue",
         swatchColor: "#a8d4f0",
-        images: [whiteFront1, whiteFront2, whiteFront3],
+        images: [
+          tequilaRunBabyblue1,
+          tequilaRunBabyblue2,
+          tequilaRunBabyblue3,
+          tequilaRunBabyblue4,
+          tequilaRunBabyblue5,
+          tequilaRunBabyblue6,
+        ],
       },
     ],
     defaultColorIndex: 0,
