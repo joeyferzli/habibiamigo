@@ -909,12 +909,12 @@ const designs: Design[] = [
         name: "Baby Blue",
         swatchColor: "#a8d4f0",
         images: [
-          spanishGirlsBabyblue1,
-          spanishGirlsBabyblue2,
-          spanishGirlsBabyblue3,
-          spanishGirlsBabyblue4,
-          spanishGirlsBabyblue5,
           spanishGirlsBabyblue6,
+          spanishGirlsBabyblue5,
+          spanishGirlsBabyblue4,
+          spanishGirlsBabyblue3,
+          spanishGirlsBabyblue2,
+          spanishGirlsBabyblue1,
         ],
       },
       {
