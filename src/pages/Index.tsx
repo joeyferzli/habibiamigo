@@ -24,12 +24,6 @@ import secretlyLatinaNavy3 from "@/assets/designs/secretly-latina-navy-3.jpg";
 import secretlyLatinaNavy4 from "@/assets/designs/secretly-latina-navy-4.jpg";
 import secretlyLatinaNavy5 from "@/assets/designs/secretly-latina-navy-5.jpg";
 import secretlyLatinaNavy6 from "@/assets/designs/secretly-latina-navy-6.jpg";
-import secretlyLatinaLavender1 from "@/assets/designs/secretly-latina-lavender-1.jpg";
-import secretlyLatinaLavender2 from "@/assets/designs/secretly-latina-lavender-2.jpg";
-import secretlyLatinaLavender3 from "@/assets/designs/secretly-latina-lavender-3.jpg";
-import secretlyLatinaLavender4 from "@/assets/designs/secretly-latina-lavender-4.jpg";
-import secretlyLatinaLavender5 from "@/assets/designs/secretly-latina-lavender-5.jpg";
-import secretlyLatinaLavender6 from "@/assets/designs/secretly-latina-lavender-6.jpg";
 
 // Dress Spanish - All 4 color variants
 import dressSpanishWhite1 from "@/assets/designs/dress-spanish-white-1.jpg";
@@ -50,12 +44,6 @@ import dressSpanishNavy3 from "@/assets/designs/dress-spanish-navy-3.jpg";
 import dressSpanishNavy4 from "@/assets/designs/dress-spanish-navy-4.jpg";
 import dressSpanishNavy5 from "@/assets/designs/dress-spanish-navy-5.jpg";
 import dressSpanishNavy6 from "@/assets/designs/dress-spanish-navy-6.jpg";
-import dressSpanishLavender1 from "@/assets/designs/dress-spanish-lavender-1.jpg";
-import dressSpanishLavender2 from "@/assets/designs/dress-spanish-lavender-2.jpg";
-import dressSpanishLavender3 from "@/assets/designs/dress-spanish-lavender-3.jpg";
-import dressSpanishLavender4 from "@/assets/designs/dress-spanish-lavender-4.jpg";
-import dressSpanishLavender5 from "@/assets/designs/dress-spanish-lavender-5.jpg";
-import dressSpanishLavender6 from "@/assets/designs/dress-spanish-lavender-6.jpg";
 // Tequila - White and Black variants
 import tequilaWhite1 from "@/assets/designs/tequila-white-1.jpg";
 import tequilaWhite2 from "@/assets/designs/tequila-white-2.jpg";
@@ -88,12 +76,6 @@ import vermutNavy3 from "@/assets/designs/vermut-navy-3.jpg";
 import vermutNavy4 from "@/assets/designs/vermut-navy-4.jpg";
 import vermutNavy5 from "@/assets/designs/vermut-navy-5.jpg";
 import vermutNavy6 from "@/assets/designs/vermut-navy-6.jpg";
-import vermutLavender1 from "@/assets/designs/vermut-lavender-1.jpg";
-import vermutLavender2 from "@/assets/designs/vermut-lavender-2.jpg";
-import vermutLavender3 from "@/assets/designs/vermut-lavender-3.jpg";
-import vermutLavender4 from "@/assets/designs/vermut-lavender-4.jpg";
-import vermutLavender5 from "@/assets/designs/vermut-lavender-5.jpg";
-import vermutLavender6 from "@/assets/designs/vermut-lavender-6.jpg";
 
 const SHOP_URL = "https://habibi-amigo.printify.me";
 
@@ -119,13 +101,8 @@ const featuredDesigns: Design[] = [
         swatchColor: "#1e3a5f",
         images: [secretlyLatinaNavy6, secretlyLatinaNavy5, secretlyLatinaNavy1, secretlyLatinaNavy4, secretlyLatinaNavy3, secretlyLatinaNavy2],
       },
-      {
-        name: "Lavender Blue",
-        swatchColor: "#7b9cb8",
-        images: [secretlyLatinaLavender1, secretlyLatinaLavender2, secretlyLatinaLavender3, secretlyLatinaLavender4, secretlyLatinaLavender5, secretlyLatinaLavender6],
-      },
     ],
-    defaultColorIndex: 3,
+    defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL", "XXL"],
     inStock: true,
   },
@@ -138,7 +115,6 @@ const featuredDesigns: Design[] = [
       { name: "White", swatchColor: "#f5f5f5", images: [dressSpanishWhite6, dressSpanishWhite1, dressSpanishWhite2, dressSpanishWhite3, dressSpanishWhite4, dressSpanishWhite5] },
       { name: "Black", swatchColor: "#1a1a1a", images: [dressSpanishBlack6, dressSpanishBlack1, dressSpanishBlack2, dressSpanishBlack3, dressSpanishBlack4, dressSpanishBlack5] },
       { name: "Navy", swatchColor: "#1e3a5f", images: [dressSpanishNavy6, dressSpanishNavy1, dressSpanishNavy2, dressSpanishNavy3, dressSpanishNavy4, dressSpanishNavy5] },
-      { name: "Lavender Blue", swatchColor: "#7b9cb8", images: [dressSpanishLavender6, dressSpanishLavender1, dressSpanishLavender2, dressSpanishLavender3, dressSpanishLavender4, dressSpanishLavender5] },
     ],
     defaultColorIndex: 0,
     availableSizes: ["XS", "S", "M", "L", "XL"],
@@ -165,7 +141,6 @@ const featuredDesigns: Design[] = [
     colorVariations: [
       { name: "Navy", swatchColor: "#1e3a5f", images: [vermutNavy1, vermutNavy2, vermutNavy3, vermutNavy4, vermutNavy5, vermutNavy6] },
       { name: "White", swatchColor: "#f5f5f5", images: [vermutWhite1, vermutWhite2, vermutWhite3, vermutWhite4, vermutWhite5, vermutWhite6] },
-      { name: "Lavender Blue", swatchColor: "#7b9cb8", images: [vermutLavender1, vermutLavender2, vermutLavender3, vermutLavender4, vermutLavender5, vermutLavender6] },
       { name: "Black", swatchColor: "#1a1a1a", images: [vermutBlack1, vermutBlack2, vermutBlack3, vermutBlack4, vermutBlack5, vermutBlack6] },
     ],
     defaultColorIndex: 0,
