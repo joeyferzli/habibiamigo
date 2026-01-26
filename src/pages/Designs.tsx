@@ -322,7 +322,7 @@ const designs: Design[] = [
       {
         name: "White",
         swatchColor: "#ffffff",
-        images: [tequilaWhite6, tequilaWhite5, whiteFront1, whiteFront2, whiteFront3, tequilaWhite4],
+        images: [tequilaWhite1, tequilaWhite2, tequilaWhite3, tequilaWhite4, tequilaWhite5, tequilaWhite6],
       },
       {
         name: "Black",
