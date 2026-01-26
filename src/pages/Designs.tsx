@@ -8,6 +8,14 @@ import { Design } from "@/types/design";
 // DESIGN IMAGES - Import all images here
 // ============================================
 
+// Tequila Run Club - White variant
+import tequilaRunWhite1 from "@/assets/designs/tequila-run-white-1.jpg";
+import tequilaRunWhite2 from "@/assets/designs/tequila-run-white-2.jpg";
+import tequilaRunWhite3 from "@/assets/designs/tequila-run-white-3.jpg";
+import tequilaRunWhite4 from "@/assets/designs/tequila-run-white-4.jpg";
+import tequilaRunWhite5 from "@/assets/designs/tequila-run-white-5.jpg";
+import tequilaRunWhite6 from "@/assets/designs/tequila-run-white-6.jpg";
+
 // Secretly Latina - White variant
 import secretlyLatinaWhite1 from "@/assets/designs/secretly-latina-white-1.jpg";
 import secretlyLatinaWhite2 from "@/assets/designs/secretly-latina-white-2.jpg";
@@ -407,7 +415,14 @@ const designs: Design[] = [
       {
         name: "White",
         swatchColor: "#f5f5f5",
-        images: [whiteFront1, whiteFront2, whiteFront3],
+        images: [
+          tequilaRunWhite1,
+          tequilaRunWhite2,
+          tequilaRunWhite3,
+          tequilaRunWhite4,
+          tequilaRunWhite5,
+          tequilaRunWhite6,
+        ],
       },
       {
         name: "Black",
