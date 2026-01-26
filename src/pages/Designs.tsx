@@ -168,6 +168,14 @@ import noGameNavy4 from "@/assets/designs/no-game-navy-4.jpg";
 import noGameNavy5 from "@/assets/designs/no-game-navy-5.jpg";
 import noGameNavy6 from "@/assets/designs/no-game-navy-6.jpg";
 
+// No Game - Baby Blue variant
+import noGameBabyblue1 from "@/assets/designs/no-game-babyblue-1.jpg";
+import noGameBabyblue2 from "@/assets/designs/no-game-babyblue-2.jpg";
+import noGameBabyblue3 from "@/assets/designs/no-game-babyblue-3.jpg";
+import noGameBabyblue4 from "@/assets/designs/no-game-babyblue-4.jpg";
+import noGameBabyblue5 from "@/assets/designs/no-game-babyblue-5.jpg";
+import noGameBabyblue6 from "@/assets/designs/no-game-babyblue-6.jpg";
+
 // I Lied - White variant
 import iLiedWhite1 from "@/assets/designs/i-lied-white-1.jpg";
 import iLiedWhite2 from "@/assets/designs/i-lied-white-2.jpg";
@@ -649,6 +657,18 @@ const designs: Design[] = [
           noGameNavy3,
           noGameNavy4,
           noGameNavy5,
+        ],
+      },
+      {
+        name: "Baby Blue",
+        swatchColor: "#a8d4f0",
+        images: [
+          noGameBabyblue1,
+          noGameBabyblue2,
+          noGameBabyblue3,
+          noGameBabyblue4,
+          noGameBabyblue5,
+          noGameBabyblue6,
         ],
       },
     ],
