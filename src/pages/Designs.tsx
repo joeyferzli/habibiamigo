@@ -245,6 +245,14 @@ import notAnOptionWhite4 from "@/assets/designs/not-an-option-white-4.jpg";
 import notAnOptionWhite5 from "@/assets/designs/not-an-option-white-5.jpg";
 import notAnOptionWhite6 from "@/assets/designs/not-an-option-white-6.jpg";
 
+// Not An Option - Black variant
+import notAnOptionBlack1 from "@/assets/designs/not-an-option-black-1.jpg";
+import notAnOptionBlack2 from "@/assets/designs/not-an-option-black-2.jpg";
+import notAnOptionBlack3 from "@/assets/designs/not-an-option-black-3.jpg";
+import notAnOptionBlack4 from "@/assets/designs/not-an-option-black-4.jpg";
+import notAnOptionBlack5 from "@/assets/designs/not-an-option-black-5.jpg";
+import notAnOptionBlack6 from "@/assets/designs/not-an-option-black-6.jpg";
+
 // ============================================
 // SHOP URL - Link to Printify store
 // ============================================
@@ -660,6 +668,18 @@ const designs: Design[] = [
           notAnOptionWhite4,
           notAnOptionWhite5,
           notAnOptionWhite6,
+        ],
+      },
+      {
+        name: "Black",
+        swatchColor: "#1a1a1a",
+        images: [
+          notAnOptionBlack1,
+          notAnOptionBlack2,
+          notAnOptionBlack3,
+          notAnOptionBlack4,
+          notAnOptionBlack5,
+          notAnOptionBlack6,
         ],
       },
     ],
