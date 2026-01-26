@@ -677,7 +677,7 @@ const designs: Design[] = [
       {
         name: "Baby Blue",
         swatchColor: "#a8d4f0",
-        images: [vermutBabyblue6, vermutBabyblue5, vermutBabyblue4, vermutBabyblue3, vermutBabyblue2, vermutBabyblue1],
+        images: [vermutBabyblue1, vermutBabyblue2, vermutBabyblue3, vermutBabyblue4, vermutBabyblue5, vermutBabyblue6],
       },
     ],
     defaultColorIndex: 0,
