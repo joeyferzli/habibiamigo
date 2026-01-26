@@ -221,6 +221,14 @@ import spanishGirlsBlack4 from "@/assets/designs/spanish-girls-black-4.jpg";
 import spanishGirlsBlack5 from "@/assets/designs/spanish-girls-black-5.jpg";
 import spanishGirlsBlack6 from "@/assets/designs/spanish-girls-black-6.jpg";
 
+// Spanish Girls Are Always Right - Baby Blue variant
+import spanishGirlsBabyblue1 from "@/assets/designs/spanish-girls-babyblue-1.jpg";
+import spanishGirlsBabyblue2 from "@/assets/designs/spanish-girls-babyblue-2.jpg";
+import spanishGirlsBabyblue3 from "@/assets/designs/spanish-girls-babyblue-3.jpg";
+import spanishGirlsBabyblue4 from "@/assets/designs/spanish-girls-babyblue-4.jpg";
+import spanishGirlsBabyblue5 from "@/assets/designs/spanish-girls-babyblue-5.jpg";
+import spanishGirlsBabyblue6 from "@/assets/designs/spanish-girls-babyblue-6.jpg";
+
 // ============================================
 // SHOP URL - Link to Printify store
 // ============================================
@@ -589,6 +597,18 @@ const designs: Design[] = [
           spanishGirlsBlack4,
           spanishGirlsBlack5,
           spanishGirlsBlack6,
+        ],
+      },
+      {
+        name: "Baby Blue",
+        swatchColor: "#a8d4f0",
+        images: [
+          spanishGirlsBabyblue1,
+          spanishGirlsBabyblue2,
+          spanishGirlsBabyblue3,
+          spanishGirlsBabyblue4,
+          spanishGirlsBabyblue5,
+          spanishGirlsBabyblue6,
         ],
       },
     ],
