@@ -247,6 +247,14 @@ import iLiedNavy4 from "@/assets/designs/i-lied-navy-4.jpg";
 import iLiedNavy5 from "@/assets/designs/i-lied-navy-5.jpg";
 import iLiedNavy6 from "@/assets/designs/i-lied-navy-6.jpg";
 
+// I Lied - Baby Blue variant
+import iLiedBabyblue1 from "@/assets/designs/i-lied-babyblue-1.jpg";
+import iLiedBabyblue2 from "@/assets/designs/i-lied-babyblue-2.jpg";
+import iLiedBabyblue3 from "@/assets/designs/i-lied-babyblue-3.jpg";
+import iLiedBabyblue4 from "@/assets/designs/i-lied-babyblue-4.jpg";
+import iLiedBabyblue5 from "@/assets/designs/i-lied-babyblue-5.jpg";
+import iLiedBabyblue6 from "@/assets/designs/i-lied-babyblue-6.jpg";
+
 // ASAP - White variant
 import asapWhite1 from "@/assets/designs/asap-white-1.jpg";
 import asapWhite2 from "@/assets/designs/asap-white-2.jpg";
@@ -828,7 +836,12 @@ const designs: Design[] = [
       {
         name: "Navy",
         swatchColor: "#1e3a5f",
-        images: [iLiedNavy6, iLiedNavy5, iLiedNavy4, iLiedNavy3, iLiedNavy2, iLiedNavy1],
+        images: [iLiedNavy1, iLiedNavy2, iLiedNavy3, iLiedNavy4, iLiedNavy5, iLiedNavy6],
+      },
+      {
+        name: "Baby Blue",
+        swatchColor: "#a8d4f0",
+        images: [iLiedBabyblue1, iLiedBabyblue2, iLiedBabyblue3, iLiedBabyblue4, iLiedBabyblue5, iLiedBabyblue6],
       },
     ],
     defaultColorIndex: 0,
