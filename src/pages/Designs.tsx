@@ -205,6 +205,14 @@ import whiteFront1 from "@/assets/designs/white-front-1.jpg";
 import whiteFront2 from "@/assets/designs/white-front-2.jpg";
 import whiteFront3 from "@/assets/designs/white-front-3.jpg";
 
+// Spanish Girls Are Always Right - White variant
+import spanishGirlsWhite1 from "@/assets/designs/spanish-girls-white-1.jpg";
+import spanishGirlsWhite2 from "@/assets/designs/spanish-girls-white-2.jpg";
+import spanishGirlsWhite3 from "@/assets/designs/spanish-girls-white-3.jpg";
+import spanishGirlsWhite4 from "@/assets/designs/spanish-girls-white-4.jpg";
+import spanishGirlsWhite5 from "@/assets/designs/spanish-girls-white-5.jpg";
+import spanishGirlsWhite6 from "@/assets/designs/spanish-girls-white-6.jpg";
+
 // ============================================
 // SHOP URL - Link to Printify store
 // ============================================
@@ -546,20 +554,27 @@ const designs: Design[] = [
   // NEW DESIGNS - Add images and details below
   // ============================================
   {
-    id: "new-design-1",
-    name: "New Design 1",
-    caption: "Coming soon",
-    description: "Description for new design 1.",
+    id: "spanish-girls",
+    name: "Spanish Girls Are Always Right",
+    caption: "Find all solutions in life",
+    description: "Tired of making decisions? Ready to find all solutions in life? This is a statement on how Spanish girls always know what's better for you.",
     colorVariations: [
       {
         name: "White",
         swatchColor: "#f5f5f5",
-        images: [whiteFront1, whiteFront2, whiteFront3],
+        images: [
+          spanishGirlsWhite1,
+          spanishGirlsWhite2,
+          spanishGirlsWhite3,
+          spanishGirlsWhite4,
+          spanishGirlsWhite5,
+          spanishGirlsWhite6,
+        ],
       },
     ],
     defaultColorIndex: 0,
     availableSizes: ["S", "M", "L", "XL"],
-    inStock: false,
+    inStock: true,
   },
   {
     id: "new-design-2",
