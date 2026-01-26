@@ -282,6 +282,7 @@ const designs: Design[] = [
           dressSpanishWhite3,
           dressSpanishWhite4,
           dressSpanishWhite5,
+          dressSpanishWhite6,
         ],
       },
       {
