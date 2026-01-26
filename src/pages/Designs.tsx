@@ -1029,12 +1029,12 @@ const designs: Design[] = [
         name: "Navy",
         swatchColor: "#1e3a5f",
         images: [
-          yoloNavy6,
-          yoloNavy5,
-          yoloNavy4,
-          yoloNavy3,
-          yoloNavy2,
           yoloNavy1,
+          yoloNavy2,
+          yoloNavy3,
+          yoloNavy4,
+          yoloNavy5,
+          yoloNavy6,
         ],
       },
       {
