@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "sdk_version": "0.24.0",
+  "path": "/functions/v1/mcp",
+  "auth": {
+    "type": "oauth",
+    "issuer": "https://pgcktjgpplbkjfklqrux.supabase.co/auth/v1",
+    "accepted_audiences": [
+      "authenticated"
+    ]
+  },
+  "mcp": {
+    "server": {
+      "name": "habibi-amigo-mcp",
+      "version": "0.1.0",
+      "title": "Habibi Amigo"
+    },
+    "tools": [
+      {
+        "name": "list_designs",
+        "title": "List designs",
+        "description": "List Habibi Amigo T-shirt designs from the public collection. Optionally filter by name or in-stock status.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "description": "Case-insensitive substring to match against design name or caption."
+            },
+            "inStockOnly": {
+              "type": "boolean",
+              "description": "When true, return only designs that are currently in stock."
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_design",
+        "title": "Get design details",
+        "description": "Fetch a single Habibi Amigo design by its id.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Design id, e.g. 'tequila-run-club'."
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_shop_info",
+        "title": "Get shop info",
+        "description": "Return the Habibi Amigo shop URL, main site URL, and contact email so a client can direct users to purchase or reach out.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
