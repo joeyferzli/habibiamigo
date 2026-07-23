@@ -8,6 +8,8 @@ import About from "./pages/About";
 import Designs from "./pages/Designs";
 import SecretDesigns from "./pages/SecretDesigns";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import OAuthConsent from "./pages/OAuthConsent";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +26,8 @@ const App = () => (
           <Route path="/designs" element={<Designs />} />
           <Route path="/secret-designs" element={<SecretDesigns />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/.lovable/oauth/consent" element={<OAuthConsent />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
