@@ -214,6 +214,27 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Season 2 Teaser */}
+      <section className="relative bg-foreground text-background py-28 lg:py-36 overflow-hidden">
+        <div className="absolute inset-0 bg-grain opacity-[0.06] pointer-events-none" />
+        <div className="container mx-auto px-6 lg:px-12 relative text-center">
+          <p className="text-rust text-xs uppercase tracking-[0.3em] mb-5 opacity-0 animate-fade-up">
+            Habibi Amigo &mdash; Next Drop
+          </p>
+          <h2 className="font-display text-display-lg tracking-wider mb-6 opacity-0 animate-fade-up delay-100">
+            SEASON 2 IS COMING
+          </h2>
+          <p className="text-background/60 text-lg max-w-xl mx-auto mb-10 opacity-0 animate-fade-up delay-200">
+            New designs, same friendship. Get on the list so you don't miss it.
+          </p>
+          <div className="opacity-0 animate-fade-up delay-300">
+            <Button variant="accent" size="xl" asChild>
+              <Link to="/designs">Preview Season 2</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Friendship Story Section */}
       <FriendshipCollage />
     </Layout>

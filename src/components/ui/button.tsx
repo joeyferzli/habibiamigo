@@ -15,8 +15,9 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-stone rounded-sm",
         ghost: "hover:bg-accent hover:text-accent-foreground rounded-sm",
         link: "text-foreground underline-offset-4 hover:underline",
-        premium: "bg-foreground text-background hover:bg-charcoal rounded-sm font-display text-lg tracking-widest",
+        premium: "bg-foreground text-background hover:bg-charcoal rounded-none font-display text-lg tracking-widest",
         nav: "text-foreground/70 hover:text-foreground bg-transparent font-sans text-sm tracking-normal normal-case",
+        accent: "bg-rust text-rust-foreground hover:bg-rust/90 rounded-none font-display text-lg tracking-widest",
       },
       size: {
         default: "h-12 px-8 py-3 text-sm",

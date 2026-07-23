@@ -1311,45 +1311,53 @@ const Designs = () => {
       {/* Designs Grid */}
       <section className="py-16 pb-32">
         <div className="container mx-auto px-6 lg:px-12">
-          {/* Season Filter */}
+          {/* Season Tabs */}
           {availableSeasons.length > 0 && (
-            <div className="mb-6">
-              <h3 className="text-xs uppercase tracking-wider text-muted-foreground mb-3">Collection</h3>
-              <div className="flex flex-wrap gap-2">
+            <div className="mb-10 border-b-2 border-foreground/10">
+              <div className="flex flex-wrap gap-8">
                 <button
                   onClick={() => setSeasonFilter("all")}
-                  className={`px-4 py-2 text-xs uppercase tracking-wider rounded transition-colors ${
+                  className={`relative pb-4 font-display text-xl md:text-2xl tracking-wider transition-colors ${
                     seasonFilter === "all"
-                      ? "bg-foreground text-background"
-                      : "bg-muted text-muted-foreground hover:bg-muted/80"
+                      ? "text-foreground after:content-[''] after:absolute after:left-0 after:right-0 after:-bottom-[2px] after:h-[3px] after:bg-rust"
+                      : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
                   All Seasons
                 </button>
-                {availableSeasons.map((season) => (
-                  <button
-                    key={season}
-                    onClick={() => setSeasonFilter(season)}
-                    className={`px-4 py-2 text-xs uppercase tracking-wider rounded transition-colors ${
-                      seasonFilter === season
-                        ? "bg-foreground text-background"
-                        : "bg-muted text-muted-foreground hover:bg-muted/80"
-                    }`}
-                  >
-                    {season}
-                  </button>
-                ))}
+                {SEASONS.map((season) => {
+                  const isSeason2 = season === "Season 2";
+                  const hasLiveDesigns = availableSeasons.includes(season);
+                  return (
+                    <button
+                      key={season}
+                      onClick={() => setSeasonFilter(season)}
+                      className={`relative pb-4 font-display text-xl md:text-2xl tracking-wider transition-colors flex items-center gap-2 ${
+                        seasonFilter === season
+                          ? "text-foreground after:content-[''] after:absolute after:left-0 after:right-0 after:-bottom-[2px] after:h-[3px] after:bg-rust"
+                          : "text-muted-foreground hover:text-foreground"
+                      }`}
+                    >
+                      {season}
+                      {isSeason2 && !hasLiveDesigns && (
+                        <span className="font-sans normal-case text-[10px] tracking-widest bg-rust text-rust-foreground px-2 py-0.5">
+                          Soon
+                        </span>
+                      )}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           )}
 
           {/* Stock Filter */}
-          <div className="mb-10">
+          <div className="mb-12">
             <h3 className="text-xs uppercase tracking-wider text-muted-foreground mb-3">Availability</h3>
             <div className="flex gap-2">
               <button
                 onClick={() => setStockFilter("all")}
-                className={`px-4 py-2 text-xs uppercase tracking-wider rounded transition-colors ${
+                className={`px-4 py-2 text-xs uppercase tracking-wider transition-colors ${
                   stockFilter === "all"
                     ? "bg-foreground text-background"
                     : "bg-muted text-muted-foreground hover:bg-muted/80"
@@ -1359,7 +1367,7 @@ const Designs = () => {
               </button>
               <button
                 onClick={() => setStockFilter("in")}
-                className={`px-4 py-2 text-xs uppercase tracking-wider rounded transition-colors ${
+                className={`px-4 py-2 text-xs uppercase tracking-wider transition-colors ${
                   stockFilter === "in"
                     ? "bg-foreground text-background"
                     : "bg-muted text-muted-foreground hover:bg-muted/80"
@@ -1369,7 +1377,7 @@ const Designs = () => {
               </button>
               <button
                 onClick={() => setStockFilter("out")}
-                className={`px-4 py-2 text-xs uppercase tracking-wider rounded transition-colors ${
+                className={`px-4 py-2 text-xs uppercase tracking-wider transition-colors ${
                   stockFilter === "out"
                     ? "bg-foreground text-background"
                     : "bg-muted text-muted-foreground hover:bg-muted/80"
@@ -1380,20 +1388,45 @@ const Designs = () => {
             </div>
           </div>
 
-          {/* Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16 mb-20">
-            {filteredDesigns.map((design, index) => (
-              <div
-                key={design.id}
-                className="opacity-0 animate-fade-up"
-                style={{
-                  animationDelay: `${index * 75}ms`,
-                }}
+          {/* Season 2 Coming Soon teaser - shown when the tab is selected but nothing has dropped yet */}
+          {seasonFilter === "Season 2" && filteredDesigns.length === 0 ? (
+            <div className="relative border border-foreground/10 bg-foreground text-background py-24 px-6 text-center mb-20 overflow-hidden">
+              <div className="absolute inset-0 bg-grain opacity-[0.06] pointer-events-none" />
+              <p className="text-rust text-xs uppercase tracking-[0.3em] mb-4 relative">
+                Habibi Amigo
+              </p>
+              <h2 className="font-display text-4xl md:text-6xl tracking-wider mb-4 relative">
+                SEASON 2 IS COMING
+              </h2>
+              <p className="text-background/60 max-w-md mx-auto relative">
+                New designs, same friendship. Follow along so you don't miss the drop.
+              </p>
+              <a
+                href="https://www.instagram.com/habibixamigo/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-8 relative"
               >
-                <DesignCard design={design} />
-              </div>
-            ))}
-          </div>
+                <Button variant="accent" size="lg">
+                  Follow For Updates
+                </Button>
+              </a>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16 mb-20">
+              {filteredDesigns.map((design, index) => (
+                <div
+                  key={design.id}
+                  className="opacity-0 animate-fade-up"
+                  style={{
+                    animationDelay: `${index * 75}ms`,
+                  }}
+                >
+                  <DesignCard design={design} />
+                </div>
+              ))}
+            </div>
+          )}
 
           <div className="text-center">
             <Button variant="premium" size="xl" asChild>

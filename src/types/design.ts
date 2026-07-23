@@ -31,9 +31,11 @@ export interface Design {
   inStock: boolean;
   /** Season collection (e.g., "Season 1", "Season 2") */
   season?: string;
+  /** Set true for designs being teased ahead of their drop - renders a locked/blurred card */
+  comingSoon?: boolean;
 }
 
-export const SEASONS = ["Season 1"] as const;
+export const SEASONS = ["Season 1", "Season 2"] as const;
 export type Season = typeof SEASONS[number];
 
 export type Size = "S" | "M" | "L" | "XL";

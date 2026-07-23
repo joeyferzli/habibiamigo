@@ -43,6 +43,10 @@ export default {
         stone: "hsl(var(--stone))",
         charcoal: "hsl(var(--charcoal))",
         "warm-white": "hsl(var(--warm-white))",
+        rust: {
+          DEFAULT: "hsl(var(--rust))",
+          foreground: "hsl(var(--rust-foreground))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

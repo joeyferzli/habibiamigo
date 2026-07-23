@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Design } from "@/types/design";
 import DesignDetailModal from "./DesignDetailModal";
 
@@ -16,12 +15,14 @@ const DesignCard = ({ design }: DesignCardProps) => {
 
   const currentColor = design.colorVariations[selectedColorIndex];
   const thumbnailImage = currentColor?.images[0];
+  const isLocked = design.comingSoon;
 
   const handleColorChange = (index: number) => {
     setSelectedColorIndex(index);
   };
 
   const handleOpenModal = () => {
+    if (isLocked) return;
     setIsModalOpen(true);
   };
 
@@ -30,25 +31,33 @@ const DesignCard = ({ design }: DesignCardProps) => {
       <div className="group">
         {/* Image - Large Square */}
         <div
-          className="aspect-square bg-muted mb-4 overflow-hidden relative cursor-pointer rounded-lg"
+          className={`aspect-square bg-muted mb-4 overflow-hidden relative border border-border ${
+            isLocked ? "cursor-default" : "cursor-pointer"
+          }`}
           onClick={handleOpenModal}
         >
-          {/* Stock Badge */}
+          {/* Badge */}
           <div
-            className={`absolute top-3 right-3 z-10 px-2 py-1 text-[10px] uppercase tracking-wider rounded ${
-              design.inStock
-                ? "bg-muted/80 text-muted-foreground"
-                : "bg-muted text-muted-foreground/60"
+            className={`absolute top-0 right-0 z-10 px-3 py-1.5 text-[10px] uppercase tracking-widest font-medium ${
+              isLocked
+                ? "bg-rust text-rust-foreground"
+                : design.inStock
+                ? "bg-foreground text-background"
+                : "bg-muted text-muted-foreground/70"
             }`}
           >
-            {design.inStock ? "In Stock" : "Out of Stock"}
+            {isLocked ? "Coming Soon" : design.inStock ? "In Stock" : "Out of Stock"}
           </div>
 
           {thumbnailImage ? (
             <img
               src={thumbnailImage}
               alt={design.name}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              className={`w-full h-full object-cover transition-all duration-500 ${
+                isLocked
+                  ? "grayscale blur-sm scale-105 opacity-70"
+                  : "group-hover:scale-105"
+              }`}
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-muted">
@@ -57,10 +66,26 @@ const DesignCard = ({ design }: DesignCardProps) => {
               </span>
             </div>
           )}
+
+          {/* Locked overlay */}
+          {isLocked && (
+            <div className="absolute inset-0 flex items-center justify-center bg-foreground/10">
+              <span className="font-display text-2xl md:text-3xl text-background bg-foreground/90 px-6 py-2 tracking-widest">
+                SEASON 2
+              </span>
+            </div>
+          )}
+
+          {/* Hover reveal bar */}
+          {!isLocked && (
+            <div className="absolute bottom-0 left-0 right-0 bg-rust text-rust-foreground text-center text-xs uppercase tracking-widest py-2.5 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              View Details
+            </div>
+          )}
         </div>
 
         {/* Color Swatches */}
-        {design.colorVariations.length >= 1 && (
+        {!isLocked && design.colorVariations.length >= 1 && (
           <div className="flex gap-1.5 mb-3">
             {design.colorVariations.map((color, index) => (
               <button
@@ -79,32 +104,26 @@ const DesignCard = ({ design }: DesignCardProps) => {
         )}
 
         {/* Content */}
-        <div className="space-y-2">
-          <h3 className="font-display text-xl text-foreground tracking-wider group-hover:tracking-widest transition-all duration-300">
+        <div className="space-y-1">
+          <h3 className="font-display text-xl text-foreground tracking-wider group-hover:text-rust transition-colors duration-300">
             {design.name}
           </h3>
-          <p className="text-muted-foreground text-sm">{design.caption}</p>
-
-          {/* View Details Button */}
-          <Button
-            variant="outline"
-            size="sm"
-            className="mt-3 text-xs px-3 py-1 h-7"
-            onClick={handleOpenModal}
-          >
-            View Details
-          </Button>
+          <p className="text-muted-foreground text-sm">
+            {isLocked ? "Dropping soon" : design.caption}
+          </p>
         </div>
       </div>
 
       {/* Detail Modal */}
-      <DesignDetailModal
-        design={design}
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        selectedColorIndex={selectedColorIndex}
-        onColorChange={handleColorChange}
-      />
+      {!isLocked && (
+        <DesignDetailModal
+          design={design}
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          selectedColorIndex={selectedColorIndex}
+          onColorChange={handleColorChange}
+        />
+      )}
     </>
   );
 };
