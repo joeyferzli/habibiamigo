@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import DesignCard from "@/components/DesignCard";
 import FriendshipCollage from "@/components/FriendshipCollage";
 import { Design } from "@/types/design";
+import heroVideo from "@/assets/hero-bg.mp4.asset.json";
 
 // Secretly Latina - All 4 color variants
 import secretlyLatinaWhite1 from "@/assets/designs/secretly-latina-white-1.jpg";
@@ -164,7 +165,7 @@ const Index = () => {
       <section className="aspect-video md:aspect-auto md:min-h-screen relative">
         {/* Video Background */}
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
-          <source src="/videos/hero-bg.mp4?v=4" type="video/mp4" />
+          <source src={heroVideo.url} type="video/mp4" />
         </video>
 
         {/* Overlay for button visibility */}
