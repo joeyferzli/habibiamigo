@@ -23,9 +23,6 @@ const Footer = () => {
               name: "Designs",
               path: "/designs"
             }, {
-              name: "About",
-              path: "/about"
-            }, {
               name: "Shop",
               path: SHOP_URL,
               external: true
