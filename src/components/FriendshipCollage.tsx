@@ -25,14 +25,6 @@ const FriendshipCollage = () => {
         <p className="font-display text-2xl text-foreground mt-10 opacity-0 animate-fade-up delay-200">
           T-Shirts By Friends, For Friends.
         </p>
-        <Link
-          to="/about"
-          className="inline-block mt-8 opacity-0 animate-fade-up delay-300"
-        >
-          <Button className="bg-foreground text-background hover:bg-foreground/90">
-            About Us
-          </Button>
-        </Link>
       </div>
     </section>
   );
