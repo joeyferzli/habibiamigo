@@ -18,11 +18,6 @@ const FriendshipCollage = () => {
         </h2>
         <div className="space-y-6 text-muted-foreground text-lg leading-relaxed opacity-0 animate-fade-up delay-100">
           <p>{"\n"}</p>
-          <p>Different countries, different cultures, same sense of humor.</p>
-          <p>
-            What started as jokes, nights out, and inside references turned into
-            designs we actually wanted to wear.
-          </p>
           <p className="text-foreground/80 italic">
             Lebanese warmth x Spanish chaos.
           </p>
