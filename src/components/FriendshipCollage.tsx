@@ -17,7 +17,7 @@ const FriendshipCollage = () => {
           HABIBI MEETS AMIGO
         </h2>
         <div className="space-y-6 text-muted-foreground text-lg leading-relaxed opacity-0 animate-fade-up delay-100">
-          <p>We met during our MBA.</p>
+          <p>{"\n"}</p>
           <p>Different countries, different cultures, same sense of humor.</p>
           <p>
             What started as jokes, nights out, and inside references turned into
